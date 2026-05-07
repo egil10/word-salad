@@ -54,7 +54,7 @@ The deployed static site includes `data/processed/ordsalat-data.js` and `data/pr
 - 1,057 speeches
 - 4.26M processed words
 - Coverage from 1789 to 2026
-- 70+ tracked or discovered terms
+- 1,500 tracked or discovered terms
 - Per-decade frequency series, first appearances, top source speeches, president coverage, and full speech metadata for corpus search
 
 ## App Pages

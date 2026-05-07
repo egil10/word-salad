@@ -6,6 +6,8 @@ const speechesDir = path.join(root, "data", "raw", "speeches");
 const outputDir = path.join(root, "data", "processed");
 const jsonPath = path.join(outputDir, "ordsalat-data.json");
 const jsPath = path.join(outputDir, "ordsalat-data.js");
+const MAX_INDEXED_TERMS = 1500;
+const MAX_TOP_DOCUMENTS = 4;
 
 const trackedTerms = [
   ["artificial intelligence", "technology"],
@@ -62,7 +64,7 @@ const trackedTerms = [
 ];
 
 const stopWords = new Set(
-  "able about above after again against almost alone along already also although always among american americans amount another anyone anything around because become became been before being between both cannot certain chief civil come comes country could day days did does doing done down during each either enough even ever every few first for from further general give given gives good government great had has have having here herself high himself history however human important into itself just know known large last later life like little long made make makes many might more most much must nation national never only order other ought over people political president public rather right said same should since small some speech state states still such than that their them then there these they thing things think this those though through time today together under united until very want wanted wants were what when where whether which while white whole will with within without world would year years your".split(
+  "able about above after again against almost alone along already also although always among american americans amount another anyone anything around because become became been before being between both cannot certain chief civil come comes country could day days did does doing done down during each either enough even ever every few first for from further general give given gives going good government great had has have having here herself high himself history however human important into itself just know known large last later life like little long made make makes many might more most much must nation national never only order other ought over people political president public rather right said same shall should since small some speech state states still such than that their them then there these they thing things think this those though through time today together under united until upon very want wanted wants well were what when where whether which while white whole will with within without world would year years your".split(
     " ",
   ),
 );
@@ -81,9 +83,10 @@ function main() {
   const years = decadeYears(documents);
   const termStats = buildTermStats(documents, years);
   const discovered = discoverTerms(documents, years, termStats);
-  const terms = [...termStats.values(), ...discovered]
-    .sort((a, b) => b.mentions - a.mentions)
-    .slice(0, 74);
+  const discoveredLimit = Math.max(0, MAX_INDEXED_TERMS - termStats.size);
+  const terms = [...termStats.values(), ...discovered.slice(0, discoveredLimit)].sort(
+    (a, b) => b.mentions - a.mentions,
+  );
 
   const presidents = summarizePresidents(documents);
   const periods = summarizePeriods(documents);
@@ -126,7 +129,7 @@ function main() {
   };
 
   fs.writeFileSync(jsonPath, `${JSON.stringify(dataset, null, 2)}\n`);
-  fs.writeFileSync(jsPath, `window.ORDSALAT_DATA = ${JSON.stringify(dataset, null, 2)};\n`);
+  fs.writeFileSync(jsPath, `window.ORDSALAT_DATA=${JSON.stringify(dataset)};\n`);
   console.log(`Processed ${documents.length} speeches into ${path.relative(root, jsonPath)}`);
 }
 
@@ -240,53 +243,127 @@ function buildTermStats(documents, years) {
 }
 
 function discoverTerms(documents, years, existingStats) {
-  const phraseCounts = new Map();
-  const docHits = new Map();
+  const candidateStats = new Map();
   const totalsByBucket = years.map(() => 0);
-  const seriesCounts = new Map();
 
   documents.forEach((doc) => {
     const bucketIndex = years.indexOf(bucketForYear(doc.year, years));
     totalsByBucket[bucketIndex] += doc.wordCount;
-    const phrasesInDoc = new Set();
-    for (let index = 0; index < doc.tokens.length - 1; index += 1) {
-      const first = doc.tokens[index];
-      const second = doc.tokens[index + 1];
-      if (first.length < 4 || second.length < 4 || stopWords.has(first) || stopWords.has(second)) continue;
-      const phrase = `${first} ${second}`;
-      if (existingStats.has(phrase)) continue;
-      phraseCounts.set(phrase, (phraseCounts.get(phrase) || 0) + 1);
-      phrasesInDoc.add(phrase);
-      if (!seriesCounts.has(phrase)) seriesCounts.set(phrase, years.map(() => 0));
-      seriesCounts.get(phrase)[bucketIndex] += 1;
+
+    const countsInDoc = new Map();
+    for (let index = 0; index < doc.tokens.length; index += 1) {
+      for (let width = 1; width <= 3; width += 1) {
+        const parts = doc.tokens.slice(index, index + width);
+        if (parts.length !== width) continue;
+        const candidate = normalizeCandidate(parts);
+        if (!candidate || existingStats.has(candidate)) continue;
+        countsInDoc.set(candidate, (countsInDoc.get(candidate) || 0) + 1);
+      }
     }
-    phrasesInDoc.forEach((phrase) => docHits.set(phrase, (docHits.get(phrase) || 0) + 1));
+
+    countsInDoc.forEach((count, term) => {
+      const stat =
+        candidateStats.get(term) ||
+        {
+          term,
+          category: classifyTerm(term),
+          source: "Miller Center",
+          mentions: 0,
+          documentCount: 0,
+          firstYear: doc.year,
+          topDocuments: [],
+          rawSeries: years.map(() => 0),
+        };
+      stat.mentions += count;
+      stat.documentCount += 1;
+      stat.firstYear = Math.min(stat.firstYear, doc.year);
+      stat.rawSeries[bucketIndex] += count;
+      stat.topDocuments.push({
+        title: doc.title,
+        president: doc.president,
+        year: doc.year,
+        url: doc.url,
+        count,
+      });
+      candidateStats.set(term, stat);
+    });
   });
 
-  return [...phraseCounts.entries()]
-    .filter(([phrase, count]) => count >= 14 && docHits.get(phrase) >= 5 && !phrase.includes("--"))
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 24)
-    .map(([phrase, count]) => {
-      const rawSeries = seriesCounts.get(phrase);
-      const series = rawSeries.map((value, index) =>
+  return [...candidateStats.values()]
+    .filter((stat) => isUsefulCandidate(stat))
+    .map((stat) => {
+      const series = stat.rawSeries.map((value, index) =>
         totalsByBucket[index] ? Number(((value / totalsByBucket[index]) * 10000).toFixed(2)) : 0,
       );
-      const firstBucket = years[rawSeries.findIndex(Boolean)];
       return {
-        term: phrase,
-        category: "discovered",
+        term: stat.term,
+        category: stat.category,
         source: "Miller Center",
-        mentions: count,
-        documentCount: docHits.get(phrase),
-        firstYear: firstBucket,
+        mentions: stat.mentions,
+        documentCount: stat.documentCount,
+        firstYear: stat.firstYear,
         intensity: Number(Math.max(...series).toFixed(2)),
         latest: series.at(-1),
         momentum: Number((series.at(-1) - series[Math.max(0, series.length - 4)]).toFixed(2)),
-        topDocuments: [],
+        topDocuments: stat.topDocuments.sort((a, b) => b.count - a.count).slice(0, MAX_TOP_DOCUMENTS),
         series: { usa: series },
       };
-    });
+    })
+    .sort((a, b) => candidateScore(b) - candidateScore(a));
+}
+
+function normalizeCandidate(parts) {
+  if (!parts.every(isCandidateToken)) return null;
+  const term = parts.join(" ");
+  if (term.length > 54) return null;
+  if (/(\b[a-z]\b)|(--)/.test(term)) return null;
+  return term;
+}
+
+function isCandidateToken(token) {
+  if (!token || token.length < 4 || stopWords.has(token)) return false;
+  if (!/^[a-z][a-z-]*[a-z]$/.test(token)) return false;
+  if (token.includes("---")) return false;
+  return true;
+}
+
+function isUsefulCandidate(stat) {
+  const width = stat.term.split(" ").length;
+  if (width === 1) return stat.mentions >= 18 && stat.documentCount >= 7;
+  if (width === 2) return stat.mentions >= 8 && stat.documentCount >= 4;
+  return stat.mentions >= 5 && stat.documentCount >= 3;
+}
+
+function candidateScore(term) {
+  const width = term.term.split(" ").length;
+  const phraseBoost = width === 1 ? 1 : width === 2 ? 1.5 : 1.75;
+  const spread = Math.log10(term.documentCount + 1);
+  const recency = Math.max(0, term.latest || 0) * 2;
+  const velocity = Math.max(0, term.momentum || 0) * 4;
+  return term.mentions * phraseBoost * Math.max(1, spread) + recency + velocity;
+}
+
+function classifyTerm(term) {
+  const value = ` ${term} `;
+  if (/(climate|energy|environment|emissions|carbon|conservation|pollution|warming)/.test(value)) return "climate";
+  if (/(digital|technology|computer|cyber|internet|algorithm|intelligence|automation|science|space)/.test(value)) {
+    return "technology";
+  }
+  if (/(economy|economic|jobs|trade|tax|inflation|market|business|industry|growth|budget|dollar)/.test(value)) {
+    return "economics";
+  }
+  if (/(security|war|peace|nuclear|terror|military|defense|allies|weapons|enemy|soviet)/.test(value)) {
+    return "geopolitics";
+  }
+  if (/(democracy|freedom|liberty|rights|constitution|vote|law|justice|equal|citizens)/.test(value)) {
+    return "democracy";
+  }
+  if (/(health|education|families|children|schools|workers|poverty|community|care|housing)/.test(value)) {
+    return "society";
+  }
+  if (/(press|media|truth|news|information|message|broadcast|radio)/.test(value)) return "media";
+  if (/(government|congress|federal|policy|program|administration|public|department)/.test(value)) return "governance";
+  return "discovered";
 }
 
 function countTerm(text, term) {
