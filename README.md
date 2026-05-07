@@ -6,11 +6,13 @@ The first version ships with an interactive seed dataset so the product can be r
 
 ## Run Locally
 
-Open `index.html` directly in a browser, or serve the folder with any static server:
+Serve the folder with any static server:
 
 ```powershell
 npx serve .
 ```
+
+The app uses Vercel-style routes such as `/dashboard`, `/corpus`, `/terms`, `/sources`, `/ai`, and `/method`, so local testing should use a static server instead of opening the file directly.
 
 ## Deploy On Vercel
 
@@ -53,7 +55,16 @@ The deployed static site includes `data/processed/ordsalat-data.js` and `data/pr
 - 4.26M processed words
 - Coverage from 1789 to 2026
 - 70+ tracked or discovered terms
-- Per-decade frequency series, first appearances, top source speeches, president coverage, and document metadata
+- Per-decade frequency series, first appearances, top source speeches, president coverage, and full speech metadata for corpus search
+
+## App Pages
+
+- `/dashboard`: high-level corpus metrics, trend chart, word cloud, burst table, and decade volume map
+- `/corpus`: searchable table for every processed source speech
+- `/terms`: searchable term index with first-year, momentum, and source-backed evidence
+- `/sources`: corpus resource library and ingestion status
+- `/ai`: prompt/evidence pack builder plus pasted-text analyzer
+- `/method`: concise explanation of the normalization and analysis method
 
 Raw downloaded files are intentionally ignored under `data/raw/`.
 

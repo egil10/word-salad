@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Ordsalat tracks recurring words across speeches, transcripts, institutions, and media over time."
+      content="Ordsalat is a research dashboard for searching speech corpora and tracking language trends over time."
     />
-    <title>Ordsalat | Language Trend Dashboard</title>
+    <title>Ordsalat | Corpus Search and Rhetoric Trends</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="app-shell">
-      <header class="topbar">
-        <a class="brand" href="#overview" aria-label="Ordsalat dashboard home">
+    <div class="app-layout">
+      <aside class="sidebar">
+        <a class="brand" href="/dashboard" data-route="/dashboard" aria-label="Ordsalat dashboard">
           <span class="brand-mark">O</span>
           <span>
             <strong>Ordsalat</strong>
@@ -27,183 +27,122 @@
           </span>
         </a>
 
-        <nav class="nav-links" aria-label="Primary navigation">
-          <a href="#overview">Overview</a>
-          <a href="#timeline">Timeline</a>
-          <a href="#sources">Sources</a>
-          <a href="#ai-lab">AI Lab</a>
+        <nav class="side-nav" aria-label="Main pages">
+          <a href="/dashboard" data-route="/dashboard">Dashboard</a>
+          <a href="/corpus" data-route="/corpus">Corpus Search</a>
+          <a href="/terms" data-route="/terms">Term Explorer</a>
+          <a href="/sources" data-route="/sources">Sources</a>
+          <a href="/ai" data-route="/ai">AI Workspace</a>
+          <a href="/method" data-route="/method">Method</a>
         </nav>
 
-        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
-          <span aria-hidden="true">T</span>
-        </button>
-      </header>
+        <div class="sidebar-footer">
+          <span id="datasetStatus">Loading corpus</span>
+          <button class="ghost-button" id="themeToggle" type="button">Theme</button>
+        </div>
+      </aside>
 
-      <main>
-        <section class="hero-section" id="overview">
-          <div class="hero-copy">
-            <p class="eyebrow">Institutional language intelligence</p>
-            <h1>See when words enter power, peak, and disappear.</h1>
-            <p class="hero-lede">
-              Compare UN, EU, US and podcast language over time, track first appearances, and export AI-ready evidence packs with dates, sources and cohort metadata.
-            </p>
+      <main class="main-panel">
+        <header class="page-topbar">
+          <div>
+            <p class="eyebrow" id="pageKicker">Dashboard</p>
+            <h1 id="pageTitle">Language Trends</h1>
           </div>
+          <div class="global-search">
+            <input id="globalSearch" type="search" placeholder="Search terms, speeches, presidents, sources..." />
+            <button id="globalSearchButton" type="button">Search</button>
+          </div>
+        </header>
 
-          <aside class="command-panel" aria-label="Dashboard controls">
-            <label class="search-label" for="termSearch">Track a word or phrase</label>
-            <div class="search-row">
-              <input id="termSearch" type="search" placeholder="Try resilience, misinformation, AI..." />
-              <button id="addTermButton" type="button">Track</button>
-            </div>
+        <section class="page-view is-active" data-page="/dashboard">
+          <div class="metric-grid" id="metricGrid"></div>
 
-            <div class="control-block">
-              <span class="control-label">Cohorts</span>
-              <div class="segmented" id="cohortControls" role="group" aria-label="Choose cohorts"></div>
-            </div>
+          <section class="work-grid">
+            <article class="panel span-7">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow">Trend line</p>
+                  <h2 id="timelineTitle">Term trajectory</h2>
+                </div>
+                <select id="dashboardTermSelect" aria-label="Select dashboard term"></select>
+              </div>
+              <svg id="timelineChart" class="trend-chart" role="img" aria-label="Term trend chart"></svg>
+            </article>
 
-            <div class="control-block">
-              <span class="control-label">Lens</span>
-              <select id="lensSelect" aria-label="Select dashboard lens">
-                <option value="frequency">Frequency per 10k words</option>
-                <option value="velocity">Recent velocity</option>
-                <option value="novelty">First-appearance novelty</option>
-              </select>
-            </div>
-          </aside>
+            <article class="panel span-5">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow">Top terms</p>
+                  <h2>Corpus word cloud</h2>
+                </div>
+                <select id="lensSelect" aria-label="Select term ranking lens">
+                  <option value="mentions">Mentions</option>
+                  <option value="momentum">Momentum</option>
+                  <option value="intensity">Peak intensity</option>
+                </select>
+              </div>
+              <div class="word-cloud" id="wordCloud"></div>
+            </article>
+
+            <article class="panel span-6">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow">Burst analysis</p>
+                  <h2>Rising and fading terms</h2>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Term</th>
+                      <th>Direction</th>
+                      <th>Momentum</th>
+                      <th>Latest</th>
+                    </tr>
+                  </thead>
+                  <tbody id="burstTable"></tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="panel span-6">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow">Era map</p>
+                  <h2>Speech volume by decade</h2>
+                </div>
+              </div>
+              <div class="era-bars" id="eraBars"></div>
+            </article>
+          </section>
         </section>
 
-        <section class="metric-grid" aria-label="Key metrics">
-          <article class="metric-card">
-            <span class="metric-label">Seed documents</span>
-            <strong id="metricDocs">0</strong>
-            <small>ready for corpus ingestion</small>
-          </article>
-          <article class="metric-card">
-            <span class="metric-label">Tracked terms</span>
-            <strong id="metricTerms">0</strong>
-            <small>across 2000-2026</small>
-          </article>
-          <article class="metric-card">
-            <span class="metric-label">Fastest riser</span>
-            <strong id="metricRiser">-</strong>
-            <small id="metricRiserMeta">last six years</small>
-          </article>
-          <article class="metric-card">
-            <span class="metric-label">Earliest signal</span>
-            <strong id="metricEarliest">-</strong>
-            <small id="metricEarliestMeta">first observed in seed</small>
-          </article>
-        </section>
+        <section class="page-view" data-page="/corpus">
+          <section class="search-console">
+            <div>
+              <label for="corpusSearch">Search speech metadata</label>
+              <input id="corpusSearch" type="search" placeholder="Try State of the Union, Lincoln, climate, 2024..." />
+            </div>
+            <div>
+              <label for="presidentFilter">President</label>
+              <select id="presidentFilter"></select>
+            </div>
+            <div>
+              <label for="yearFilter">Decade</label>
+              <select id="yearFilter"></select>
+            </div>
+          </section>
 
-        <section class="dashboard-grid">
-          <article class="panel word-panel">
+          <section class="panel">
             <div class="panel-header">
               <div>
-                <p class="eyebrow">Word cloud</p>
-                <h2>Relative saturation</h2>
+                <p class="eyebrow">Search results</p>
+                <h2 id="corpusResultTitle">All speeches</h2>
               </div>
-              <output id="activeCohortsLabel" aria-live="polite"></output>
+              <button id="exportCorpusButton" type="button">Export JSON</button>
             </div>
-            <div class="word-cloud" id="wordCloud" aria-label="Weighted word cloud"></div>
-          </article>
-
-          <article class="panel" id="timeline">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Timeline</p>
-                <h2 id="timelineTitle">Term trajectory</h2>
-              </div>
-              <select id="termSelect" aria-label="Select term"></select>
-            </div>
-            <div class="chart-frame">
-              <svg id="timelineChart" role="img" aria-label="Line chart of selected term over time"></svg>
-            </div>
-          </article>
-
-          <article class="panel">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Adoption</p>
-                <h2>First appearance map</h2>
-              </div>
-            </div>
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Term</th>
-                    <th>First cohort</th>
-                    <th>First year</th>
-                    <th>2026 index</th>
-                  </tr>
-                </thead>
-                <tbody id="firstAppearanceTable"></tbody>
-              </table>
-            </div>
-          </article>
-
-          <article class="panel">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Cohort distance</p>
-                <h2>Vocabulary overlap</h2>
-              </div>
-            </div>
-            <div class="matrix" id="similarityMatrix" aria-label="Vocabulary overlap matrix"></div>
-          </article>
-        </section>
-
-        <section class="dashboard-grid evidence-grid" id="evidence">
-          <article class="panel">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Real corpus</p>
-                <h2>Presidential speech archive</h2>
-              </div>
-            </div>
-            <div class="corpus-stats" id="corpusStats"></div>
-          </article>
-
-          <article class="panel">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Term evidence</p>
-                <h2 id="evidenceTitle">Source-backed hits</h2>
-              </div>
-            </div>
-            <div class="evidence-list" id="termEvidence"></div>
-          </article>
-
-          <article class="panel">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Presidents</p>
-                <h2>Corpus coverage</h2>
-              </div>
-            </div>
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>President</th>
-                    <th>Speeches</th>
-                    <th>Words</th>
-                    <th>Span</th>
-                  </tr>
-                </thead>
-                <tbody id="presidentTable"></tbody>
-              </table>
-            </div>
-          </article>
-
-          <article class="panel">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Documents</p>
-                <h2>Recent source records</h2>
-              </div>
-            </div>
-            <div class="table-wrap">
+            <div class="table-wrap tall">
               <table>
                 <thead>
                   <tr>
@@ -211,97 +150,125 @@
                     <th>President</th>
                     <th>Year</th>
                     <th>Words</th>
+                    <th>Source</th>
                   </tr>
                 </thead>
-                <tbody id="documentTable"></tbody>
+                <tbody id="corpusTable"></tbody>
               </table>
             </div>
-          </article>
-
-          <article class="panel">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Burst analysis</p>
-                <h2>Rising and fading language</h2>
-              </div>
-            </div>
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Term</th>
-                    <th>Direction</th>
-                    <th>Momentum</th>
-                    <th>Latest</th>
-                  </tr>
-                </thead>
-                <tbody id="burstTable"></tbody>
-              </table>
-            </div>
-          </article>
-
-          <article class="panel">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Era map</p>
-                <h2>Speech volume by decade</h2>
-              </div>
-            </div>
-            <div class="era-bars" id="eraBars"></div>
-          </article>
+          </section>
         </section>
 
-        <section class="panel lab-panel" id="custom-analyzer">
-          <div class="panel-header">
+        <section class="page-view" data-page="/terms">
+          <section class="search-console compact">
             <div>
-              <p class="eyebrow">Bring your own corpus</p>
-              <h2>Paste speeches, transcripts or show notes</h2>
+              <label for="termSearch">Search indexed terms</label>
+              <input id="termSearch" type="search" placeholder="Search by phrase, category, source..." />
             </div>
-            <button id="analyzeTextButton" type="button">Analyze Text</button>
-          </div>
-          <div class="analyzer-grid">
-            <textarea
-              id="customText"
-              spellcheck="true"
-              placeholder="Paste a speech, podcast transcript, EU debate excerpt or UN statement. Ordsalat extracts candidate buzzwords and compares them with the seed index."
-            ></textarea>
-            <div class="analysis-output" id="customOutput" aria-live="polite">
-              <span>Waiting for text.</span>
+            <div>
+              <label for="categoryFilter">Category</label>
+              <select id="categoryFilter"></select>
             </div>
-          </div>
+          </section>
+
+          <section class="work-grid">
+            <article class="panel span-5">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow">Index</p>
+                  <h2 id="termResultTitle">Tracked terms</h2>
+                </div>
+              </div>
+              <div class="term-list" id="termList"></div>
+            </article>
+
+            <article class="panel span-7">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow">Term detail</p>
+                  <h2 id="termDetailTitle">Select a term</h2>
+                </div>
+              </div>
+              <div class="term-detail" id="termDetail"></div>
+            </article>
+          </section>
         </section>
 
-        <section class="source-section" id="sources">
-          <div class="section-heading">
-            <p class="eyebrow">Corpus runway</p>
-            <h2>Data sources worth ingesting first</h2>
-          </div>
+        <section class="page-view" data-page="/sources">
+          <section class="source-intro">
+            <div>
+              <p class="eyebrow">Resource library</p>
+              <h2>Datasets and ingestion status</h2>
+              <p>
+                The app currently ships with processed Miller Center speech data. UN, EU, Congressional, White House and podcast sources are mapped here so they can be added as normalized cohorts.
+              </p>
+            </div>
+          </section>
           <div class="source-grid" id="sourceGrid"></div>
         </section>
 
-        <section class="panel ai-panel" id="ai-lab">
-          <div class="panel-header">
-            <div>
-              <p class="eyebrow">AI Lab</p>
-              <h2>Evidence pack generator</h2>
-            </div>
-            <button id="copyPromptButton" type="button">Copy Prompt</button>
-          </div>
-          <div class="ai-grid">
-            <div class="prompt-builder">
-              <label for="aiQuestion">Research question</label>
+        <section class="page-view" data-page="/ai">
+          <section class="work-grid">
+            <article class="panel span-6">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow">Evidence prompt</p>
+                  <h2>Build an AI-ready pack</h2>
+                </div>
+                <button id="copyPromptButton" type="button">Copy Prompt</button>
+              </div>
+              <label for="aiQuestion">Question</label>
               <input
                 id="aiQuestion"
                 type="text"
-                value="Which organizations adopted resilience language first, and did podcasts follow or lead?"
+                value="Which terms rose fastest in US presidential speeches, and which source speeches should be reviewed first?"
               />
-              <label for="aiTermChoice">Focus term</label>
-              <select id="aiTermChoice"></select>
-              <label for="aiEvidence">Generated prompt</label>
+              <label for="aiTermSelect">Focus term</label>
+              <select id="aiTermSelect"></select>
+              <label for="aiEvidence">Prompt</label>
               <textarea id="aiEvidence" readonly></textarea>
+            </article>
+
+            <article class="panel span-6">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow">Custom text</p>
+                  <h2>Analyze a pasted transcript</h2>
+                </div>
+                <button id="analyzeTextButton" type="button">Analyze</button>
+              </div>
+              <textarea
+                id="customText"
+                placeholder="Paste a speech, podcast transcript, EU debate excerpt or UN statement."
+              ></textarea>
+              <div class="analysis-output" id="customOutput">Waiting for text.</div>
+            </article>
+          </section>
+        </section>
+
+        <section class="page-view" data-page="/method">
+          <section class="panel method-panel">
+            <p class="eyebrow">Method</p>
+            <h2>How Ordsalat reads a corpus</h2>
+            <div class="method-grid">
+              <div>
+                <strong>1. Normalize documents</strong>
+                <p>Every speech becomes a dated record with source, speaker, organization, country, title, URL and cleaned text.</p>
+              </div>
+              <div>
+                <strong>2. Count terms by time bucket</strong>
+                <p>Terms are counted per decade and normalized as mentions per 10,000 words so long and short eras are comparable.</p>
+              </div>
+              <div>
+                <strong>3. Track adoption and velocity</strong>
+                <p>The app records first observed year, total mentions, document count, peak intensity, latest intensity and recent momentum.</p>
+              </div>
+              <div>
+                <strong>4. Preserve source links</strong>
+                <p>Term evidence keeps top speeches and source URLs so interesting spikes can be inspected instead of treated as black-box signals.</p>
+              </div>
             </div>
-            <pre class="json-preview" id="jsonPreview" aria-label="AI-ready JSON preview"></pre>
-          </div>
+          </section>
         </section>
       </main>
     </div>

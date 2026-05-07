@@ -114,7 +114,6 @@ function main() {
     periods,
     documents: documents
       .sort((a, b) => b.year - a.year)
-      .slice(0, 140)
       .map(({ id, title, president, year, date, url, wordCount }) => ({
         id,
         title,
