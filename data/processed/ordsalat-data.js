@@ -1,0 +1,6344 @@
+window.ORDSALAT_DATA = {
+  "generatedAt": "2026-05-07T12:29:50.547Z",
+  "source": {
+    "id": "miller-center",
+    "name": "Miller Center Presidential Speeches",
+    "url": "https://data.millercenter.org/",
+    "citation": "Miller Center of Public Affairs, University of Virginia. \"Presidential Speeches: Downloadable Data.\"",
+    "documentCount": 1057,
+    "earliestYear": 1789,
+    "latestYear": 2026,
+    "totalWords": 4266417
+  },
+  "years": [
+    1780,
+    1790,
+    1800,
+    1810,
+    1820,
+    1830,
+    1840,
+    1850,
+    1860,
+    1870,
+    1880,
+    1890,
+    1900,
+    1910,
+    1920,
+    1930,
+    1940,
+    1950,
+    1960,
+    1970,
+    1980,
+    1990,
+    2000,
+    2010,
+    2020,
+    2030
+  ],
+  "cohorts": {
+    "usa": {
+      "documents": 1057,
+      "totalWords": 4266417,
+      "earliestYear": 1789,
+      "latestYear": 2026
+    }
+  },
+  "terms": [
+    {
+      "term": "constitution",
+      "category": "democracy",
+      "source": "Miller Center",
+      "mentions": 2641,
+      "documentCount": 451,
+      "firstYear": 1789,
+      "topDocuments": [
+        {
+          "title": "February 27, 1860: Cooper Union Address",
+          "president": "Abraham Lincoln",
+          "year": 1860,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-27-1860-cooper-union-address",
+          "count": 88
+        },
+        {
+          "title": "April 15, 1834: Protest of Senate Censure",
+          "president": "Andrew Jackson",
+          "year": 1834,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-15-1834-protest-senate-censure",
+          "count": 83
+        },
+        {
+          "title": "December 3, 1860: Fourth Annual Message",
+          "president": "James Buchanan",
+          "year": 1860,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-3-1860-fourth-annual-message",
+          "count": 68
+        },
+        {
+          "title": "February 2, 1858: Message to Congress Transmitting the Constitution of Kansas",
+          "president": "James Buchanan",
+          "year": 1858,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-2-1858-message-congress-transmitting-constitution",
+          "count": 66
+        },
+        {
+          "title": "December 5, 1848: Fourth Annual Message to Congress",
+          "president": "James K. Polk",
+          "year": 1848,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-5-1848-fourth-annual-message-congress",
+          "count": 65
+        }
+      ],
+      "series": {
+        "usa": [
+          10.15,
+          12.31,
+          4.97,
+          7.56,
+          5.28,
+          17.26,
+          13.25,
+          21.69,
+          33.66,
+          9.56,
+          6.03,
+          1.74,
+          2.45,
+          1.11,
+          4.55,
+          3.63,
+          1.87,
+          0.87,
+          1.51,
+          2.23,
+          1.57,
+          1.1,
+          1.16,
+          0.79,
+          2.04,
+          0
+        ]
+      },
+      "intensity": 33.66,
+      "latest": 0,
+      "momentum": -1.16
+    },
+    {
+      "term": "freedom",
+      "category": "democracy",
+      "source": "Miller Center",
+      "mentions": 2536,
+      "documentCount": 561,
+      "firstYear": 1793,
+      "topDocuments": [
+        {
+          "title": "February 23, 1966: Remarks on Receiving the National Freedom Award",
+          "president": "Lyndon B. Johnson",
+          "year": 1966,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-23-1966-remarks-receiving-national-freedom-award",
+          "count": 38
+        },
+        {
+          "title": "November 6, 2003: Remarks on Freedom in Iraq and Middle East",
+          "president": "George W. Bush",
+          "year": 2003,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/november-6-2003-remarks-freedom-iraq-and-middle-east",
+          "count": 37
+        },
+        {
+          "title": "October 21, 1960: Debate with Richard Nixon in New York",
+          "president": "John F. Kennedy",
+          "year": 1960,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-21-1960-debate-richard-nixon-new-york",
+          "count": 35
+        },
+        {
+          "title": "January 20, 2005: Second Inaugural Address",
+          "president": "George W. Bush",
+          "year": 2005,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-20-2005-second-inaugural-address-0",
+          "count": 28
+        },
+        {
+          "title": "May 31, 1988: Address at Moscow State University",
+          "president": "Ronald Reagan",
+          "year": 1988,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/may-31-1988-address-moscow-state-university",
+          "count": 24
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          1.14,
+          2.38,
+          1.39,
+          3.12,
+          1.04,
+          1.23,
+          2.29,
+          2.36,
+          1.65,
+          1.18,
+          0.71,
+          1.5,
+          2.9,
+          7.61,
+          4.3,
+          14.71,
+          16.11,
+          13.62,
+          4.68,
+          16.08,
+          7.15,
+          15.92,
+          4.01,
+          4.15,
+          0
+        ]
+      },
+      "intensity": 16.11,
+      "latest": 0,
+      "momentum": -15.92
+    },
+    {
+      "term": "rights",
+      "category": "democracy",
+      "source": "Miller Center",
+      "mentions": 2509,
+      "documentCount": 582,
+      "firstYear": 1789,
+      "topDocuments": [
+        {
+          "title": "December 31, 1855: Third Annual Message",
+          "president": "Franklin Pierce",
+          "year": 1855,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-31-1855-third-annual-message",
+          "count": 36
+        },
+        {
+          "title": "June 25, 1996: Victims Rights Announcement",
+          "president": "Bill Clinton",
+          "year": 1996,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/june-25-1996-victims-rights-announcement",
+          "count": 30
+        },
+        {
+          "title": "September 26, 1988: Address to the United Nations",
+          "president": "Ronald Reagan",
+          "year": 1988,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-26-1988-address-united-nations",
+          "count": 24
+        },
+        {
+          "title": "December 5, 1899: Third Annual Message",
+          "president": "William McKinley",
+          "year": 1899,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-5-1899-third-annual-message",
+          "count": 24
+        },
+        {
+          "title": "March 27, 1866: Veto Message on Civil Rights Legislation",
+          "president": "Andrew Johnson",
+          "year": 1866,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-27-1866-veto-message-civil-rights-legislation",
+          "count": 21
+        }
+      ],
+      "series": {
+        "usa": [
+          10.15,
+          6.61,
+          8.21,
+          11.34,
+          7.08,
+          5.29,
+          6.9,
+          7.2,
+          9.07,
+          5.98,
+          6.15,
+          4.14,
+          6.4,
+          5.96,
+          7.31,
+          1.35,
+          6.56,
+          4.75,
+          7.25,
+          5.13,
+          6.85,
+          4.68,
+          4.22,
+          5.09,
+          2.77,
+          0
+        ]
+      },
+      "intensity": 11.34,
+      "latest": 0,
+      "momentum": -4.22
+    },
+    {
+      "term": "security",
+      "category": "geopolitics",
+      "source": "Miller Center",
+      "mentions": 2497,
+      "documentCount": 603,
+      "firstYear": 1789,
+      "topDocuments": [
+        {
+          "title": "October 28, 1980: Debate with Ronald Reagan",
+          "president": "Jimmy Carter",
+          "year": 1980,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-28-1980-debate-ronald-reagan",
+          "count": 41
+        },
+        {
+          "title": "January 19, 1999: State of the Union Address",
+          "president": "Bill Clinton",
+          "year": 1999,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-19-1999-state-union-address",
+          "count": 31
+        },
+        {
+          "title": "February 2, 2005: State of the Union Address",
+          "president": "George W. Bush",
+          "year": 2005,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-2-2005-state-union-address",
+          "count": 30
+        },
+        {
+          "title": "October 7, 1984: Debate with Walter Mondale (Domestic Issues)",
+          "president": "Ronald Reagan",
+          "year": 1984,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-7-1984-debate-walter-mondale-domestic-issues",
+          "count": 29
+        },
+        {
+          "title": "December 1, 2009: Speech on Strategy in Afghanistan and Pakistan",
+          "president": "Barack Obama",
+          "year": 2009,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-1-2009-speech-strategy-afghanistan-and-pakistan",
+          "count": 28
+        }
+      ],
+      "series": {
+        "usa": [
+          5.08,
+          5.24,
+          3.46,
+          5.17,
+          2.64,
+          2.62,
+          2.41,
+          2.81,
+          1.63,
+          1.03,
+          1.89,
+          1.55,
+          0.79,
+          1.62,
+          3.06,
+          6.49,
+          9.09,
+          20.36,
+          7.97,
+          7.69,
+          10.62,
+          10.5,
+          18.12,
+          9.89,
+          4.91,
+          0
+        ]
+      },
+      "intensity": 20.36,
+      "latest": 0,
+      "momentum": -18.12
+    },
+    {
+      "term": "justice",
+      "category": "society",
+      "source": "Miller Center",
+      "mentions": 1754,
+      "documentCount": 539,
+      "firstYear": 1790,
+      "topDocuments": [
+        {
+          "title": "December 3, 1906: Sixth Annual Message",
+          "president": "Theodore Roosevelt",
+          "year": 1906,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-3-1906-sixth-annual-message",
+          "count": 25
+        },
+        {
+          "title": "October 26, 2020: Swearing-In Ceremony of the Honorable Amy Coney Barrett to the US Supreme Court ",
+          "president": "Donald Trump",
+          "year": 2020,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-26-2020-swearing-ceremony-honorable-amy-coney-barrett",
+          "count": 24
+        },
+        {
+          "title": "December 5, 1905: Fifth Annual Message",
+          "president": "Theodore Roosevelt",
+          "year": 1905,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-5-1905-fifth-annual-message",
+          "count": 21
+        },
+        {
+          "title": "September 26, 2020: Announcing His Nominee for the US Supreme Court",
+          "president": "Donald Trump",
+          "year": 2020,
+          "url": "",
+          "count": 19
+        },
+        {
+          "title": "December 9, 1908: Eighth Annual Message",
+          "president": "Theodore Roosevelt",
+          "year": 1908,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-9-1908-eighth-annual-message",
+          "count": 19
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          9.35,
+          7.78,
+          6.77,
+          4.8,
+          5.09,
+          3.45,
+          4.43,
+          4.67,
+          3.92,
+          4.97,
+          3.53,
+          5.41,
+          5.79,
+          7.68,
+          3.37,
+          2.9,
+          5.12,
+          2.83,
+          3.4,
+          2.27,
+          2.11,
+          4.59,
+          2.85,
+          4.41,
+          0
+        ]
+      },
+      "intensity": 9.35,
+      "latest": 0,
+      "momentum": -4.59
+    },
+    {
+      "term": "jobs",
+      "category": "economics",
+      "source": "Miller Center",
+      "mentions": 1348,
+      "documentCount": 241,
+      "firstYear": 1930,
+      "topDocuments": [
+        {
+          "title": "April 28, 2021: Address to Joint Session of Congress",
+          "president": "Joe Biden",
+          "year": 2021,
+          "url": "",
+          "count": 47
+        },
+        {
+          "title": "September 23, 1976: Debate with President Gerald Ford (Domestic Issues)",
+          "president": "Jimmy Carter",
+          "year": 1976,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-23-1976-debate-president-gerald-ford-domestic-issues",
+          "count": 40
+        },
+        {
+          "title": "September 8, 2011: Address to Congress on the American Jobs Act",
+          "president": "Barack Obama",
+          "year": 2011,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-8-2011-address-congress-american-jobs-act",
+          "count": 39
+        },
+        {
+          "title": "January 24, 2012: 2012 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2012,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-24-2012-2012-state-union-address",
+          "count": 34
+        },
+        {
+          "title": "February 13, 2013: 2013 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2013,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-13-2013-2013-state-union-address",
+          "count": 32
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2.53,
+          0.37,
+          0.87,
+          2.04,
+          7.52,
+          4.98,
+          10.04,
+          6.98,
+          14.46,
+          7.54,
+          0
+        ]
+      },
+      "intensity": 14.46,
+      "latest": 0,
+      "momentum": -6.98
+    },
+    {
+      "term": "opportunity",
+      "category": "society",
+      "source": "Miller Center",
+      "mentions": 1344,
+      "documentCount": 522,
+      "firstYear": 1789,
+      "topDocuments": [
+        {
+          "title": "July 19, 1995: Address on Affirmative Action",
+          "president": "Bill Clinton",
+          "year": 1995,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/july-19-1995-address-affirmative-action",
+          "count": 25
+        },
+        {
+          "title": "December 4, 2013: Speech on Economic Mobility",
+          "president": "Barack Obama",
+          "year": 2013,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-4-2013-speech-economic-mobility",
+          "count": 16
+        },
+        {
+          "title": "October 21, 1932: Campaign Speech in Madison Square Garden",
+          "president": "Herbert Hoover",
+          "year": 1932,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-21-1932-campaign-speech-madison-square-garden",
+          "count": 16
+        },
+        {
+          "title": "December 7, 1909: First Annual Message",
+          "president": "William Taft",
+          "year": 1909,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-7-1909-first-annual-message",
+          "count": 16
+        },
+        {
+          "title": "September 25, 1988: Debate with Michael Dukakis",
+          "president": "George H. W. Bush",
+          "year": 1988,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-25-1988-debate-michael-dukakis",
+          "count": 14
+        }
+      ],
+      "series": {
+        "usa": [
+          5.08,
+          1.37,
+          1.3,
+          2.39,
+          1.44,
+          1.19,
+          1.08,
+          1.19,
+          0.79,
+          1.44,
+          1.89,
+          1.65,
+          2.57,
+          3.79,
+          4.77,
+          5.4,
+          2.72,
+          5.12,
+          4.26,
+          4.23,
+          4.25,
+          7.38,
+          5.63,
+          4.57,
+          1.68,
+          0
+        ]
+      },
+      "intensity": 7.38,
+      "latest": 0,
+      "momentum": -5.63
+    },
+    {
+      "term": "prosperity",
+      "category": "economics",
+      "source": "Miller Center",
+      "mentions": 1191,
+      "documentCount": 429,
+      "firstYear": 1789,
+      "topDocuments": [
+        {
+          "title": "December 7, 1874: Sixth Annual Message",
+          "president": "Ulysses S. Grant",
+          "year": 1874,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-7-1874-sixth-annual-message",
+          "count": 14
+        },
+        {
+          "title": "September 19, 2017: Address to the United Nations General Assembly ",
+          "president": "Donald Trump",
+          "year": 2017,
+          "url": "",
+          "count": 12
+        },
+        {
+          "title": "October 22, 1928: Principles and Ideals of the United States Government",
+          "president": "Herbert Hoover",
+          "year": 1928,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-22-1928-principles-and-ideals-united-states-government",
+          "count": 12
+        },
+        {
+          "title": "December 2, 1839: Third Annual Message to Congress",
+          "president": "Martin Van Buren",
+          "year": 1839,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-2-1839-third-annual-message-congress",
+          "count": 12
+        },
+        {
+          "title": "December 3, 1912: Fourth Annual Message",
+          "president": "William Taft",
+          "year": 1912,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-3-1912-fourth-annual-message",
+          "count": 12
+        }
+      ],
+      "series": {
+        "usa": [
+          10.15,
+          5.7,
+          2.81,
+          3.98,
+          2.52,
+          4.15,
+          3.6,
+          3.1,
+          1.89,
+          3.92,
+          3.08,
+          2.64,
+          3.24,
+          2.28,
+          5.67,
+          4.05,
+          1.12,
+          5.5,
+          1.69,
+          2.28,
+          1.9,
+          2.29,
+          3.55,
+          3.48,
+          0.56,
+          0
+        ]
+      },
+      "intensity": 10.15,
+      "latest": 0,
+      "momentum": -3.55
+    },
+    {
+      "term": "education",
+      "category": "society",
+      "source": "Miller Center",
+      "mentions": 1124,
+      "documentCount": 329,
+      "firstYear": 1790,
+      "topDocuments": [
+        {
+          "title": "October 6, 1996: Presidential Debate with Senator Bob Dole",
+          "president": "Bill Clinton",
+          "year": 1996,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-6-1996-presidential-debate-senator-bob-dole",
+          "count": 34
+        },
+        {
+          "title": "December 3, 1906: Sixth Annual Message",
+          "president": "Theodore Roosevelt",
+          "year": 1906,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-3-1906-sixth-annual-message",
+          "count": 25
+        },
+        {
+          "title": "April 30, 1993: National Service Address",
+          "president": "Bill Clinton",
+          "year": 1993,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-30-1993-national-service-address",
+          "count": 20
+        },
+        {
+          "title": "September 25, 1988: Debate with Michael Dukakis",
+          "president": "George H. W. Bush",
+          "year": 1988,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-25-1988-debate-michael-dukakis",
+          "count": 18
+        },
+        {
+          "title": "February 4, 1997: State of the Union Address",
+          "president": "Bill Clinton",
+          "year": 1997,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-4-1997-state-union-address",
+          "count": 16
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0.91,
+          1.08,
+          0.4,
+          0.6,
+          0.25,
+          0.44,
+          1.14,
+          0.37,
+          3.51,
+          2.72,
+          1.04,
+          2.41,
+          0.95,
+          5.15,
+          1.01,
+          1.03,
+          4.37,
+          4.24,
+          3.01,
+          3.22,
+          8.3,
+          4.71,
+          4.72,
+          0.99,
+          0
+        ]
+      },
+      "intensity": 8.3,
+      "latest": 0,
+      "momentum": -4.71
+    },
+    {
+      "term": "families",
+      "category": "society",
+      "source": "Miller Center",
+      "mentions": 1085,
+      "documentCount": 350,
+      "firstYear": 1792,
+      "topDocuments": [
+        {
+          "title": "September 25, 1988: Debate with Michael Dukakis",
+          "president": "George H. W. Bush",
+          "year": 1988,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-25-1988-debate-michael-dukakis",
+          "count": 26
+        },
+        {
+          "title": "January 23, 1996: State of the Union Address",
+          "president": "Bill Clinton",
+          "year": 1996,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-23-1996-state-union-address",
+          "count": 18
+        },
+        {
+          "title": "January 27, 2010: 2010 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2010,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-27-2010-2010-state-union-address",
+          "count": 17
+        },
+        {
+          "title": "February 13, 2013: 2013 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2013,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-13-2013-2013-state-union-address",
+          "count": 17
+        },
+        {
+          "title": "March 1, 2022: State of the Union Address",
+          "president": "Joe Biden",
+          "year": 2022,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-1-2022-state-union-address",
+          "count": 17
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0.68,
+          1.94,
+          0.2,
+          0,
+          0.05,
+          0.49,
+          0.24,
+          0.16,
+          0.55,
+          0.3,
+          0.33,
+          0.32,
+          0.11,
+          0.67,
+          3.04,
+          1.5,
+          2.5,
+          1.92,
+          1.73,
+          4.98,
+          8.21,
+          7.23,
+          8.54,
+          5.5,
+          0
+        ]
+      },
+      "intensity": 8.54,
+      "latest": 0,
+      "momentum": -7.23
+    },
+    {
+      "term": "nuclear",
+      "category": "geopolitics",
+      "source": "Miller Center",
+      "mentions": 1047,
+      "documentCount": 206,
+      "firstYear": 1953,
+      "topDocuments": [
+        {
+          "title": "July 26, 1963: Address on the Nuclear Test Ban Treaty",
+          "president": "John F. Kennedy",
+          "year": 1963,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/july-26-1963-address-nuclear-test-ban-treaty",
+          "count": 41
+        },
+        {
+          "title": "October 18, 1964: Report to the Nation on Events in China and the USSR",
+          "president": "Lyndon B. Johnson",
+          "year": 1964,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-18-1964-report-nation-events-china-and-ussr",
+          "count": 40
+        },
+        {
+          "title": "July 31, 1991: Press Conference with Mikhail Gorbachev",
+          "president": "George H. W. Bush",
+          "year": 1991,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/july-31-1991-press-conference-mikhail-gorbachev",
+          "count": 36
+        },
+        {
+          "title": "October 21, 1984: Debate with Walter Mondale (Defense and Foreign Policy)",
+          "president": "Ronald Reagan",
+          "year": 1984,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-21-1984-debate-walter-mondale-defense-and-foreign",
+          "count": 29
+        },
+        {
+          "title": "October 28, 1980: Debate with Ronald Reagan",
+          "president": "Jimmy Carter",
+          "year": 1980,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-28-1980-debate-ronald-reagan",
+          "count": 27
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1.75,
+          6.76,
+          5.52,
+          9.45,
+          5.14,
+          5.27,
+          3.41,
+          3.13,
+          0
+        ]
+      },
+      "intensity": 9.45,
+      "latest": 0,
+      "momentum": -5.27
+    },
+    {
+      "term": "liberty",
+      "category": "democracy",
+      "source": "Miller Center",
+      "mentions": 1030,
+      "documentCount": 418,
+      "firstYear": 1789,
+      "topDocuments": [
+        {
+          "title": "July 6, 1852: Eulogy on Henry Clay",
+          "president": "Abraham Lincoln",
+          "year": 1852,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/july-6-1852-eulogy-henry-clay",
+          "count": 22
+        },
+        {
+          "title": "November 6, 2003: Remarks on Freedom in Iraq and Middle East",
+          "president": "George W. Bush",
+          "year": 2003,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/november-6-2003-remarks-freedom-iraq-and-middle-east",
+          "count": 18
+        },
+        {
+          "title": "March 4, 1841: Inaugural Address",
+          "president": "William Harrison",
+          "year": 1841,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-4-1841-inaugural-address",
+          "count": 17
+        },
+        {
+          "title": "January 20, 2005: Second Inaugural Address",
+          "president": "George W. Bush",
+          "year": 2005,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-20-2005-second-inaugural-address-0",
+          "count": 16
+        },
+        {
+          "title": "September 19, 1796: Farewell Address",
+          "president": "George Washington",
+          "year": 1796,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-19-1796-farewell-address",
+          "count": 15
+        }
+      ],
+      "series": {
+        "usa": [
+          10.15,
+          6.16,
+          2.59,
+          1.79,
+          3.12,
+          2.27,
+          2.36,
+          3.34,
+          2.78,
+          1.03,
+          1.54,
+          0.52,
+          2.49,
+          4.07,
+          4.77,
+          2.19,
+          3.19,
+          1.12,
+          2.04,
+          1.5,
+          2.42,
+          1.42,
+          6.61,
+          1.31,
+          2.01,
+          0
+        ]
+      },
+      "intensity": 10.15,
+      "latest": 0,
+      "momentum": -6.61
+    },
+    {
+      "term": "democracy",
+      "category": "democracy",
+      "source": "Miller Center",
+      "mentions": 944,
+      "documentCount": 261,
+      "firstYear": 1825,
+      "topDocuments": [
+        {
+          "title": "September 1, 2022: Remarks on the Continued Battle for the Soul of the Nation",
+          "president": "Joe Biden",
+          "year": 2022,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-1-2022-remarks-continued-battle-soul-nation",
+          "count": 33
+        },
+        {
+          "title": "November 6, 2003: Remarks on Freedom in Iraq and Middle East",
+          "president": "George W. Bush",
+          "year": 2003,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/november-6-2003-remarks-freedom-iraq-and-middle-east",
+          "count": 31
+        },
+        {
+          "title": "January 6, 2022: Remarks on the Anniversary of the January 6th Assault on the US Capitol",
+          "president": "Joe Biden",
+          "year": 2022,
+          "url": "",
+          "count": 31
+        },
+        {
+          "title": "January 5, 2024: Speech on the Third Anniversary of the January 6th Attack",
+          "president": "Joe Biden",
+          "year": 2024,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-5-2024-speech-third-anniversary-january-6th-attack",
+          "count": 29
+        },
+        {
+          "title": "January 10, 2017: Farewell Address to the Nation",
+          "president": "Barack Obama",
+          "year": 2017,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-10-2017-farewell-address-nation",
+          "count": 23
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0.12,
+          0,
+          0.25,
+          0.05,
+          0.26,
+          0,
+          0,
+          0,
+          0.2,
+          0.67,
+          2.69,
+          4.13,
+          7.78,
+          0.5,
+          1.58,
+          0.78,
+          4.21,
+          5.14,
+          6.25,
+          4.38,
+          7.08,
+          0
+        ]
+      },
+      "intensity": 7.78,
+      "latest": 0,
+      "momentum": -6.25
+    },
+    {
+      "term": "allies",
+      "category": "geopolitics",
+      "source": "Miller Center",
+      "mentions": 743,
+      "documentCount": 278,
+      "firstYear": 1797,
+      "topDocuments": [
+        {
+          "title": "March 24, 1999: Statement on Kosovo",
+          "president": "Bill Clinton",
+          "year": 1999,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-24-1999-statement-kosovo",
+          "count": 16
+        },
+        {
+          "title": "February 24, 2022: Remarks on the Russian Invasion of Ukraine",
+          "president": "Joe Biden",
+          "year": 2022,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-24-2022-remarks-russian-invasion-ukraine",
+          "count": 16
+        },
+        {
+          "title": "December 1, 2009: Speech on Strategy in Afghanistan and Pakistan",
+          "president": "Barack Obama",
+          "year": 2009,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-1-2009-speech-strategy-afghanistan-and-pakistan",
+          "count": 11
+        },
+        {
+          "title": "October 6, 1976: Debate with President Gerald Ford (Foreign and Defense Issues)",
+          "president": "Jimmy Carter",
+          "year": 1976,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-6-1976-debate-president-gerald-ford-foreign-and",
+          "count": 11
+        },
+        {
+          "title": "March 23, 1983: Address to the Nation on National Security",
+          "president": "Ronald Reagan",
+          "year": 1983,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-23-1983-address-nation-national-security",
+          "count": 11
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0.23,
+          0,
+          0.2,
+          0.12,
+          0,
+          0.1,
+          0,
+          0.21,
+          0.07,
+          0.12,
+          0.09,
+          0.08,
+          0.39,
+          0,
+          0.59,
+          6.18,
+          2.62,
+          3.22,
+          3.18,
+          4.28,
+          3.26,
+          4.47,
+          3.03,
+          2.9,
+          0
+        ]
+      },
+      "intensity": 6.18,
+      "latest": 0,
+      "momentum": -4.47
+    },
+    {
+      "term": "soviet union",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 682,
+      "documentCount": 144,
+      "firstYear": 1940,
+      "intensity": 10.44,
+      "latest": 0,
+      "momentum": -0.31,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.75,
+          4.75,
+          3.91,
+          6.02,
+          10.44,
+          2.71,
+          0.31,
+          0.19,
+          0.16,
+          0
+        ]
+      }
+    },
+    {
+      "term": "crisis",
+      "category": "systems",
+      "source": "Miller Center",
+      "mentions": 625,
+      "documentCount": 278,
+      "firstYear": 1789,
+      "topDocuments": [
+        {
+          "title": "November 13, 2008: Speech on Financial Markets and the World Economy",
+          "president": "George W. Bush",
+          "year": 2008,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/november-13-2008-speech-financial-markets-and-world-economy",
+          "count": 16
+        },
+        {
+          "title": "March 19, 2018: Remarks on Combating the Opioid Crisis",
+          "president": "Donald Trump",
+          "year": 2018,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-19-2018-remarks-combating-opioid-crisis",
+          "count": 15
+        },
+        {
+          "title": "April 28, 2010: Remarks on Wall Street Reform",
+          "president": "Barack Obama",
+          "year": 2010,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-28-2010-remarks-wall-street-reform",
+          "count": 13
+        },
+        {
+          "title": "July 15, 1979: \"Crisis of Confidence\" Speech",
+          "president": "Jimmy Carter",
+          "year": 1979,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/july-15-1979-crisis-confidence-speech",
+          "count": 12
+        },
+        {
+          "title": "February 24, 2009: Address Before a Joint Session of Congress",
+          "president": "Barack Obama",
+          "year": 2009,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-24-2009-address-joint-session-congress",
+          "count": 11
+        }
+      ],
+      "series": {
+        "usa": [
+          5.08,
+          0.91,
+          1.51,
+          1.59,
+          0.12,
+          0.89,
+          0.2,
+          0.57,
+          0.37,
+          0.07,
+          0.06,
+          0.33,
+          0.51,
+          0.22,
+          0.82,
+          2.53,
+          2.44,
+          0.25,
+          1.9,
+          3.51,
+          1.98,
+          1.7,
+          3.8,
+          3.75,
+          2.31,
+          0
+        ]
+      },
+      "intensity": 5.08,
+      "latest": 0,
+      "momentum": -3.8
+    },
+    {
+      "term": "inflation",
+      "category": "economics",
+      "source": "Miller Center",
+      "mentions": 552,
+      "documentCount": 140,
+      "firstYear": 1841,
+      "topDocuments": [
+        {
+          "title": "October 24, 1978: Anti-Inflation Program Speech",
+          "president": "Jimmy Carter",
+          "year": 1978,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-24-1978-anti-inflation-program-speech",
+          "count": 46
+        },
+        {
+          "title": "October 28, 1980: Debate with Ronald Reagan",
+          "president": "Jimmy Carter",
+          "year": 1980,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-28-1980-debate-ronald-reagan",
+          "count": 28
+        },
+        {
+          "title": "October 8, 1974: \"Whip Inflation Now\" Speech",
+          "president": "Gerald Ford",
+          "year": 1974,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-8-1974-whip-inflation-now-speech",
+          "count": 24
+        },
+        {
+          "title": "September 23, 1976: Debate with President Gerald Ford (Domestic Issues)",
+          "president": "Jimmy Carter",
+          "year": 1976,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-23-1976-debate-president-gerald-ford-domestic-issues",
+          "count": 18
+        },
+        {
+          "title": "January 19, 1978: State of the Union Address",
+          "president": "Jimmy Carter",
+          "year": 1978,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-19-1978-state-union-address",
+          "count": 17
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.15,
+          0.1,
+          0,
+          0.48,
+          0,
+          0,
+          0.16,
+          0.06,
+          0.3,
+          1.01,
+          0.94,
+          2.62,
+          1.07,
+          11.7,
+          5.64,
+          1.33,
+          0.18,
+          0.07,
+          1.45,
+          0
+        ]
+      },
+      "intensity": 11.7,
+      "latest": 0,
+      "momentum": -0.18
+    },
+    {
+      "term": "health care",
+      "category": "society",
+      "source": "Miller Center",
+      "mentions": 527,
+      "documentCount": 92,
+      "firstYear": 1955,
+      "topDocuments": [
+        {
+          "title": "September 22, 1993: Address on Health Care Reform",
+          "president": "Bill Clinton",
+          "year": 1993,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-22-1993-address-health-care-reform",
+          "count": 69
+        },
+        {
+          "title": "September 9, 2009: Address to Congress on Health Care",
+          "president": "Barack Obama",
+          "year": 2009,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-9-2009-address-congress-health-care",
+          "count": 37
+        },
+        {
+          "title": "January 25, 1994: State of the Union Address",
+          "president": "Bill Clinton",
+          "year": 1994,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-25-1994-state-union-address",
+          "count": 29
+        },
+        {
+          "title": "October 11, 1992: Debate with Bill Clinton and Ross Perot",
+          "president": "George H. W. Bush",
+          "year": 1992,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-11-1992-debate-bill-clinton-and-ross-perot",
+          "count": 23
+        },
+        {
+          "title": "February 9, 2010: News Conference on Congressional Gridlock",
+          "president": "Barack Obama",
+          "year": 2010,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-9-2010-news-conference-congressional-gridlock",
+          "count": 22
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.12,
+          0.09,
+          1.39,
+          0.55,
+          9.36,
+          8.45,
+          4.19,
+          0.92,
+          0
+        ]
+      },
+      "intensity": 9.36,
+      "latest": 0,
+      "momentum": -8.45
+    },
+    {
+      "term": "press",
+      "category": "media",
+      "source": "Miller Center",
+      "mentions": 524,
+      "documentCount": 245,
+      "firstYear": 1794,
+      "topDocuments": [
+        {
+          "title": "March 20, 1965: Press Conference at the LBJ Ranch",
+          "president": "Lyndon B. Johnson",
+          "year": 1965,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-20-1965-press-conference-lbj-ranch",
+          "count": 24
+        },
+        {
+          "title": "April 27, 1961: \"President and the Press\" Speech",
+          "president": "John F. Kennedy",
+          "year": 1961,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-27-1961-president-and-press-speech",
+          "count": 19
+        },
+        {
+          "title": "February 29, 1964: Press Conference at the State Department",
+          "president": "Lyndon B. Johnson",
+          "year": 1964,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-29-1964-press-conference-state-department",
+          "count": 13
+        },
+        {
+          "title": "September 25, 2019: Press Conference",
+          "president": "Donald Trump",
+          "year": 2019,
+          "url": "",
+          "count": 12
+        },
+        {
+          "title": "April 13, 2020: Coronavirus Task Force Briefing",
+          "president": "Donald Trump",
+          "year": 2020,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-13-2020-coronavirus-task-force-briefing",
+          "count": 10
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0.46,
+          1.3,
+          0.99,
+          0.72,
+          0.99,
+          0.34,
+          0.24,
+          0.37,
+          0.48,
+          0.3,
+          0.47,
+          0.47,
+          0.72,
+          0.75,
+          0.76,
+          1.59,
+          1,
+          4.38,
+          1.73,
+          1.28,
+          0.96,
+          0.67,
+          1.27,
+          1.78,
+          0
+        ]
+      },
+      "intensity": 4.38,
+      "latest": 0,
+      "momentum": -0.67
+    },
+    {
+      "term": "truth",
+      "category": "media",
+      "source": "Miller Center",
+      "mentions": 519,
+      "documentCount": 283,
+      "firstYear": 1789,
+      "topDocuments": [
+        {
+          "title": "January 6, 2022: Remarks on the Anniversary of the January 6th Assault on the US Capitol",
+          "president": "Joe Biden",
+          "year": 2022,
+          "url": "",
+          "count": 17
+        },
+        {
+          "title": "January 5, 2024: Speech on the Third Anniversary of the January 6th Attack",
+          "president": "Joe Biden",
+          "year": 2024,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-5-2024-speech-third-anniversary-january-6th-attack",
+          "count": 10
+        },
+        {
+          "title": "March 15, 1952: Columbia Scholastic Press Association",
+          "president": "Harry S. Truman",
+          "year": 1952,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-15-1952-columbia-scholastic-press-association",
+          "count": 9
+        },
+        {
+          "title": "March 11, 2021: Remarks on the Anniversary of the Coronavirus Shutdown",
+          "president": "Joe Biden",
+          "year": 2021,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-11-2021-remarks-anniversary-coronavirus-shutdown",
+          "count": 8
+        },
+        {
+          "title": "April 29, 1974: Address to the Nation on Presidential Tape Recordings",
+          "president": "Richard M. Nixon",
+          "year": 1974,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-29-1974-address-nation-presidential-tape-recordings",
+          "count": 8
+        }
+      ],
+      "series": {
+        "usa": [
+          5.08,
+          2.28,
+          2.38,
+          0.4,
+          0.24,
+          1.19,
+          0.64,
+          1.19,
+          1,
+          0.27,
+          0.12,
+          0.52,
+          0.43,
+          0.56,
+          0.82,
+          0.67,
+          1.69,
+          3.75,
+          1.02,
+          1.84,
+          1.9,
+          1.79,
+          1.29,
+          1.46,
+          2.6,
+          0
+        ]
+      },
+      "intensity": 5.08,
+      "latest": 0,
+      "momentum": -1.29
+    },
+    {
+      "term": "middle east",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 464,
+      "documentCount": 154,
+      "firstYear": 1940,
+      "intensity": 5.82,
+      "latest": 0,
+      "momentum": -5.82,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.75,
+          4.25,
+          0.81,
+          3.29,
+          3.11,
+          2.38,
+          5.82,
+          1.87,
+          1.51,
+          0
+        ]
+      }
+    },
+    {
+      "term": "annual message",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 396,
+      "documentCount": 181,
+      "firstYear": 1790,
+      "intensity": 2.54,
+      "latest": 0,
+      "momentum": 0,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          2.51,
+          2.16,
+          1.99,
+          1.08,
+          1.78,
+          2.22,
+          2.19,
+          1.57,
+          2.54,
+          2.01,
+          2.5,
+          1.07,
+          1.78,
+          0.82,
+          0.17,
+          0.28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "term": "recovery",
+      "category": "systems",
+      "source": "Miller Center",
+      "mentions": 373,
+      "documentCount": 135,
+      "firstYear": 1812,
+      "topDocuments": [
+        {
+          "title": "October 7, 1984: Debate with Walter Mondale (Domestic Issues)",
+          "president": "Ronald Reagan",
+          "year": 1984,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-7-1984-debate-walter-mondale-domestic-issues",
+          "count": 16
+        },
+        {
+          "title": "September 30, 1934: Fireside Chat 6: On Government and Capitalism",
+          "president": "Franklin D. Roosevelt",
+          "year": 1934,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-30-1934-fireside-chat-6-government-and-capitalism",
+          "count": 14
+        },
+        {
+          "title": "February 24, 2009: Address Before a Joint Session of Congress",
+          "president": "Barack Obama",
+          "year": 2009,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-24-2009-address-joint-session-congress",
+          "count": 12
+        },
+        {
+          "title": "December 6, 1932: Fourth State of the Union Address",
+          "president": "Herbert Hoover",
+          "year": 1932,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-6-1932-fourth-state-union-address",
+          "count": 12
+        },
+        {
+          "title": "January 25, 1983: State of the Union Address",
+          "president": "Ronald Reagan",
+          "year": 1983,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-25-1983-state-union-address",
+          "count": 11
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0.4,
+          0.12,
+          0,
+          0,
+          0.1,
+          0.05,
+          0,
+          0.24,
+          0.19,
+          0.08,
+          0.17,
+          0.75,
+          10.2,
+          1.03,
+          0.25,
+          0.56,
+          0.56,
+          2.67,
+          0.73,
+          2.33,
+          1.05,
+          0.69,
+          0
+        ]
+      },
+      "intensity": 10.2,
+      "latest": 0,
+      "momentum": -2.33
+    },
+    {
+      "term": "supreme court",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 369,
+      "documentCount": 138,
+      "firstYear": 1790,
+      "intensity": 2.45,
+      "latest": 0,
+      "momentum": -0.61,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0.46,
+          0,
+          0.2,
+          0.6,
+          0.89,
+          0.25,
+          0.67,
+          1.83,
+          0.82,
+          1.12,
+          0.52,
+          1.19,
+          2.45,
+          0.6,
+          2.45,
+          0,
+          0.12,
+          0.53,
+          0.78,
+          0.48,
+          0.18,
+          0.61,
+          0.64,
+          1.78,
+          0
+        ]
+      }
+    },
+    {
+      "term": "social security",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 346,
+      "documentCount": 106,
+      "firstYear": 1930,
+      "intensity": 3.31,
+      "latest": 0,
+      "momentum": -3.31,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.93,
+          0.75,
+          1.25,
+          1.55,
+          0.61,
+          2.97,
+          2.89,
+          3.31,
+          0.64,
+          0.79,
+          0
+        ]
+      }
+    },
+    {
+      "term": "fellow citizens",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 328,
+      "documentCount": 187,
+      "firstYear": 1780,
+      "intensity": 6.26,
+      "latest": 0,
+      "momentum": -2.88,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          5.08,
+          3.88,
+          6.26,
+          2.98,
+          3.72,
+          1.73,
+          0.25,
+          0.05,
+          0.1,
+          0,
+          0,
+          0,
+          0.08,
+          0.28,
+          0.22,
+          0.93,
+          0.19,
+          0.62,
+          0.6,
+          0.22,
+          1.28,
+          1.1,
+          2.88,
+          0.75,
+          0.26,
+          0
+        ]
+      }
+    },
+    {
+      "term": "foreign policy",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 310,
+      "documentCount": 135,
+      "firstYear": 1800,
+      "intensity": 4.57,
+      "latest": 0,
+      "momentum": -0.37,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0.22,
+          0.6,
+          0.12,
+          0.25,
+          0.2,
+          0.1,
+          0.05,
+          0.69,
+          0.12,
+          0.33,
+          0.32,
+          0.06,
+          0.22,
+          0,
+          1.41,
+          2,
+          1.44,
+          4.57,
+          1.83,
+          0.78,
+          0.37,
+          0.22,
+          0.26,
+          0
+        ]
+      }
+    },
+    {
+      "term": "nuclear weapons",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 263,
+      "documentCount": 117,
+      "firstYear": 1950,
+      "intensity": 2.56,
+      "latest": 0,
+      "momentum": -2.14,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.62,
+          1.67,
+          0.84,
+          2.56,
+          1.38,
+          2.14,
+          0.71,
+          0.56,
+          0
+        ]
+      }
+    },
+    {
+      "term": "south vietnam",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 238,
+      "documentCount": 35,
+      "firstYear": 1960,
+      "intensity": 3.94,
+      "latest": 0,
+      "momentum": 0,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3.94,
+          3.79,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "term": "armed forces",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 228,
+      "documentCount": 143,
+      "firstYear": 1800,
+      "intensity": 4.12,
+      "latest": 0,
+      "momentum": -0.98,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0.22,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.1,
+          0.14,
+          0.12,
+          0.14,
+          0.28,
+          0.33,
+          0.07,
+          0,
+          4.12,
+          2.75,
+          0.44,
+          0.84,
+          0.88,
+          1.42,
+          0.98,
+          0.22,
+          0.89,
+          0
+        ]
+      }
+    },
+    {
+      "term": "economic growth",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 205,
+      "documentCount": 102,
+      "firstYear": 1950,
+      "intensity": 2.25,
+      "latest": 0,
+      "momentum": -1.29,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2.25,
+          1,
+          0.72,
+          1.94,
+          1.05,
+          1.29,
+          0.75,
+          0.46,
+          0
+        ]
+      }
+    },
+    {
+      "term": "central america",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 201,
+      "documentCount": 76,
+      "firstYear": 1820,
+      "intensity": 2.53,
+      "latest": 0,
+      "momentum": -0.06,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0.6,
+          0.4,
+          0.15,
+          2.43,
+          0,
+          0.21,
+          0.65,
+          0.66,
+          0.32,
+          0.67,
+          0.07,
+          0,
+          0.19,
+          0,
+          0.07,
+          0.06,
+          2.53,
+          0.23,
+          0.06,
+          0.07,
+          0.07,
+          0
+        ]
+      }
+    },
+    {
+      "term": "climate",
+      "category": "climate",
+      "source": "Miller Center",
+      "mentions": 199,
+      "documentCount": 110,
+      "firstYear": 1803,
+      "topDocuments": [
+        {
+          "title": "September 21, 2022: Speech before the 77th Session of the United Nations General Assembly",
+          "president": "Joe Biden",
+          "year": 2022,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-21-2022-speech-77th-session-united-nations-general",
+          "count": 14
+        },
+        {
+          "title": "September 23, 2025: Address before the 80th United Nations General Assembly",
+          "president": "Donald Trump",
+          "year": 2025,
+          "url": "",
+          "count": 8
+        },
+        {
+          "title": "April 28, 2021: Address to Joint Session of Congress",
+          "president": "Joe Biden",
+          "year": 2021,
+          "url": "",
+          "count": 7
+        },
+        {
+          "title": "October 16, 1854: At Peoria, Illinois",
+          "president": "Abraham Lincoln",
+          "year": 1854,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-16-1854-peoria-illinois",
+          "count": 6
+        },
+        {
+          "title": "March 7, 2024: State of Union Address",
+          "president": "Joe Biden",
+          "year": 2024,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-7-2024-state-union-address",
+          "count": 6
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0.86,
+          0.2,
+          0.48,
+          0.35,
+          0.49,
+          0.67,
+          0.37,
+          0.48,
+          0.24,
+          0.05,
+          0.12,
+          0.06,
+          0,
+          0.17,
+          0,
+          1.12,
+          0.09,
+          0.33,
+          0.11,
+          0.18,
+          0.43,
+          1.27,
+          2.21,
+          0
+        ]
+      },
+      "intensity": 2.21,
+      "latest": 0,
+      "momentum": -0.43
+    },
+    {
+      "term": "ending june",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 198,
+      "documentCount": 66,
+      "firstYear": 1830,
+      "intensity": 2.64,
+      "latest": 0,
+      "momentum": 0,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.1,
+          0.05,
+          0.95,
+          1.68,
+          2.54,
+          1.12,
+          2.64,
+          0.43,
+          0.56,
+          0,
+          0.25,
+          0.09,
+          0.5,
+          0.05,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "term": "environment",
+      "category": "climate",
+      "source": "Miller Center",
+      "mentions": 191,
+      "documentCount": 99,
+      "firstYear": 1889,
+      "topDocuments": [
+        {
+          "title": "October 6, 1996: Presidential Debate with Senator Bob Dole",
+          "president": "Bill Clinton",
+          "year": 1996,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-6-1996-presidential-debate-senator-bob-dole",
+          "count": 8
+        },
+        {
+          "title": "October 7, 1984: Debate with Walter Mondale (Domestic Issues)",
+          "president": "Ronald Reagan",
+          "year": 1984,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-7-1984-debate-walter-mondale-domestic-issues",
+          "count": 8
+        },
+        {
+          "title": "January 23, 1996: State of the Union Address",
+          "president": "Bill Clinton",
+          "year": 1996,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-23-1996-state-union-address",
+          "count": 6
+        },
+        {
+          "title": "August 29, 1996: Remarks at the Democratic National Convention",
+          "president": "Bill Clinton",
+          "year": 1996,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/august-29-1996-remarks-democratic-national-convention",
+          "count": 6
+        },
+        {
+          "title": "February 4, 1997: State of the Union Address",
+          "president": "Bill Clinton",
+          "year": 1997,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-4-1997-state-union-address",
+          "count": 6
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.06,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.09,
+          0.87,
+          0.3,
+          2.01,
+          1.1,
+          3.03,
+          1.04,
+          0.34,
+          0.36,
+          0
+        ]
+      },
+      "intensity": 3.03,
+      "latest": 0,
+      "momentum": -1.04
+    },
+    {
+      "term": "foreign countries",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 185,
+      "documentCount": 114,
+      "firstYear": 1790,
+      "intensity": 1.94,
+      "latest": 0,
+      "momentum": -0.06,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0.68,
+          0.22,
+          0.6,
+          0.36,
+          0.4,
+          0.59,
+          0.29,
+          0.26,
+          1.17,
+          0.77,
+          0.75,
+          0.87,
+          1.28,
+          0.3,
+          1.94,
+          0,
+          0.12,
+          0.09,
+          0.33,
+          0.11,
+          0.05,
+          0.06,
+          0.19,
+          0.16,
+          0
+        ]
+      }
+    },
+    {
+      "term": "21st century",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 183,
+      "documentCount": 74,
+      "firstYear": 1970,
+      "intensity": 4.59,
+      "latest": 0,
+      "momentum": -1.71,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.11,
+          0.29,
+          4.59,
+          1.71,
+          1.05,
+          0.56,
+          0
+        ]
+      }
+    },
+    {
+      "term": "senator kennedy",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 178,
+      "documentCount": 10,
+      "firstYear": 1960,
+      "intensity": 4.01,
+      "latest": 0,
+      "momentum": 0,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4.01,
+          0,
+          0.04,
+          0.18,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "term": "military force",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 174,
+      "documentCount": 102,
+      "firstYear": 1790,
+      "intensity": 1.8,
+      "latest": 0,
+      "momentum": -0.12,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0.91,
+          0.86,
+          0.2,
+          1.8,
+          0.49,
+          1.18,
+          1.05,
+          0.94,
+          1.1,
+          0.18,
+          0.28,
+          0.04,
+          0.06,
+          0.22,
+          0,
+          0.09,
+          0.37,
+          0.16,
+          0.06,
+          0.51,
+          0.6,
+          0.12,
+          0.07,
+          0.1,
+          0
+        ]
+      }
+    },
+    {
+      "term": "health insurance",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 173,
+      "documentCount": 55,
+      "firstYear": 1950,
+      "intensity": 2.27,
+      "latest": 0,
+      "momentum": -2.27,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.5,
+          0.12,
+          0.22,
+          0.59,
+          1.93,
+          2.27,
+          1.87,
+          0.49,
+          0
+        ]
+      }
+    },
+    {
+      "term": "latin america",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 173,
+      "documentCount": 82,
+      "firstYear": 1900,
+      "intensity": 2.43,
+      "latest": 0,
+      "momentum": -0.37,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.08,
+          0.45,
+          0.15,
+          0,
+          0.09,
+          0.25,
+          2.43,
+          1,
+          0.48,
+          0.5,
+          0.37,
+          0.07,
+          0.1,
+          0
+        ]
+      }
+    },
+    {
+      "term": "interest rates",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 165,
+      "documentCount": 69,
+      "firstYear": 1900,
+      "intensity": 2.49,
+      "latest": 0,
+      "momentum": -0.31,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.16,
+          0,
+          0.6,
+          0.25,
+          0,
+          0,
+          0.67,
+          0.39,
+          2.49,
+          1.51,
+          0.31,
+          0.11,
+          0.16,
+          0
+        ]
+      }
+    },
+    {
+      "term": "interstate commerce",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 164,
+      "documentCount": 48,
+      "firstYear": 1880,
+      "intensity": 3.24,
+      "latest": 0,
+      "momentum": 0,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.24,
+          0.24,
+          3.24,
+          2.73,
+          1.27,
+          0.42,
+          0,
+          0,
+          0.02,
+          0,
+          0,
+          0.05,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "term": "terrorism",
+      "category": "geopolitics",
+      "source": "Miller Center",
+      "mentions": 157,
+      "documentCount": 85,
+      "firstYear": 1858,
+      "topDocuments": [
+        {
+          "title": "October 28, 1980: Debate with Ronald Reagan",
+          "president": "Jimmy Carter",
+          "year": 1980,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-28-1980-debate-ronald-reagan",
+          "count": 13
+        },
+        {
+          "title": "September 25, 1988: Debate with Michael Dukakis",
+          "president": "George H. W. Bush",
+          "year": 1988,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-25-1988-debate-michael-dukakis",
+          "count": 7
+        },
+        {
+          "title": "October 27, 1983: Speech to the Nation on Lebanon and Grenada",
+          "president": "Ronald Reagan",
+          "year": 1983,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/october-27-1983-speech-nation-lebanon-and-grenada",
+          "count": 6
+        },
+        {
+          "title": "September 20, 2001: Address on the U.S. Response to the Attacks of September 11",
+          "president": "George W. Bush",
+          "year": 2001,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-20-2001-address-us-response-attacks-september-11",
+          "count": 5
+        },
+        {
+          "title": "January 31, 2006: State of the Union Address",
+          "president": "George W. Bush",
+          "year": 2006,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-31-2006-state-union-address",
+          "count": 5
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.05,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.07,
+          0,
+          0.09,
+          0,
+          0.09,
+          0.06,
+          1.83,
+          0.64,
+          2.2,
+          1.12,
+          0.63,
+          0
+        ]
+      },
+      "intensity": 2.2,
+      "latest": 0,
+      "momentum": -2.2
+    },
+    {
+      "term": "republican party",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 156,
+      "documentCount": 58,
+      "firstYear": 1850,
+      "intensity": 3,
+      "latest": 0,
+      "momentum": -0.31,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.14,
+          0.26,
+          0,
+          0,
+          0.24,
+          0.43,
+          0.33,
+          2.09,
+          1.43,
+          0.47,
+          3,
+          0.3,
+          0.17,
+          0.33,
+          0.14,
+          0.31,
+          0.41,
+          0.26,
+          0
+        ]
+      }
+    },
+    {
+      "term": "south carolina",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 154,
+      "documentCount": 43,
+      "firstYear": 1820,
+      "intensity": 3.36,
+      "latest": 0,
+      "momentum": -0.12,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0.12,
+          3.36,
+          0,
+          1.05,
+          1.63,
+          0.89,
+          0,
+          0.05,
+          0.08,
+          0,
+          0.15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.04,
+          0.05,
+          0.12,
+          0.19,
+          0.16,
+          0
+        ]
+      }
+    },
+    {
+      "term": "billion dollars",
+      "category": "discovered",
+      "source": "Miller Center",
+      "mentions": 153,
+      "documentCount": 66,
+      "firstYear": 1890,
+      "intensity": 2.62,
+      "latest": 0,
+      "momentum": -0.24,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.05,
+          0.04,
+          0.06,
+          0.15,
+          1.94,
+          0.56,
+          2.62,
+          1.53,
+          0.33,
+          0.44,
+          0,
+          0.24,
+          0.15,
+          0.2,
+          0
+        ]
+      }
+    },
+    {
+      "term": "middle class",
+      "category": "economics",
+      "source": "Miller Center",
+      "mentions": 140,
+      "documentCount": 61,
+      "firstYear": 1906,
+      "topDocuments": [
+        {
+          "title": "December 4, 2013: Speech on Economic Mobility",
+          "president": "Barack Obama",
+          "year": 2013,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-4-2013-speech-economic-mobility",
+          "count": 9
+        },
+        {
+          "title": "July 24, 2013: Remarks on Education and the Economy",
+          "president": "Barack Obama",
+          "year": 2013,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/july-24-2013-remarks-education-and-economy",
+          "count": 7
+        },
+        {
+          "title": "July 19, 1995: Address on Affirmative Action",
+          "president": "Bill Clinton",
+          "year": 1995,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/july-19-1995-address-affirmative-action",
+          "count": 7
+        },
+        {
+          "title": "February 13, 2013: 2013 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2013,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-13-2013-2013-state-union-address",
+          "count": 6
+        },
+        {
+          "title": "January 24, 1995: State of the Union Address",
+          "president": "Bill Clinton",
+          "year": 1995,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-24-1995-state-union-address",
+          "count": 6
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.04,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.02,
+          0,
+          0.07,
+          1.56,
+          0.61,
+          2.43,
+          0.89,
+          0
+        ]
+      },
+      "intensity": 2.43,
+      "latest": 0,
+      "momentum": -0.61
+    },
+    {
+      "term": "equity",
+      "category": "society",
+      "source": "Miller Center",
+      "mentions": 105,
+      "documentCount": 63,
+      "firstYear": 1793,
+      "topDocuments": [
+        {
+          "title": "December 7, 1909: First Annual Message",
+          "president": "William Taft",
+          "year": 1909,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-7-1909-first-annual-message",
+          "count": 8
+        },
+        {
+          "title": "December 6, 1910: Second Annual Message",
+          "president": "William Taft",
+          "year": 1910,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-6-1910-second-annual-message",
+          "count": 7
+        },
+        {
+          "title": "December 3, 1912: Fourth Annual Message",
+          "president": "William Taft",
+          "year": 1912,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-3-1912-fourth-annual-message",
+          "count": 6
+        },
+        {
+          "title": "December 5, 1911: Third Annual Message",
+          "president": "William Taft",
+          "year": 1911,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-5-1911-third-annual-message",
+          "count": 5
+        },
+        {
+          "title": "January 16, 1833: Message Regarding South Carolina Nullification of Federal Legislation",
+          "president": "Andrew Jackson",
+          "year": 1833,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-16-1833-message-regarding-south-carolina-nullification",
+          "count": 3
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0.68,
+          0.22,
+          0.2,
+          0.48,
+          0.35,
+          0.15,
+          0,
+          0.1,
+          0.34,
+          0.12,
+          0.38,
+          0.63,
+          1.06,
+          0.22,
+          0,
+          0,
+          0,
+          0.16,
+          0.39,
+          0.18,
+          0,
+          0.12,
+          0.11,
+          0.23,
+          0
+        ]
+      },
+      "intensity": 1.06,
+      "latest": 0,
+      "momentum": -0.12
+    },
+    {
+      "term": "innovation",
+      "category": "technology",
+      "source": "Miller Center",
+      "mentions": 101,
+      "documentCount": 63,
+      "firstYear": 1796,
+      "topDocuments": [
+        {
+          "title": "January 25, 2011: 2011 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2011,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-25-2011-2011-state-union-address",
+          "count": 9
+        },
+        {
+          "title": "January 24, 2012: 2012 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2012,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-24-2012-2012-state-union-address",
+          "count": 6
+        },
+        {
+          "title": "March 21, 2013: Address to the People of Israel",
+          "president": "Barack Obama",
+          "year": 2013,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-21-2013-address-people-israel",
+          "count": 5
+        },
+        {
+          "title": "January 27, 2010: 2010 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2010,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-27-2010-2010-state-union-address",
+          "count": 4
+        },
+        {
+          "title": "June 4, 2009: Address at Cairo University",
+          "president": "Barack Obama",
+          "year": 2009,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/june-4-2009-address-cairo-university",
+          "count": 3
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0.23,
+          0.22,
+          0.2,
+          0,
+          0,
+          0,
+          0.05,
+          0.1,
+          0,
+          0.12,
+          0.05,
+          0.12,
+          0,
+          0,
+          0.08,
+          0,
+          0,
+          0.12,
+          0,
+          0.07,
+          0.32,
+          0.98,
+          1.87,
+          0.26,
+          0
+        ]
+      },
+      "intensity": 1.87,
+      "latest": 0,
+      "momentum": -0.98
+    },
+    {
+      "term": "pandemic",
+      "category": "systems",
+      "source": "Miller Center",
+      "mentions": 100,
+      "documentCount": 32,
+      "firstYear": 2009,
+      "topDocuments": [
+        {
+          "title": "September 9, 2021: Remarks on Fighting the COVID-⁠19 Pandemic",
+          "president": "Joe Biden",
+          "year": 2021,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-9-2021-remarks-fighting-covid-19-pandemic",
+          "count": 12
+        },
+        {
+          "title": "April 28, 2021: Address to Joint Session of Congress",
+          "president": "Joe Biden",
+          "year": 2021,
+          "url": "",
+          "count": 9
+        },
+        {
+          "title": "March 1, 2022: State of the Union Address",
+          "president": "Joe Biden",
+          "year": 2022,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-1-2022-state-union-address",
+          "count": 9
+        },
+        {
+          "title": "April 13, 2020: Coronavirus Task Force Briefing",
+          "president": "Donald Trump",
+          "year": 2020,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-13-2020-coronavirus-task-force-briefing",
+          "count": 5
+        },
+        {
+          "title": "August 8, 2020: Press Conference on Executive Orders",
+          "president": "Donald Trump",
+          "year": 2020,
+          "url": "",
+          "count": 5
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.06,
+          0.04,
+          3.23,
+          0
+        ]
+      },
+      "intensity": 3.23,
+      "latest": 0,
+      "momentum": -0.06
+    },
+    {
+      "term": "clean energy",
+      "category": "climate",
+      "source": "Miller Center",
+      "mentions": 69,
+      "documentCount": 26,
+      "firstYear": 1999,
+      "topDocuments": [
+        {
+          "title": "January 27, 2010: 2010 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2010,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-27-2010-2010-state-union-address",
+          "count": 10
+        },
+        {
+          "title": "January 24, 2012: 2012 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2012,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-24-2012-2012-state-union-address",
+          "count": 8
+        },
+        {
+          "title": "June 15, 2010: Speech on the BP Oil Spill",
+          "president": "Barack Obama",
+          "year": 2010,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/june-15-2010-speech-bp-oil-spill",
+          "count": 6
+        },
+        {
+          "title": "January 25, 2011: 2011 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2011,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-25-2011-2011-state-union-address",
+          "count": 5
+        },
+        {
+          "title": "February 9, 2010: News Conference on Congressional Gridlock",
+          "president": "Barack Obama",
+          "year": 2010,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-9-2010-news-conference-congressional-gridlock",
+          "count": 3
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.05,
+          0.43,
+          1.61,
+          0.59,
+          0
+        ]
+      },
+      "intensity": 1.61,
+      "latest": 0,
+      "momentum": -0.43
+    },
+    {
+      "term": "accountability",
+      "category": "governance",
+      "source": "Miller Center",
+      "mentions": 66,
+      "documentCount": 54,
+      "firstYear": 1801,
+      "topDocuments": [
+        {
+          "title": "January 8, 2002: Remarks on No Child Left Behind Bill",
+          "president": "George W. Bush",
+          "year": 2002,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-8-2002-remarks-no-child-left-behind-bill",
+          "count": 3
+        },
+        {
+          "title": "March 4, 1829: First Inaugural Address",
+          "president": "Andrew Jackson",
+          "year": 1829,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-4-1829-first-inaugural-address",
+          "count": 2
+        },
+        {
+          "title": "December 3, 1867: Third Annual Message to Congress",
+          "president": "Andrew Johnson",
+          "year": 1867,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-3-1867-third-annual-message-congress",
+          "count": 2
+        },
+        {
+          "title": "February 7, 2009: Remarks on the American Recovery and Reinvestment Act",
+          "president": "Barack Obama",
+          "year": 2009,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-7-2009-remarks-american-recovery-and-reinvestment-act",
+          "count": 2
+        },
+        {
+          "title": "April 28, 2010: Remarks on Wall Street Reform",
+          "president": "Barack Obama",
+          "year": 2010,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-28-2010-remarks-wall-street-reform",
+          "count": 2
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0.43,
+          0,
+          0.84,
+          0.05,
+          0.25,
+          0.05,
+          0.26,
+          0.21,
+          0.06,
+          0.05,
+          0.08,
+          0.06,
+          0.07,
+          0,
+          0.09,
+          0,
+          0,
+          0.06,
+          0.04,
+          0.14,
+          0.98,
+          0.3,
+          0.2,
+          0
+        ]
+      },
+      "intensity": 0.98,
+      "latest": 0,
+      "momentum": -0.98
+    },
+    {
+      "term": "fake news",
+      "category": "media",
+      "source": "Miller Center",
+      "mentions": 34,
+      "documentCount": 12,
+      "firstYear": 2017,
+      "topDocuments": [
+        {
+          "title": "June 20, 2020: Campaign Rally in Tulsa, Oklahoma",
+          "president": "Donald Trump",
+          "year": 2020,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/june-20-2020-campaign-rally-tulsa-oklahoma",
+          "count": 10
+        },
+        {
+          "title": "February 23, 2018: Remarks at the Conservative Political Action Conference",
+          "president": "Donald Trump",
+          "year": 2018,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-23-2018-remarks-conservative-political-action",
+          "count": 5
+        },
+        {
+          "title": "April 23, 2020: Task Force Briefing on the Coronavirus Pandemic ",
+          "president": "Donald Trump",
+          "year": 2020,
+          "url": "",
+          "count": 4
+        },
+        {
+          "title": "July 24, 2017: Speech at the Boy Scout Jamboree ",
+          "president": "Donald Trump",
+          "year": 2017,
+          "url": "",
+          "count": 3
+        },
+        {
+          "title": "April 13, 2020: Coronavirus Task Force Briefing",
+          "president": "Donald Trump",
+          "year": 2020,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-13-2020-coronavirus-task-force-briefing",
+          "count": 3
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.45,
+          0.72,
+          0
+        ]
+      },
+      "intensity": 0.72,
+      "latest": 0,
+      "momentum": 0
+    },
+    {
+      "term": "transparency",
+      "category": "governance",
+      "source": "Miller Center",
+      "mentions": 29,
+      "documentCount": 19,
+      "firstYear": 2007,
+      "topDocuments": [
+        {
+          "title": "September 25, 2019: Press Conference",
+          "president": "Donald Trump",
+          "year": 2019,
+          "url": "",
+          "count": 6
+        },
+        {
+          "title": "March 25, 2021: First Press Conference",
+          "president": "Joe Biden",
+          "year": 2021,
+          "url": "",
+          "count": 3
+        },
+        {
+          "title": "February 7, 2009: Remarks on the American Recovery and Reinvestment Act",
+          "president": "Barack Obama",
+          "year": 2009,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-7-2009-remarks-american-recovery-and-reinvestment-act",
+          "count": 2
+        },
+        {
+          "title": "April 28, 2010: Remarks on Wall Street Reform",
+          "president": "Barack Obama",
+          "year": 2010,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-28-2010-remarks-wall-street-reform",
+          "count": 2
+        },
+        {
+          "title": "February 4, 2020: State of the Union Address",
+          "president": "Donald Trump",
+          "year": 2020,
+          "url": "",
+          "count": 2
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.24,
+          0.56,
+          0.33,
+          0
+        ]
+      },
+      "intensity": 0.56,
+      "latest": 0,
+      "momentum": -0.24
+    },
+    {
+      "term": "resilience",
+      "category": "systems",
+      "source": "Miller Center",
+      "mentions": 28,
+      "documentCount": 21,
+      "firstYear": 1975,
+      "topDocuments": [
+        {
+          "title": "November 13, 2008: Speech on Financial Markets and the World Economy",
+          "president": "George W. Bush",
+          "year": 2008,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/november-13-2008-speech-financial-markets-and-world-economy",
+          "count": 4
+        },
+        {
+          "title": "February 7, 2023: State of the Union Address",
+          "president": "Joe Biden",
+          "year": 2023,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-7-2023-state-union-address",
+          "count": 3
+        },
+        {
+          "title": "January 28, 2008: State of the Union Address",
+          "president": "George W. Bush",
+          "year": 2008,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-28-2008-state-union-address",
+          "count": 2
+        },
+        {
+          "title": "May 28, 1984: Remarks Honoring the Vietnam War’s Unknown Soldier",
+          "president": "Ronald Reagan",
+          "year": 1984,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/may-28-1984-remarks-honoring-vietnam-wars-unknown-soldier",
+          "count": 2
+        },
+        {
+          "title": "February 24, 2009: Address Before a Joint Session of Congress",
+          "president": "Barack Obama",
+          "year": 2009,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-24-2009-address-joint-session-congress",
+          "count": 1
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.06,
+          0.11,
+          0,
+          0.49,
+          0.22,
+          0.33,
+          0
+        ]
+      },
+      "intensity": 0.49,
+      "latest": 0,
+      "momentum": -0.49
+    },
+    {
+      "term": "energy independence",
+      "category": "climate",
+      "source": "Miller Center",
+      "mentions": 27,
+      "documentCount": 19,
+      "firstYear": 1975,
+      "topDocuments": [
+        {
+          "title": "January 19, 1976: State of the Union Address",
+          "president": "Gerald Ford",
+          "year": 1976,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-19-1976-state-union-address",
+          "count": 3
+        },
+        {
+          "title": "January 12, 1977: State of the Union Address",
+          "president": "Gerald Ford",
+          "year": 1977,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-12-1977-state-union-address",
+          "count": 3
+        },
+        {
+          "title": "November 3, 2010: Press Conference After 2010 Midterm Elections",
+          "president": "Barack Obama",
+          "year": 2010,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/november-3-2010-press-conference-after-2010-midterm-elections",
+          "count": 2
+        },
+        {
+          "title": "January 28, 2003: State of the Union Address",
+          "president": "George W. Bush",
+          "year": 2003,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-28-2003-state-union-address",
+          "count": 2
+        },
+        {
+          "title": "January 15, 1975: State of the Union Address",
+          "president": "Gerald Ford",
+          "year": 1975,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-15-1975-state-union-address",
+          "count": 2
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.72,
+          0.07,
+          0,
+          0.24,
+          0.22,
+          0.07,
+          0
+        ]
+      },
+      "intensity": 0.72,
+      "latest": 0,
+      "momentum": -0.24
+    },
+    {
+      "term": "misinformation",
+      "category": "media",
+      "source": "Miller Center",
+      "mentions": 17,
+      "documentCount": 15,
+      "firstYear": 1844,
+      "topDocuments": [
+        {
+          "title": "April 13, 2020: Coronavirus Task Force Briefing",
+          "president": "Donald Trump",
+          "year": 2020,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-13-2020-coronavirus-task-force-briefing",
+          "count": 3
+        },
+        {
+          "title": "September 9, 2009: Address to Congress on Health Care",
+          "president": "Barack Obama",
+          "year": 2009,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-9-2009-address-congress-health-care",
+          "count": 1
+        },
+        {
+          "title": "April 8, 2013: Speech on Gun Violence",
+          "president": "Barack Obama",
+          "year": 2013,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-8-2013-speech-gun-violence",
+          "count": 1
+        },
+        {
+          "title": "December 1, 1890: Second Annual Message",
+          "president": "Benjamin Harrison",
+          "year": 1890,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-1-1890-second-annual-message",
+          "count": 1
+        },
+        {
+          "title": "July 7, 1930: Message Regarding London Naval Treaty",
+          "president": "Herbert Hoover",
+          "year": 1930,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/july-7-1930-message-regarding-london-naval-treaty",
+          "count": 1
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.05,
+          0,
+          0,
+          0,
+          0,
+          0.05,
+          0.04,
+          0,
+          0,
+          0.25,
+          0,
+          0,
+          0.02,
+          0,
+          0.04,
+          0,
+          0.06,
+          0.04,
+          0.23,
+          0
+        ]
+      },
+      "intensity": 0.25,
+      "latest": 0,
+      "momentum": -0.06
+    },
+    {
+      "term": "digital",
+      "category": "technology",
+      "source": "Miller Center",
+      "mentions": 11,
+      "documentCount": 7,
+      "firstYear": 1999,
+      "topDocuments": [
+        {
+          "title": "January 27, 2000: State of the Union Address",
+          "president": "Bill Clinton",
+          "year": 2000,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-27-2000-state-union-address",
+          "count": 3
+        },
+        {
+          "title": "January 25, 2011: 2011 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2011,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-25-2011-2011-state-union-address",
+          "count": 2
+        },
+        {
+          "title": "September 24, 2024: Address before the 79th United Nations General Assembly",
+          "president": "Joe Biden",
+          "year": 2024,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-24-2024-address-79th-united-nations-general-assembly",
+          "count": 2
+        },
+        {
+          "title": "January 20, 2009: Inaugural Address",
+          "president": "Barack Obama",
+          "year": 2009,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-20-2009-inaugural-address",
+          "count": 1
+        },
+        {
+          "title": "January 20, 2015: 2015 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2015,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-20-2015-2015-state-union-address",
+          "count": 1
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.05,
+          0.24,
+          0.11,
+          0.1,
+          0
+        ]
+      },
+      "intensity": 0.24,
+      "latest": 0,
+      "momentum": -0.24
+    },
+    {
+      "term": "cyber",
+      "category": "technology",
+      "source": "Miller Center",
+      "mentions": 10,
+      "documentCount": 7,
+      "firstYear": 2009,
+      "topDocuments": [
+        {
+          "title": "February 13, 2013: 2013 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2013,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-13-2013-2013-state-union-address",
+          "count": 2
+        },
+        {
+          "title": "January 20, 2015: 2015 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2015,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-20-2015-2015-state-union-address",
+          "count": 2
+        },
+        {
+          "title": "December 18, 2017: Remarks on National Security Strategy",
+          "president": "Donald Trump",
+          "year": 2017,
+          "url": "",
+          "count": 2
+        },
+        {
+          "title": "February 24, 2009: Address Before a Joint Session of Congress",
+          "president": "Barack Obama",
+          "year": 2009,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-24-2009-address-joint-session-congress",
+          "count": 1
+        },
+        {
+          "title": "May 25, 2011: Address to the British Parliament",
+          "president": "Barack Obama",
+          "year": 2011,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/may-25-2011-address-british-parliament",
+          "count": 1
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.06,
+          0.3,
+          0.03,
+          0
+        ]
+      },
+      "intensity": 0.3,
+      "latest": 0,
+      "momentum": -0.06
+    },
+    {
+      "term": "artificial intelligence",
+      "category": "technology",
+      "source": "Miller Center",
+      "mentions": 9,
+      "documentCount": 6,
+      "firstYear": 2020,
+      "topDocuments": [
+        {
+          "title": "September 24, 2024: Address before the 79th United Nations General Assembly",
+          "president": "Joe Biden",
+          "year": 2024,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-24-2024-address-79th-united-nations-general-assembly",
+          "count": 3
+        },
+        {
+          "title": "January 15, 2025: Farewell Address",
+          "president": "Joe Biden",
+          "year": 2025,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-15-2025-farewell-address",
+          "count": 2
+        },
+        {
+          "title": "April 23, 2020: Task Force Briefing on the Coronavirus Pandemic ",
+          "president": "Donald Trump",
+          "year": 2020,
+          "url": "",
+          "count": 1
+        },
+        {
+          "title": "September 23, 2025: Address before the 80th United Nations General Assembly",
+          "president": "Donald Trump",
+          "year": 2025,
+          "url": "",
+          "count": 1
+        },
+        {
+          "title": "March 25, 2021: First Press Conference",
+          "president": "Joe Biden",
+          "year": 2021,
+          "url": "",
+          "count": 1
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.3,
+          0
+        ]
+      },
+      "intensity": 0.3,
+      "latest": 0,
+      "momentum": 0
+    },
+    {
+      "term": "globalization",
+      "category": "economics",
+      "source": "Miller Center",
+      "mentions": 9,
+      "documentCount": 5,
+      "firstYear": 2000,
+      "topDocuments": [
+        {
+          "title": "January 27, 2000: State of the Union Address",
+          "president": "Bill Clinton",
+          "year": 2000,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-27-2000-state-union-address",
+          "count": 4
+        },
+        {
+          "title": "June 4, 2009: Address at Cairo University",
+          "president": "Barack Obama",
+          "year": 2009,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/june-4-2009-address-cairo-university",
+          "count": 2
+        },
+        {
+          "title": "December 10, 2009: Acceptance of Nobel Peace Prize",
+          "president": "Barack Obama",
+          "year": 2009,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/december-10-2009-acceptance-nobel-peace-prize",
+          "count": 1
+        },
+        {
+          "title": "February 13, 2013: 2013 State of the Union Address",
+          "president": "Barack Obama",
+          "year": 2013,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/february-13-2013-2013-state-union-address",
+          "count": 1
+        },
+        {
+          "title": "May 15, 2016: Commencement Address at Rutgers University",
+          "president": "Barack Obama",
+          "year": 2016,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/may-15-2016-commencement-address-rutgers-university",
+          "count": 1
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.43,
+          0.07,
+          0,
+          0
+        ]
+      },
+      "intensity": 0.43,
+      "latest": 0,
+      "momentum": -0.43
+    },
+    {
+      "term": "supply chains",
+      "category": "economics",
+      "source": "Miller Center",
+      "mentions": 8,
+      "documentCount": 7,
+      "firstYear": 2016,
+      "topDocuments": [
+        {
+          "title": "March 1, 2022: State of the Union Address",
+          "president": "Joe Biden",
+          "year": 2022,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-1-2022-state-union-address",
+          "count": 2
+        },
+        {
+          "title": "May 15, 2016: Commencement Address at Rutgers University",
+          "president": "Barack Obama",
+          "year": 2016,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/may-15-2016-commencement-address-rutgers-university",
+          "count": 1
+        },
+        {
+          "title": "September 24, 2019: Remarks at the United Nations General Assembly",
+          "president": "Donald Trump",
+          "year": 2019,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-24-2019-remarks-united-nations-general-assembly",
+          "count": 1
+        },
+        {
+          "title": "April 13, 2020: Coronavirus Task Force Briefing",
+          "president": "Donald Trump",
+          "year": 2020,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-13-2020-coronavirus-task-force-briefing",
+          "count": 1
+        },
+        {
+          "title": "April 15, 2020: Press Briefing with the Coronavirus Task Force",
+          "president": "Donald Trump",
+          "year": 2020,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-15-2020-press-briefing-coronavirus-task-force",
+          "count": 1
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.07,
+          0.2,
+          0
+        ]
+      },
+      "intensity": 0.2,
+      "latest": 0,
+      "momentum": 0
+    },
+    {
+      "term": "automation",
+      "category": "technology",
+      "source": "Miller Center",
+      "mentions": 7,
+      "documentCount": 7,
+      "firstYear": 1960,
+      "topDocuments": [
+        {
+          "title": "January 10, 2017: Farewell Address to the Nation",
+          "president": "Barack Obama",
+          "year": 2017,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-10-2017-farewell-address-nation",
+          "count": 1
+        },
+        {
+          "title": "April 30, 1993: National Service Address",
+          "president": "Bill Clinton",
+          "year": 1993,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/april-30-1993-national-service-address",
+          "count": 1
+        },
+        {
+          "title": "July 15, 1960: Acceptance of the Democratic Party Nomination",
+          "president": "John F. Kennedy",
+          "year": 1960,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/july-15-1960-acceptance-democratic-party-nomination",
+          "count": 1
+        },
+        {
+          "title": "May 25, 1961: The Goal of Sending a Man to the Moon",
+          "president": "John F. Kennedy",
+          "year": 1961,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/may-25-1961-goal-sending-man-moon",
+          "count": 1
+        },
+        {
+          "title": "January 11, 1962: State of the Union Address",
+          "president": "John F. Kennedy",
+          "year": 1962,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-11-1962-state-union-address",
+          "count": 1
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.12,
+          0,
+          0,
+          0.05,
+          0,
+          0.04,
+          0,
+          0
+        ]
+      },
+      "intensity": 0.12,
+      "latest": 0,
+      "momentum": 0
+    },
+    {
+      "term": "sustainable development",
+      "category": "policy",
+      "source": "Miller Center",
+      "mentions": 2,
+      "documentCount": 2,
+      "firstYear": 1994,
+      "topDocuments": [
+        {
+          "title": "January 25, 1994: State of the Union Address",
+          "president": "Bill Clinton",
+          "year": 1994,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/january-25-1994-state-union-address",
+          "count": 1
+        },
+        {
+          "title": "September 24, 2024: Address before the 79th United Nations General Assembly",
+          "president": "Joe Biden",
+          "year": 2024,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/september-24-2024-address-79th-united-nations-general-assembly",
+          "count": 1
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.05,
+          0,
+          0,
+          0.03,
+          0
+        ]
+      },
+      "intensity": 0.05,
+      "latest": 0,
+      "momentum": 0
+    },
+    {
+      "term": "stakeholders",
+      "category": "governance",
+      "source": "Miller Center",
+      "mentions": 1,
+      "documentCount": 1,
+      "firstYear": 2021,
+      "topDocuments": [
+        {
+          "title": "July 8, 2021: Speech on the Drawdown of US Forces in Afghanistan",
+          "president": "Joe Biden",
+          "year": 2021,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/july-8-2021-speech-drawdown-us-forces-afghanistan",
+          "count": 1
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.03,
+          0
+        ]
+      },
+      "intensity": 0.03,
+      "latest": 0,
+      "momentum": 0
+    },
+    {
+      "term": "whole-of-government",
+      "category": "governance",
+      "source": "Miller Center",
+      "mentions": 1,
+      "documentCount": 1,
+      "firstYear": 2020,
+      "topDocuments": [
+        {
+          "title": "March 13, 2020: Press Conference about the Coronavirus",
+          "president": "Donald Trump",
+          "year": 2020,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-13-2020-press-conference-about-coronavirus",
+          "count": 1
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.03,
+          0
+        ]
+      },
+      "intensity": 0.03,
+      "latest": 0,
+      "momentum": 0
+    },
+    {
+      "term": "rules-based order",
+      "category": "geopolitics",
+      "source": "Miller Center",
+      "mentions": 1,
+      "documentCount": 1,
+      "firstYear": 2022,
+      "topDocuments": [
+        {
+          "title": "March 26, 2022: Remarks in Support of the People of Ukraine",
+          "president": "Joe Biden",
+          "year": 2022,
+          "url": "https://millercenter.org/the-presidency/presidential-speeches/march-26-2022-remarks-support-people-ukraine",
+          "count": 1
+        }
+      ],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.03,
+          0
+        ]
+      },
+      "intensity": 0.03,
+      "latest": 0,
+      "momentum": 0
+    },
+    {
+      "term": "algorithm",
+      "category": "technology",
+      "source": "Miller Center",
+      "mentions": 0,
+      "documentCount": 0,
+      "firstYear": null,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "intensity": 0,
+      "latest": 0,
+      "momentum": 0
+    },
+    {
+      "term": "human-centered",
+      "category": "technology",
+      "source": "Miller Center",
+      "mentions": 0,
+      "documentCount": 0,
+      "firstYear": null,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "intensity": 0,
+      "latest": 0,
+      "momentum": 0
+    },
+    {
+      "term": "inclusive growth",
+      "category": "economics",
+      "source": "Miller Center",
+      "mentions": 0,
+      "documentCount": 0,
+      "firstYear": null,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "intensity": 0,
+      "latest": 0,
+      "momentum": 0
+    },
+    {
+      "term": "green transition",
+      "category": "climate",
+      "source": "Miller Center",
+      "mentions": 0,
+      "documentCount": 0,
+      "firstYear": null,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "intensity": 0,
+      "latest": 0,
+      "momentum": 0
+    },
+    {
+      "term": "democratic backsliding",
+      "category": "democracy",
+      "source": "Miller Center",
+      "mentions": 0,
+      "documentCount": 0,
+      "firstYear": null,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "intensity": 0,
+      "latest": 0,
+      "momentum": 0
+    },
+    {
+      "term": "polycrisis",
+      "category": "systems",
+      "source": "Miller Center",
+      "mentions": 0,
+      "documentCount": 0,
+      "firstYear": null,
+      "topDocuments": [],
+      "series": {
+        "usa": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "intensity": 0,
+      "latest": 0,
+      "momentum": 0
+    }
+  ],
+  "presidents": [
+    {
+      "president": "Lyndon B. Johnson",
+      "documents": 71,
+      "words": 255704,
+      "firstYear": 1963,
+      "latestYear": 1969
+    },
+    {
+      "president": "Ronald Reagan",
+      "documents": 60,
+      "words": 223083,
+      "firstYear": 1964,
+      "latestYear": 1989
+    },
+    {
+      "president": "Donald Trump",
+      "documents": 53,
+      "words": 280309,
+      "firstYear": 2017,
+      "latestYear": 2026
+    },
+    {
+      "president": "Barack Obama",
+      "documents": 51,
+      "words": 217793,
+      "firstYear": 2008,
+      "latestYear": 2017
+    },
+    {
+      "president": "Franklin D. Roosevelt",
+      "documents": 49,
+      "words": 135621,
+      "firstYear": 1933,
+      "latestYear": 1945
+    },
+    {
+      "president": "John F. Kennedy",
+      "documents": 44,
+      "words": 156711,
+      "firstYear": 1960,
+      "latestYear": 1963
+    },
+    {
+      "president": "Bill Clinton",
+      "documents": 39,
+      "words": 156825,
+      "firstYear": 1993,
+      "latestYear": 2001
+    },
+    {
+      "president": "George W. Bush",
+      "documents": 38,
+      "words": 111136,
+      "firstYear": 2001,
+      "latestYear": 2009
+    },
+    {
+      "president": "Woodrow Wilson",
+      "documents": 33,
+      "words": 86763,
+      "firstYear": 1913,
+      "latestYear": 1920
+    },
+    {
+      "president": "Grover Cleveland",
+      "documents": 32,
+      "words": 161834,
+      "firstYear": 1885,
+      "latestYear": 1897
+    },
+    {
+      "president": "Ulysses S. Grant",
+      "documents": 32,
+      "words": 105976,
+      "firstYear": 1869,
+      "latestYear": 1877
+    },
+    {
+      "president": "Andrew Johnson",
+      "documents": 31,
+      "words": 100105,
+      "firstYear": 1865,
+      "latestYear": 1868
+    },
+    {
+      "president": "Herbert Hoover",
+      "documents": 30,
+      "words": 91381,
+      "firstYear": 1928,
+      "latestYear": 1932
+    },
+    {
+      "president": "Joe Biden",
+      "documents": 28,
+      "words": 114304,
+      "firstYear": 2021,
+      "latestYear": 2025
+    },
+    {
+      "president": "Andrew Jackson",
+      "documents": 26,
+      "words": 159115,
+      "firstYear": 1829,
+      "latestYear": 1837
+    },
+    {
+      "president": "James K. Polk",
+      "documents": 25,
+      "words": 105484,
+      "firstYear": 1845,
+      "latestYear": 1849
+    },
+    {
+      "president": "Thomas Jefferson",
+      "documents": 24,
+      "words": 41424,
+      "firstYear": 1801,
+      "latestYear": 1809
+    },
+    {
+      "president": "George H. W. Bush",
+      "documents": 23,
+      "words": 102678,
+      "firstYear": 1988,
+      "latestYear": 1993
+    },
+    {
+      "president": "Richard M. Nixon",
+      "documents": 23,
+      "words": 69914,
+      "firstYear": 1952,
+      "latestYear": 1974
+    },
+    {
+      "president": "Jimmy Carter",
+      "documents": 22,
+      "words": 103967,
+      "firstYear": 1976,
+      "latestYear": 1981
+    },
+    {
+      "president": "Theodore Roosevelt",
+      "documents": 22,
+      "words": 198787,
+      "firstYear": 1901,
+      "latestYear": 1908
+    },
+    {
+      "president": "George Washington",
+      "documents": 21,
+      "words": 32522,
+      "firstYear": 1789,
+      "latestYear": 1796
+    },
+    {
+      "president": "James Madison",
+      "documents": 21,
+      "words": 36312,
+      "firstYear": 1809,
+      "latestYear": 1817
+    },
+    {
+      "president": "Harry S. Truman",
+      "documents": 19,
+      "words": 38292,
+      "firstYear": 1945,
+      "latestYear": 1953
+    },
+    {
+      "president": "John Tyler",
+      "documents": 18,
+      "words": 70260,
+      "firstYear": 1841,
+      "latestYear": 1845
+    },
+    {
+      "president": "Warren G. Harding",
+      "documents": 18,
+      "words": 30822,
+      "firstYear": 1917,
+      "latestYear": 1922
+    },
+    {
+      "president": "Benjamin Harrison",
+      "documents": 16,
+      "words": 78382,
+      "firstYear": 1889,
+      "latestYear": 1893
+    },
+    {
+      "president": "Rutherford B. Hayes",
+      "documents": 16,
+      "words": 69172,
+      "firstYear": 1877,
+      "latestYear": 1881
+    },
+    {
+      "president": "Abraham Lincoln",
+      "documents": 15,
+      "words": 102463,
+      "firstYear": 1852,
+      "latestYear": 1865
+    },
+    {
+      "president": "Dwight D. Eisenhower",
+      "documents": 15,
+      "words": 69217,
+      "firstYear": 1953,
+      "latestYear": 1961
+    },
+    {
+      "president": "Franklin Pierce",
+      "documents": 15,
+      "words": 63730,
+      "firstYear": 1853,
+      "latestYear": 1856
+    },
+    {
+      "president": "Gerald Ford",
+      "documents": 14,
+      "words": 41033,
+      "firstYear": 1974,
+      "latestYear": 1977
+    },
+    {
+      "president": "James Buchanan",
+      "documents": 14,
+      "words": 81544,
+      "firstYear": 1857,
+      "latestYear": 1861
+    },
+    {
+      "president": "William McKinley",
+      "documents": 14,
+      "words": 93735,
+      "firstYear": 1897,
+      "latestYear": 1901
+    },
+    {
+      "president": "Calvin Coolidge",
+      "documents": 12,
+      "words": 75427,
+      "firstYear": 1923,
+      "latestYear": 1928
+    },
+    {
+      "president": "William Taft",
+      "documents": 12,
+      "words": 122611,
+      "firstYear": 1909,
+      "latestYear": 1912
+    },
+    {
+      "president": "Chester A. Arthur",
+      "documents": 11,
+      "words": 51256,
+      "firstYear": 1881,
+      "latestYear": 1884
+    },
+    {
+      "president": "James Monroe",
+      "documents": 10,
+      "words": 50743,
+      "firstYear": 1817,
+      "latestYear": 1824
+    },
+    {
+      "president": "Martin Van Buren",
+      "documents": 10,
+      "words": 65334,
+      "firstYear": 1837,
+      "latestYear": 1841
+    },
+    {
+      "president": "John Adams",
+      "documents": 9,
+      "words": 15034,
+      "firstYear": 1797,
+      "latestYear": 1800
+    },
+    {
+      "president": "John Quincy Adams",
+      "documents": 8,
+      "words": 37394,
+      "firstYear": 1821,
+      "latestYear": 1828
+    },
+    {
+      "president": "Millard Fillmore",
+      "documents": 7,
+      "words": 39336,
+      "firstYear": 1850,
+      "latestYear": 1852
+    },
+    {
+      "president": "Zachary Taylor",
+      "documents": 4,
+      "words": 11430,
+      "firstYear": 1849,
+      "latestYear": 1850
+    },
+    {
+      "president": "James A. Garfield",
+      "documents": 1,
+      "words": 2975,
+      "firstYear": 1881,
+      "latestYear": 1881
+    },
+    {
+      "president": "William Harrison",
+      "documents": 1,
+      "words": 8479,
+      "firstYear": 1841,
+      "latestYear": 1841
+    }
+  ],
+  "periods": [
+    {
+      "decade": 1780,
+      "documents": 2,
+      "words": 1970
+    },
+    {
+      "decade": 1790,
+      "documents": 26,
+      "words": 43857
+    },
+    {
+      "decade": 1800,
+      "documents": 28,
+      "words": 46292
+    },
+    {
+      "decade": 1810,
+      "documents": 23,
+      "words": 50253
+    },
+    {
+      "decade": 1820,
+      "documents": 17,
+      "words": 83283
+    },
+    {
+      "decade": 1830,
+      "documents": 31,
+      "words": 202225
+    },
+    {
+      "decade": 1840,
+      "documents": 48,
+      "words": 202970
+    },
+    {
+      "decade": 1850,
+      "documents": 34,
+      "words": 209789
+    },
+    {
+      "decade": 1860,
+      "documents": 55,
+      "words": 190736
+    },
+    {
+      "decade": 1870,
+      "documents": 39,
+      "words": 145473
+    },
+    {
+      "decade": 1880,
+      "documents": 34,
+      "words": 169034
+    },
+    {
+      "decade": 1890,
+      "documents": 40,
+      "words": 212353
+    },
+    {
+      "decade": 1900,
+      "documents": 31,
+      "words": 253021
+    },
+    {
+      "decade": 1910,
+      "documents": 41,
+      "words": 179468
+    },
+    {
+      "decade": 1920,
+      "documents": 39,
+      "words": 134044
+    },
+    {
+      "decade": 1930,
+      "documents": 40,
+      "words": 118583
+    },
+    {
+      "decade": 1940,
+      "documents": 43,
+      "words": 106744
+    },
+    {
+      "decade": 1950,
+      "documents": 19,
+      "words": 80063
+    },
+    {
+      "decade": 1960,
+      "documents": 120,
+      "words": 431691
+    },
+    {
+      "decade": 1970,
+      "documents": 52,
+      "words": 179484
+    },
+    {
+      "decade": 1980,
+      "documents": 69,
+      "words": 273061
+    },
+    {
+      "decade": 1990,
+      "documents": 54,
+      "words": 218050
+    },
+    {
+      "decade": 2000,
+      "documents": 51,
+      "words": 163314
+    },
+    {
+      "decade": 2010,
+      "documents": 60,
+      "words": 266990
+    },
+    {
+      "decade": 2020,
+      "documents": 61,
+      "words": 303669
+    }
+  ],
+  "documents": [
+    {
+      "id": "Donald_Trump_2026-01-03T11_00_00-05_00_January_3,_2026__Statement_on_U.S._Action_in_Venezuela",
+      "title": "January 3, 2026: Statement on U.S. Action in Venezuela",
+      "president": "Donald Trump",
+      "year": 2026,
+      "date": "2026-01-03T11:00:00-05:00",
+      "url": "",
+      "wordCount": 3108
+    },
+    {
+      "id": "Donald_Trump_2026-02-24T20_00_00-05_00_February_24,_2026__State_of_the_Union_Address",
+      "title": "February 24, 2026: State of the Union Address",
+      "president": "Donald Trump",
+      "year": 2026,
+      "date": "2026-02-24T20:00:00-05:00",
+      "url": "",
+      "wordCount": 11033
+    },
+    {
+      "id": "Donald_Trump_2026-02-28T00_00_00-05_00_February_28,_2026__Remarks_on_the_U.S._Military_Operations_Against_Iran",
+      "title": "February 28, 2026: Remarks on the U.S. Military Operations Against Iran",
+      "president": "Donald Trump",
+      "year": 2026,
+      "date": "2026-02-28T00:00:00-05:00",
+      "url": "",
+      "wordCount": 1165
+    },
+    {
+      "id": "Donald_Trump_2026-04-01T21_00_00-04_00_April_1,_2026__Address_to_the_Nation_on_Iran",
+      "title": "April 1, 2026: Address to the Nation on Iran",
+      "president": "Donald Trump",
+      "year": 2026,
+      "date": "2026-04-01T21:00:00-04:00",
+      "url": "",
+      "wordCount": 2903
+    },
+    {
+      "id": "Donald_Trump_2025-01-20T12_10_00-05_00_January_20,_2025__Inaugural_Address",
+      "title": "January 20, 2025: Inaugural Address",
+      "president": "Donald Trump",
+      "year": 2025,
+      "date": "2025-01-20T12:10:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-20-2025-inaugural-address",
+      "wordCount": 3029
+    },
+    {
+      "id": "Donald_Trump_2025-03-04T21_15_00-05_00_March_4,_2025__Address_to_a_Joint_Session_of_Congress",
+      "title": "March 4, 2025: Address to a Joint Session of Congress",
+      "president": "Donald Trump",
+      "year": 2025,
+      "date": "2025-03-04T21:15:00-05:00",
+      "url": "",
+      "wordCount": 10514
+    },
+    {
+      "id": "Donald_Trump_2025-06-21T22_00_00-04_00_June_21,_2025__Address_to_the_American_People",
+      "title": "June 21, 2025: Address to the American People",
+      "president": "Donald Trump",
+      "year": 2025,
+      "date": "2025-06-21T22:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/june-21-2025-address-american-people",
+      "wordCount": 615
+    },
+    {
+      "id": "Donald_Trump_2025-09-23T10_00_00-04_00_September_23,_2025__Address_before_the_80th_United_Nations_General_Assembly",
+      "title": "September 23, 2025: Address before the 80th United Nations General Assembly",
+      "president": "Donald Trump",
+      "year": 2025,
+      "date": "2025-09-23T10:00:00-04:00",
+      "url": "",
+      "wordCount": 8683
+    },
+    {
+      "id": "Donald_Trump_2025-09-30T10_00_00-04_00_September_30,_2025__Remarks_to_Military_Leaders",
+      "title": "September 30, 2025: Remarks to Military Leaders",
+      "president": "Donald Trump",
+      "year": 2025,
+      "date": "2025-09-30T10:00:00-04:00",
+      "url": "",
+      "wordCount": 13028
+    },
+    {
+      "id": "Donald_Trump_2025-12-17T20_00_00-05_00_December_17,_2025__Address_to_the_Nation",
+      "title": "December 17, 2025: Address to the Nation",
+      "president": "Donald Trump",
+      "year": 2025,
+      "date": "2025-12-17T20:00:00-05:00",
+      "url": "",
+      "wordCount": 2760
+    },
+    {
+      "id": "Joe_Biden_2025-01-15T20_00_00-05_00_January_15,_2025__Farewell_Address",
+      "title": "January 15, 2025: Farewell Address",
+      "president": "Joe Biden",
+      "year": 2025,
+      "date": "2025-01-15T20:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-15-2025-farewell-address",
+      "wordCount": 2605
+    },
+    {
+      "id": "Joe_Biden_2024-01-05T15_00_00-05_00_January_5,_2024__Speech_on_the_Third_Anniversary_of_the_January_6th_Attack",
+      "title": "January 5, 2024: Speech on the Third Anniversary of the January 6th Attack",
+      "president": "Joe Biden",
+      "year": 2024,
+      "date": "2024-01-05T15:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-5-2024-speech-third-anniversary-january-6th-attack",
+      "wordCount": 4325
+    },
+    {
+      "id": "Joe_Biden_2024-03-07T21_00_00-05_00_March_7,_2024__State_of_Union_Address",
+      "title": "March 7, 2024: State of Union Address",
+      "president": "Joe Biden",
+      "year": 2024,
+      "date": "2024-03-07T21:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/march-7-2024-state-union-address",
+      "wordCount": 8505
+    },
+    {
+      "id": "Joe_Biden_2024-05-31T13_00_00-04_00_May_31,_2024__Remarks_on_the_Middle_East",
+      "title": "May 31, 2024: Remarks on the Middle East",
+      "president": "Joe Biden",
+      "year": 2024,
+      "date": "2024-05-31T13:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/may-31-2024-remarks-middle-east",
+      "wordCount": 1995
+    },
+    {
+      "id": "Joe_Biden_2024-07-14T20_00_00-04_00_July_14,_2024__Remarks_after_the_Attempted_Assassination_of_Former_President_Trump",
+      "title": "July 14, 2024: Remarks after the Attempted Assassination of Former President Trump",
+      "president": "Joe Biden",
+      "year": 2024,
+      "date": "2024-07-14T20:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/july-14-2024-remarks-after-attempted-assassination-former",
+      "wordCount": 1119
+    },
+    {
+      "id": "Joe_Biden_2024-07-24T20_00_00-04_00_July_24,_2024__Statement_to_the_American_People",
+      "title": "July 24, 2024: Statement to the American People",
+      "president": "Joe Biden",
+      "year": 2024,
+      "date": "2024-07-24T20:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/july-24-2024-statement-american-people",
+      "wordCount": 1713
+    },
+    {
+      "id": "Joe_Biden_2024-09-24T10_12_00-04_00_September_24,_2024__Address_before_the_79th_United_Nations_General_Assembly",
+      "title": "September 24, 2024: Address before the 79th United Nations General Assembly",
+      "president": "Joe Biden",
+      "year": 2024,
+      "date": "2024-09-24T10:12:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/september-24-2024-address-79th-united-nations-general-assembly",
+      "wordCount": 3359
+    },
+    {
+      "id": "Joe_Biden_2023-02-07T21_00_00-05_00_February_7,_2023__State_of_the_Union_Address",
+      "title": "February 7, 2023: State of the Union Address",
+      "president": "Joe Biden",
+      "year": 2023,
+      "date": "2023-02-07T21:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/february-7-2023-state-union-address",
+      "wordCount": 7549
+    },
+    {
+      "id": "Joe_Biden_2023-02-21T20_00_00-05_00_February_21,_2023__Remarks_on_the_One-Year_Anniversary_of_the_Ukraine_War",
+      "title": "February 21, 2023: Remarks on the One-Year Anniversary of the Ukraine War",
+      "president": "Joe Biden",
+      "year": 2023,
+      "date": "2023-02-21T20:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/february-21-2023-remarks-one-year-anniversary-ukraine-war",
+      "wordCount": 2821
+    },
+    {
+      "id": "Joe_Biden_2023-10-20T20_00_00-04_00_October_20,_2023__Remarks_on_the_US_Response_in_Support_of_Israel_and_Ukraine",
+      "title": "October 20, 2023: Remarks on the US Response in Support of Israel and Ukraine",
+      "president": "Joe Biden",
+      "year": 2023,
+      "date": "2023-10-20T20:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/october-20-2023-remarks-us-response-support-israel-and-ukraine",
+      "wordCount": 2485
+    },
+    {
+      "id": "Joe_Biden_2022-01-06T09_00_00-05_00_January_6,_2022__Remarks_on_the_Anniversary_of_the_January_6th_Assault_on_the_US_Capitol",
+      "title": "January 6, 2022: Remarks on the Anniversary of the January 6th Assault on the US Capitol",
+      "president": "Joe Biden",
+      "year": 2022,
+      "date": "2022-01-06T09:00:00-05:00",
+      "url": "",
+      "wordCount": 3990
+    },
+    {
+      "id": "Joe_Biden_2022-02-24T13_45_00-05_00_February_24,_2022__Remarks_on_the_Russian_Invasion_of_Ukraine",
+      "title": "February 24, 2022: Remarks on the Russian Invasion of Ukraine",
+      "president": "Joe Biden",
+      "year": 2022,
+      "date": "2022-02-24T13:45:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/february-24-2022-remarks-russian-invasion-ukraine",
+      "wordCount": 3704
+    },
+    {
+      "id": "Joe_Biden_2022-03-01T21_00_00-05_00_March_1,_2022__State_of_the_Union_Address",
+      "title": "March 1, 2022: State of the Union Address",
+      "president": "Joe Biden",
+      "year": 2022,
+      "date": "2022-03-01T21:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/march-1-2022-state-union-address",
+      "wordCount": 6838
+    },
+    {
+      "id": "Joe_Biden_2022-03-26T18_00_00-04_00_March_26,_2022__Remarks_in_Support_of_the_People_of_Ukraine",
+      "title": "March 26, 2022: Remarks in Support of the People of Ukraine",
+      "president": "Joe Biden",
+      "year": 2022,
+      "date": "2022-03-26T18:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/march-26-2022-remarks-support-people-ukraine",
+      "wordCount": 3600
+    },
+    {
+      "id": "Joe_Biden_2022-05-24T20_45_00-04_00_May_24,_2022__Remarks_on_School_Shooting_in_Uvalde,_Texas",
+      "title": "May 24, 2022: Remarks on School Shooting in Uvalde, Texas",
+      "president": "Joe Biden",
+      "year": 2022,
+      "date": "2022-05-24T20:45:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/may-24-2022-remarks-school-shooting-uvalde-texas",
+      "wordCount": 917
+    },
+    {
+      "id": "Joe_Biden_2022-09-01T20_00_00-04_00_September_1,_2022__Remarks_on_the_Continued_Battle_for_the_Soul_of_the_Nation",
+      "title": "September 1, 2022: Remarks on the Continued Battle for the Soul of the Nation",
+      "president": "Joe Biden",
+      "year": 2022,
+      "date": "2022-09-01T20:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/september-1-2022-remarks-continued-battle-soul-nation",
+      "wordCount": 3098
+    },
+    {
+      "id": "Joe_Biden_2022-09-21T11_00_00-04_00_September_21,_2022__Speech_before_the_77th_Session_of_the_United_Nations_General_Assembly",
+      "title": "September 21, 2022: Speech before the 77th Session of the United Nations General Assembly",
+      "president": "Joe Biden",
+      "year": 2022,
+      "date": "2022-09-21T11:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/september-21-2022-speech-77th-session-united-nations-general",
+      "wordCount": 3858
+    },
+    {
+      "id": "Donald_Trump_2021-01-06T15_30_00-05_00_January_6,_2021__Speech_Urging_Supporters_to_Go_Home",
+      "title": "January 6, 2021: Speech Urging Supporters to Go Home",
+      "president": "Donald Trump",
+      "year": 2021,
+      "date": "2021-01-06T15:30:00-05:00",
+      "url": "",
+      "wordCount": 341
+    },
+    {
+      "id": "Donald_Trump_2021-01-07T10_00_00-05_00_January_7,_2021__Message_After_Pro-Trump_Mob_Overruns_US_Capitol",
+      "title": "January 7, 2021: Message After Pro-Trump Mob Overruns US Capitol",
+      "president": "Donald Trump",
+      "year": 2021,
+      "date": "2021-01-07T10:00:00-05:00",
+      "url": "",
+      "wordCount": 456
+    },
+    {
+      "id": "Donald_Trump_2021-01-13T13_00_00-05_00_January_13,_2021__Statement_about_the_Violence_at_the_Capitol",
+      "title": "January 13, 2021: Statement about the Violence at the Capitol",
+      "president": "Donald Trump",
+      "year": 2021,
+      "date": "2021-01-13T13:00:00-05:00",
+      "url": "",
+      "wordCount": 724
+    },
+    {
+      "id": "Donald_Trump_2021-01-19T22_01_01-05_00_January_19,_2021__Farewell_Address",
+      "title": "January 19, 2021: Farewell Address",
+      "president": "Donald Trump",
+      "year": 2021,
+      "date": "2021-01-19T22:01:01-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-19-2021-farewell-address",
+      "wordCount": 2856
+    },
+    {
+      "id": "Joe_Biden_2021-01-20T11_50_00-05_00_January_20,_2021__Inaugural_Address",
+      "title": "January 20, 2021: Inaugural Address",
+      "president": "Joe Biden",
+      "year": 2021,
+      "date": "2021-01-20T11:50:00-05:00",
+      "url": "",
+      "wordCount": 2487
+    },
+    {
+      "id": "Joe_Biden_2021-03-11T20_00_00-05_00_March_11,_2021__Remarks_on_the_Anniversary_of_the_Coronavirus_Shutdown",
+      "title": "March 11, 2021: Remarks on the Anniversary of the Coronavirus Shutdown",
+      "president": "Joe Biden",
+      "year": 2021,
+      "date": "2021-03-11T20:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/march-11-2021-remarks-anniversary-coronavirus-shutdown",
+      "wordCount": 3393
+    },
+    {
+      "id": "Joe_Biden_2021-03-25T13_30_00-04_00_March_25,_2021__First_Press_Conference",
+      "title": "March 25, 2021: First Press Conference",
+      "president": "Joe Biden",
+      "year": 2021,
+      "date": "2021-03-25T13:30:00-04:00",
+      "url": "",
+      "wordCount": 9911
+    },
+    {
+      "id": "Joe_Biden_2021-03-31T17_00_00-04_00_March_31,_2021__Announcing_the_American_Jobs_Plan",
+      "title": "March 31, 2021: Announcing the American Jobs Plan",
+      "president": "Joe Biden",
+      "year": 2021,
+      "date": "2021-03-31T17:00:00-04:00",
+      "url": "",
+      "wordCount": 4597
+    },
+    {
+      "id": "Joe_Biden_2021-04-28T21_00_00-04_00_April_28,_2021__Address_to_Joint_Session_of_Congress",
+      "title": "April 28, 2021: Address to Joint Session of Congress",
+      "president": "Joe Biden",
+      "year": 2021,
+      "date": "2021-04-28T21:00:00-04:00",
+      "url": "",
+      "wordCount": 8531
+    },
+    {
+      "id": "Joe_Biden_2021-06-01T15_15_00-04_00_June_1,_2021__Remarks_Commemorating_the_100th_Anniversary_of_the_Tulsa_Race_Massacre",
+      "title": "June 1, 2021: Remarks Commemorating the 100th Anniversary of the Tulsa Race Massacre",
+      "president": "Joe Biden",
+      "year": 2021,
+      "date": "2021-06-01T15:15:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/june-1-2021-remarks-commemorating-100th-anniversary-tulsa-race",
+      "wordCount": 5142
+    },
+    {
+      "id": "Joe_Biden_2021-07-08T14_00_00-04_00_July_8,_2021__Speech_on_the_Drawdown_of_US_Forces_in_Afghanistan",
+      "title": "July 8, 2021: Speech on the Drawdown of US Forces in Afghanistan",
+      "president": "Joe Biden",
+      "year": 2021,
+      "date": "2021-07-08T14:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/july-8-2021-speech-drawdown-us-forces-afghanistan",
+      "wordCount": 4327
+    },
+    {
+      "id": "Joe_Biden_2021-08-16T15_00_00-04_00_August_16,_2021__Remarks_on_Situation_in_Afghanistan",
+      "title": "August 16, 2021: Remarks on Situation in Afghanistan",
+      "president": "Joe Biden",
+      "year": 2021,
+      "date": "2021-08-16T15:00:00-04:00",
+      "url": "",
+      "wordCount": 2540
+    },
+    {
+      "id": "Joe_Biden_2021-08-26T17_24_00-04_00_August_26,_2021__Statement_on_Terror_Attacks_in_Afghanistan",
+      "title": "August 26, 2021: Statement on Terror Attacks in Afghanistan",
+      "president": "Joe Biden",
+      "year": 2021,
+      "date": "2021-08-26T17:24:00-04:00",
+      "url": "",
+      "wordCount": 3770
+    },
+    {
+      "id": "Joe_Biden_2021-09-09T17_00_00-04_00_September_9,_2021__Remarks_on_Fighting_the_COVID-⁠19_Pandemic",
+      "title": "September 9, 2021: Remarks on Fighting the COVID-⁠19 Pandemic",
+      "president": "Joe Biden",
+      "year": 2021,
+      "date": "2021-09-09T17:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/september-9-2021-remarks-fighting-covid-19-pandemic",
+      "wordCount": 3735
+    },
+    {
+      "id": "Joe_Biden_2021-11-15T16_01_00-05_00_November_15,_2021__Signing_the_Infrastructure_Investment_and_Jobs_Act",
+      "title": "November 15, 2021: Signing the Infrastructure Investment and Jobs Act",
+      "president": "Joe Biden",
+      "year": 2021,
+      "date": "2021-11-15T16:01:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/november-15-2021-signing-infrastructure-investment-and-jobs",
+      "wordCount": 3390
+    },
+    {
+      "id": "Donald_Trump_2020-01-03T15_13_13-05_00_January_3,_2020__Remarks_on_the_Killing_of_Qasem_Soleimani",
+      "title": "January 3, 2020: Remarks on the Killing of Qasem Soleimani",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-01-03T15:13:13-05:00",
+      "url": "",
+      "wordCount": 566
+    },
+    {
+      "id": "Donald_Trump_2020-01-08T11_30_02-05_00_January_8,_2020__Statement_on_Iran",
+      "title": "January 8, 2020: Statement on Iran",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-01-08T11:30:02-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-8-2020-statement-iran",
+      "wordCount": 1110
+    },
+    {
+      "id": "Donald_Trump_2020-01-24T12_30_00-05_00_January_24,_2020__Speech_at_March_for_Life",
+      "title": "January 24, 2020: Speech at March for Life",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-01-24T12:30:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-24-2020-speech-march-life",
+      "wordCount": 1561
+    },
+    {
+      "id": "Donald_Trump_2020-02-04T21_00_00-05_00_February_4,_2020__State_of_the_Union_Address",
+      "title": "February 4, 2020: State of the Union Address",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-02-04T21:00:00-05:00",
+      "url": "",
+      "wordCount": 6562
+    },
+    {
+      "id": "Donald_Trump_2020-02-06T12_30_00-05_00_February_6,_2020__Remarks_after_His_Acquittal_",
+      "title": "February 6, 2020: Remarks after His Acquittal ",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-02-06T12:30:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/february-6-2020-remarks-after-his-acquittal",
+      "wordCount": 10113
+    },
+    {
+      "id": "Donald_Trump_2020-03-11T21_00_00-04_00_March_11,_2020__Statement_on_the_Coronavirus",
+      "title": "March 11, 2020: Statement on the Coronavirus",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-03-11T21:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/march-11-2020-statement-coronavirus",
+      "wordCount": 1352
+    },
+    {
+      "id": "Donald_Trump_2020-03-13T15_30_00-04_00_March_13,_2020__Press_Conference_about_the_Coronavirus",
+      "title": "March 13, 2020: Press Conference about the Coronavirus",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-03-13T15:30:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/march-13-2020-press-conference-about-coronavirus",
+      "wordCount": 13149
+    },
+    {
+      "id": "Donald_Trump_2020-04-13T17_30_00-04_00_April_13,_2020__Coronavirus_Task_Force_Briefing",
+      "title": "April 13, 2020: Coronavirus Task Force Briefing",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-04-13T17:30:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/april-13-2020-coronavirus-task-force-briefing",
+      "wordCount": 27872
+    },
+    {
+      "id": "Donald_Trump_2020-04-15T17_30_00-04_00_April_15,_2020__Press_Briefing_with_the_Coronavirus_Task_Force",
+      "title": "April 15, 2020: Press Briefing with the Coronavirus Task Force",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-04-15T17:30:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/april-15-2020-press-briefing-coronavirus-task-force",
+      "wordCount": 10400
+    },
+    {
+      "id": "Donald_Trump_2020-04-23T17_50_00-04_00_April_23,_2020__Task_Force_Briefing_on_the_Coronavirus_Pandemic_",
+      "title": "April 23, 2020: Task Force Briefing on the Coronavirus Pandemic ",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-04-23T17:50:00-04:00",
+      "url": "",
+      "wordCount": 13137
+    },
+    {
+      "id": "Donald_Trump_2020-06-01T18_43_00-04_00_June_1,_2020__Statement_on_Protests_Against_Police_Brutality_",
+      "title": "June 1, 2020: Statement on Protests Against Police Brutality ",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-06-01T18:43:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/june-1-2020-statement-protests-against-police-brutality",
+      "wordCount": 884
+    },
+    {
+      "id": "Donald_Trump_2020-06-13T10_30_00-04_00_June_13,_2020__Address_at_West_Point_Graduation",
+      "title": "June 13, 2020: Address at West Point Graduation",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-06-13T10:30:00-04:00",
+      "url": "",
+      "wordCount": 3007
+    },
+    {
+      "id": "Donald_Trump_2020-06-20T19_00_00-04_00_June_20,_2020__Campaign_Rally_in_Tulsa,_Oklahoma",
+      "title": "June 20, 2020: Campaign Rally in Tulsa, Oklahoma",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-06-20T19:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/june-20-2020-campaign-rally-tulsa-oklahoma",
+      "wordCount": 13394
+    },
+    {
+      "id": "Donald_Trump_2020-07-04T18_50_00-04_00_July_4,_2020__Remarks_at_Salute_to_America",
+      "title": "July 4, 2020: Remarks at Salute to America",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-07-04T18:50:00-04:00",
+      "url": "",
+      "wordCount": 3124
+    },
+    {
+      "id": "Donald_Trump_2020-08-08T16_20_00-04_00_August_8,_2020__Press_Conference_on_Executive_Orders",
+      "title": "August 8, 2020: Press Conference on Executive Orders",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-08-08T16:20:00-04:00",
+      "url": "",
+      "wordCount": 5822
+    },
+    {
+      "id": "Donald_Trump_2020-09-07T13_30_00-04_00_September_7,_2020__Labor_Day_Press_Conference",
+      "title": "September 7, 2020: Labor Day Press Conference",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-09-07T13:30:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/september-7-2020-labor-day-press-conference",
+      "wordCount": 9293
+    },
+    {
+      "id": "Donald_Trump_2020-09-26T17_00_00-04_00_September_26,_2020__Announcing_His_Nominee_for_the_US_Supreme_Court",
+      "title": "September 26, 2020: Announcing His Nominee for the US Supreme Court",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-09-26T17:00:00-04:00",
+      "url": "",
+      "wordCount": 2308
+    },
+    {
+      "id": "Donald_Trump_2020-10-26T21_00_00-04_00_October_26,_2020__Swearing-In_Ceremony_of_the_Honorable_Amy_Coney_Barrett_to_the_US_Supreme_Court_",
+      "title": "October 26, 2020: Swearing-In Ceremony of the Honorable Amy Coney Barrett to the US Supreme Court ",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-10-26T21:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/october-26-2020-swearing-ceremony-honorable-amy-coney-barrett",
+      "wordCount": 1627
+    },
+    {
+      "id": "Donald_Trump_2020-11-05T19_00_00-05_00_November_5,_2020__Remarks_on_the_2020_Election",
+      "title": "November 5, 2020: Remarks on the 2020 Election",
+      "president": "Donald Trump",
+      "year": 2020,
+      "date": "2020-11-05T19:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/november-5-2020-remarks-2020-election",
+      "wordCount": 2869
+    },
+    {
+      "id": "Donald_Trump_2019-01-19T16_00_00-05_00_January_19,_2019__Remarks_about_the_US_Southern_Border",
+      "title": "January 19, 2019: Remarks about the US Southern Border",
+      "president": "Donald Trump",
+      "year": 2019,
+      "date": "2019-01-19T16:00:00-05:00",
+      "url": "",
+      "wordCount": 1596
+    },
+    {
+      "id": "Donald_Trump_2019-02-05T21_00_00-05_00_February_5,_2019__State_of_the_Union_Address",
+      "title": "February 5, 2019: State of the Union Address",
+      "president": "Donald Trump",
+      "year": 2019,
+      "date": "2019-02-05T21:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/february-5-2019-state-union-address",
+      "wordCount": 5357
+    },
+    {
+      "id": "Donald_Trump_2019-02-15T11_30_00-05_00_February_15,_2019__Speech_Declaring_a_National_Emergency",
+      "title": "February 15, 2019: Speech Declaring a National Emergency",
+      "president": "Donald Trump",
+      "year": 2019,
+      "date": "2019-02-15T11:30:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/february-15-2019-speech-declaring-national-emergency",
+      "wordCount": 9212
+    },
+    {
+      "id": "Donald_Trump_2019-09-24T10_12_00-04_00_September_24,_2019__Remarks_at_the_United_Nations_General_Assembly",
+      "title": "September 24, 2019: Remarks at the United Nations General Assembly",
+      "president": "Donald Trump",
+      "year": 2019,
+      "date": "2019-09-24T10:12:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/september-24-2019-remarks-united-nations-general-assembly",
+      "wordCount": 3941
+    },
+    {
+      "id": "Donald_Trump_2019-09-25T16_30_00-04_00_September_25,_2019__Press_Conference",
+      "title": "September 25, 2019: Press Conference",
+      "president": "Donald Trump",
+      "year": 2019,
+      "date": "2019-09-25T16:30:00-04:00",
+      "url": "",
+      "wordCount": 7400
+    },
+    {
+      "id": "Donald_Trump_2019-10-27T10_00_00-04_00_October_27,_2019__Statement_on_the_the_Death_of_Abu_Bakr_al-Baghdadi",
+      "title": "October 27, 2019: Statement on the the Death of Abu Bakr al-Baghdadi",
+      "president": "Donald Trump",
+      "year": 2019,
+      "date": "2019-10-27T10:00:00-04:00",
+      "url": "",
+      "wordCount": 801
+    },
+    {
+      "id": "Donald_Trump_2018-01-26T14_02_00-05_00_January_26,_2018__Address_at_the_World_Economic_Forum",
+      "title": "January 26, 2018: Address at the World Economic Forum",
+      "president": "Donald Trump",
+      "year": 2018,
+      "date": "2018-01-26T14:02:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-26-2018-address-world-economic-forum",
+      "wordCount": 3915
+    },
+    {
+      "id": "Donald_Trump_2018-01-30T21_00_00-05_00_January_30,_2018__State_of_the_Union_Address",
+      "title": "January 30, 2018: State of the Union Address",
+      "president": "Donald Trump",
+      "year": 2018,
+      "date": "2018-01-30T21:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-30-2018-state-union-address",
+      "wordCount": 5250
+    },
+    {
+      "id": "Donald_Trump_2018-02-01T14_00_00-05_00_February_1,_2018__Remarks_at_the_House_and_Senate_Republican_Member_Conference",
+      "title": "February 1, 2018: Remarks at the House and Senate Republican Member Conference",
+      "president": "Donald Trump",
+      "year": 2018,
+      "date": "2018-02-01T14:00:00-05:00",
+      "url": "",
+      "wordCount": 5835
+    },
+    {
+      "id": "Donald_Trump_2018-02-15T11_28_00-05_00_February_15,_2018__Statement_on_the_School_Shooting_in_Parkland,_Florida",
+      "title": "February 15, 2018: Statement on the School Shooting in Parkland, Florida",
+      "president": "Donald Trump",
+      "year": 2018,
+      "date": "2018-02-15T11:28:00-05:00",
+      "url": "",
+      "wordCount": 746
+    },
+    {
+      "id": "Donald_Trump_2018-02-23T12_12_12-05_00_February_23,_2018__Remarks_at_the_Conservative_Political_Action_Conference",
+      "title": "February 23, 2018: Remarks at the Conservative Political Action Conference",
+      "president": "Donald Trump",
+      "year": 2018,
+      "date": "2018-02-23T12:12:12-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/february-23-2018-remarks-conservative-political-action",
+      "wordCount": 10449
+    },
+    {
+      "id": "Donald_Trump_2018-03-19T14_35_00-04_00_March_19,_2018__Remarks_on_Combating_the_Opioid_Crisis",
+      "title": "March 19, 2018: Remarks on Combating the Opioid Crisis",
+      "president": "Donald Trump",
+      "year": 2018,
+      "date": "2018-03-19T14:35:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/march-19-2018-remarks-combating-opioid-crisis",
+      "wordCount": 5236
+    },
+    {
+      "id": "Donald_Trump_2018-07-24T13_00_00-04_00_July_24,_2018__Speech_at_the_Veterans_of_Foreign_Wars_National_Convention",
+      "title": "July 24, 2018: Speech at the Veterans of Foreign Wars National Convention",
+      "president": "Donald Trump",
+      "year": 2018,
+      "date": "2018-07-24T13:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/july-24-2018-speech-veterans-foreign-wars-national-convention",
+      "wordCount": 6349
+    },
+    {
+      "id": "Donald_Trump_2018-09-25T10_30_00-04_00_September_25,_2018__Address_at_the_73rd_Session_of_the_United_Nations_General_Assembly",
+      "title": "September 25, 2018: Address at the 73rd Session of the United Nations General Assembly",
+      "president": "Donald Trump",
+      "year": 2018,
+      "date": "2018-09-25T10:30:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/september-25-2018-address-73rd-session-united-nations-general",
+      "wordCount": 3722
+    },
+    {
+      "id": "Barack_Obama_2017-01-10T20_00_00-05_00_January_10,_2017__Farewell_Address_to_the_Nation",
+      "title": "January 10, 2017: Farewell Address to the Nation",
+      "president": "Barack Obama",
+      "year": 2017,
+      "date": "2017-01-10T20:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-10-2017-farewell-address-nation",
+      "wordCount": 4999
+    },
+    {
+      "id": "Donald_Trump_2017-01-20T11_00_00-05_00_January_20,_2017__Inaugural_Address",
+      "title": "January 20, 2017: Inaugural Address",
+      "president": "Donald Trump",
+      "year": 2017,
+      "date": "2017-01-20T11:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-20-2017-inaugural-address",
+      "wordCount": 1475
+    },
+    {
+      "id": "Donald_Trump_2017-02-28T20_00_00-05_00_February_28,_2017__Address_to_Joint_Session_of_Congress",
+      "title": "February 28, 2017: Address to Joint Session of Congress",
+      "president": "Donald Trump",
+      "year": 2017,
+      "date": "2017-02-28T20:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/february-28-2017-address-joint-session-congress",
+      "wordCount": 4780
+    },
+    {
+      "id": "Donald_Trump_2017-06-29T15_30_00-04_00_June_29,_2017__Speech_at_the_Unleashing_American_Energy_Event",
+      "title": "June 29, 2017: Speech at the Unleashing American Energy Event",
+      "president": "Donald Trump",
+      "year": 2017,
+      "date": "2017-06-29T15:30:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/june-29-2017-speech-unleashing-american-energy-event",
+      "wordCount": 2618
+    },
+    {
+      "id": "Donald_Trump_2017-07-24T19_00_00-04_00_July_24,_2017__Speech_at_the_Boy_Scout_Jamboree_",
+      "title": "July 24, 2017: Speech at the Boy Scout Jamboree ",
+      "president": "Donald Trump",
+      "year": 2017,
+      "date": "2017-07-24T19:00:00-04:00",
+      "url": "",
+      "wordCount": 4489
+    },
+    {
+      "id": "Donald_Trump_2017-09-19T10_04_00-04_00_September_19,_2017__Address_to_the_United_Nations_General_Assembly_",
+      "title": "September 19, 2017: Address to the United Nations General Assembly ",
+      "president": "Donald Trump",
+      "year": 2017,
+      "date": "2017-09-19T10:04:00-04:00",
+      "url": "",
+      "wordCount": 4651
+    },
+    {
+      "id": "Donald_Trump_2017-12-18T14_00_00-05_00_December_18,_2017__Remarks_on_National_Security_Strategy",
+      "title": "December 18, 2017: Remarks on National Security Strategy",
+      "president": "Donald Trump",
+      "year": 2017,
+      "date": "2017-12-18T14:00:00-05:00",
+      "url": "",
+      "wordCount": 3122
+    },
+    {
+      "id": "Barack_Obama_2016-01-12T01_00_00-05_00_January_12,_2016__2016_State_of_the_Union_Address",
+      "title": "January 12, 2016: 2016 State of the Union Address",
+      "president": "Barack Obama",
+      "year": 2016,
+      "date": "2016-01-12T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-12-2016-2016-state-union-address",
+      "wordCount": 6374
+    },
+    {
+      "id": "Barack_Obama_2016-03-22T01_00_00-04_00_March_22,_2016__Remarks_to_the_People_of_Cuba",
+      "title": "March 22, 2016: Remarks to the People of Cuba",
+      "president": "Barack Obama",
+      "year": 2016,
+      "date": "2016-03-22T01:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/march-22-2016-remarks-people-cuba",
+      "wordCount": 4249
+    },
+    {
+      "id": "Barack_Obama_2016-05-15T02_00_00-04_00_May_15,_2016__Commencement_Address_at_Rutgers_University",
+      "title": "May 15, 2016: Commencement Address at Rutgers University",
+      "president": "Barack Obama",
+      "year": 2016,
+      "date": "2016-05-15T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/may-15-2016-commencement-address-rutgers-university",
+      "wordCount": 5124
+    },
+    {
+      "id": "Barack_Obama_2015-01-20T01_00_00-05_00_January_20,_2015__2015_State_of_the_Union_Address",
+      "title": "January 20, 2015: 2015 State of the Union Address",
+      "president": "Barack Obama",
+      "year": 2015,
+      "date": "2015-01-20T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-20-2015-2015-state-union-address",
+      "wordCount": 7098
+    },
+    {
+      "id": "Barack_Obama_2015-03-07T01_00_00-05_00_March_7,_2015__Remarks_at_the_50th_Anniversary_of_the_Selma_Marches",
+      "title": "March 7, 2015: Remarks at the 50th Anniversary of the Selma Marches",
+      "president": "Barack Obama",
+      "year": 2015,
+      "date": "2015-03-07T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/march-7-2015-remarks-50th-anniversary-selma-marches",
+      "wordCount": 3833
+    },
+    {
+      "id": "Barack_Obama_2015-06-26T02_00_00-04_00_June_26,_2015__Remarks_in_Eulogy_for_the_Honorable_Reverend_Clementa_Pickney",
+      "title": "June 26, 2015: Remarks in Eulogy for the Honorable Reverend Clementa Pickney",
+      "president": "Barack Obama",
+      "year": 2015,
+      "date": "2015-06-26T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/june-26-2015-remarks-eulogy-honorable-reverend-clementa",
+      "wordCount": 3168
+    },
+    {
+      "id": "Barack_Obama_2014-01-28T01_00_00-05_00_January_28,_2014__2014_State_of_the_Union_Address",
+      "title": "January 28, 2014: 2014 State of the Union Address",
+      "president": "Barack Obama",
+      "year": 2014,
+      "date": "2014-01-28T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-28-2014-2014-state-union-address",
+      "wordCount": 6993
+    },
+    {
+      "id": "Barack_Obama_2014-11-20T01_00_00-05_00_November_20,_2014__Address_to_the_Nation_on_Immigration",
+      "title": "November 20, 2014: Address to the Nation on Immigration",
+      "president": "Barack Obama",
+      "year": 2014,
+      "date": "2014-11-20T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/november-20-2014-address-nation-immigration",
+      "wordCount": 2303
+    },
+    {
+      "id": "Barack_Obama_2013-01-21T01_00_00-05_00_January_21,_2013__Second_Inaugural_Address",
+      "title": "January 21, 2013: Second Inaugural Address",
+      "president": "Barack Obama",
+      "year": 2013,
+      "date": "2013-01-21T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-21-2013-second-inaugural-address",
+      "wordCount": 2162
+    },
+    {
+      "id": "Barack_Obama_2013-01-29T01_00_00-05_00_January_29,_2013__Remarks_on_Immigration_Reform",
+      "title": "January 29, 2013: Remarks on Immigration Reform",
+      "president": "Barack Obama",
+      "year": 2013,
+      "date": "2013-01-29T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-29-2013-remarks-immigration-reform",
+      "wordCount": 3190
+    },
+    {
+      "id": "Barack_Obama_2013-02-13T01_00_00-05_00_February_13,_2013__2013_State_of_the_Union_Address",
+      "title": "February 13, 2013: 2013 State of the Union Address",
+      "president": "Barack Obama",
+      "year": 2013,
+      "date": "2013-02-13T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/february-13-2013-2013-state-union-address",
+      "wordCount": 7108
+    },
+    {
+      "id": "Barack_Obama_2013-03-01T01_00_00-05_00_March_1,_2013__Statement_on_the_Government_Sequester",
+      "title": "March 1, 2013: Statement on the Government Sequester",
+      "president": "Barack Obama",
+      "year": 2013,
+      "date": "2013-03-01T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/march-1-2013-statement-government-sequester",
+      "wordCount": 5572
+    },
+    {
+      "id": "Barack_Obama_2013-03-21T01_00_00-04_00_March_21,_2013__Address_to_the_People_of_Israel",
+      "title": "March 21, 2013: Address to the People of Israel",
+      "president": "Barack Obama",
+      "year": 2013,
+      "date": "2013-03-21T01:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/march-21-2013-address-people-israel",
+      "wordCount": 5666
+    },
+    {
+      "id": "Barack_Obama_2013-04-08T02_00_00-04_00_April_8,_2013__Speech_on_Gun_Violence",
+      "title": "April 8, 2013: Speech on Gun Violence",
+      "president": "Barack Obama",
+      "year": 2013,
+      "date": "2013-04-08T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/april-8-2013-speech-gun-violence",
+      "wordCount": 3421
+    },
+    {
+      "id": "Barack_Obama_2013-07-19T02_00_00-04_00_July_19,_2013__Remarks_on_Trayvon_Martin",
+      "title": "July 19, 2013: Remarks on Trayvon Martin",
+      "president": "Barack Obama",
+      "year": 2013,
+      "date": "2013-07-19T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/july-19-2013-remarks-trayvon-martin",
+      "wordCount": 2251
+    },
+    {
+      "id": "Barack_Obama_2013-07-24T02_00_00-04_00_July_24,_2013__Remarks_on_Education_and_the_Economy",
+      "title": "July 24, 2013: Remarks on Education and the Economy",
+      "president": "Barack Obama",
+      "year": 2013,
+      "date": "2013-07-24T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/july-24-2013-remarks-education-and-economy",
+      "wordCount": 4667
+    },
+    {
+      "id": "Barack_Obama_2013-09-10T02_00_00-04_00_September_10,_2013__Address_to_the_Nation_on_Syria",
+      "title": "September 10, 2013: Address to the Nation on Syria",
+      "president": "Barack Obama",
+      "year": 2013,
+      "date": "2013-09-10T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/september-10-2013-address-nation-syria",
+      "wordCount": 2278
+    },
+    {
+      "id": "Barack_Obama_2013-12-04T01_00_00-05_00_December_4,_2013__Speech_on_Economic_Mobility",
+      "title": "December 4, 2013: Speech on Economic Mobility",
+      "president": "Barack Obama",
+      "year": 2013,
+      "date": "2013-12-04T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/december-4-2013-speech-economic-mobility",
+      "wordCount": 6795
+    },
+    {
+      "id": "Barack_Obama_2012-01-24T01_00_00-05_00_January_24,_2012__2012_State_of_the_Union_Address",
+      "title": "January 24, 2012: 2012 State of the Union Address",
+      "president": "Barack Obama",
+      "year": 2012,
+      "date": "2012-01-24T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-24-2012-2012-state-union-address",
+      "wordCount": 7397
+    },
+    {
+      "id": "Barack_Obama_2012-09-06T02_00_00-04_00_September_6,_2012__Nominee_Acceptance_Speech_at_2012_Democratic_National_Convention",
+      "title": "September 6, 2012: Nominee Acceptance Speech at 2012 Democratic National Convention",
+      "president": "Barack Obama",
+      "year": 2012,
+      "date": "2012-09-06T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/september-6-2012-nominee-acceptance-speech-2012-democratic",
+      "wordCount": 4864
+    },
+    {
+      "id": "Barack_Obama_2012-11-06T01_00_00-05_00_November_6,_2012__2012_Election_Night_Victory_Speech",
+      "title": "November 6, 2012: 2012 Election Night Victory Speech",
+      "president": "Barack Obama",
+      "year": 2012,
+      "date": "2012-11-06T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/november-6-2012-2012-election-night-victory-speech",
+      "wordCount": 2320
+    },
+    {
+      "id": "Barack_Obama_2012-12-16T01_00_00-05_00_December_16,_2012__Remarks_on_Sandy_Hook_Elementary_Shootings",
+      "title": "December 16, 2012: Remarks on Sandy Hook Elementary Shootings",
+      "president": "Barack Obama",
+      "year": 2012,
+      "date": "2012-12-16T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/december-16-2012-remarks-sandy-hook-elementary-shootings",
+      "wordCount": 1790
+    },
+    {
+      "id": "Barack_Obama_2011-01-12T01_00_00-05_00_January_12,_2011__Remarks_at_Memorial_for_Victims_of_the_Tucson,_AZ_Shooting",
+      "title": "January 12, 2011: Remarks at Memorial for Victims of the Tucson, AZ Shooting",
+      "president": "Barack Obama",
+      "year": 2011,
+      "date": "2011-01-12T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-12-2011-remarks-memorial-victims-tucson-az-shooting",
+      "wordCount": 2918
+    },
+    {
+      "id": "Barack_Obama_2011-01-25T01_00_00-05_00_January_25,_2011__2011_State_of_the_Union_Address",
+      "title": "January 25, 2011: 2011 State of the Union Address",
+      "president": "Barack Obama",
+      "year": 2011,
+      "date": "2011-01-25T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-25-2011-2011-state-union-address",
+      "wordCount": 7266
+    },
+    {
+      "id": "Barack_Obama_2011-05-01T02_00_00-04_00_May_1,_2011__Remarks_on_the_Death_of_Osama_Bin_Laden",
+      "title": "May 1, 2011: Remarks on the Death of Osama Bin Laden",
+      "president": "Barack Obama",
+      "year": 2011,
+      "date": "2011-05-01T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/may-1-2011-remarks-death-osama-bin-laden",
+      "wordCount": 1469
+    },
+    {
+      "id": "Barack_Obama_2011-05-19T02_00_00-04_00_May_19,_2011__Speech_on_American_Diplomacy_in_the_Middle_East_and_North_Africa",
+      "title": "May 19, 2011: Speech on American Diplomacy in the Middle East and North Africa",
+      "president": "Barack Obama",
+      "year": 2011,
+      "date": "2011-05-19T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/may-19-2011-speech-american-diplomacy-middle-east-and-north",
+      "wordCount": 5774
+    },
+    {
+      "id": "Barack_Obama_2011-05-25T02_00_00-04_00_May_25,_2011__Address_to_the_British_Parliament",
+      "title": "May 25, 2011: Address to the British Parliament",
+      "president": "Barack Obama",
+      "year": 2011,
+      "date": "2011-05-25T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/may-25-2011-address-british-parliament",
+      "wordCount": 4336
+    },
+    {
+      "id": "Barack_Obama_2011-06-22T02_00_00-04_00_June_22,_2011__Remarks_on_the_Afghanistan_Pullout",
+      "title": "June 22, 2011: Remarks on the Afghanistan Pullout",
+      "president": "Barack Obama",
+      "year": 2011,
+      "date": "2011-06-22T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/june-22-2011-remarks-afghanistan-pullout",
+      "wordCount": 2101
+    },
+    {
+      "id": "Barack_Obama_2011-09-08T02_00_00-04_00_September_8,_2011__Address_to_Congress_on_the_American_Jobs_Act",
+      "title": "September 8, 2011: Address to Congress on the American Jobs Act",
+      "president": "Barack Obama",
+      "year": 2011,
+      "date": "2011-09-08T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/september-8-2011-address-congress-american-jobs-act",
+      "wordCount": 4326
+    },
+    {
+      "id": "Barack_Obama_2011-10-21T02_00_00-04_00_October_21,_2011__Remarks_on_the_End_of_the_War_in_Iraq",
+      "title": "October 21, 2011: Remarks on the End of the War in Iraq",
+      "president": "Barack Obama",
+      "year": 2011,
+      "date": "2011-10-21T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/october-21-2011-remarks-end-war-iraq",
+      "wordCount": 1024
+    },
+    {
+      "id": "Barack_Obama_2010-01-27T13_00_00-05_00_January_27,_2010__2010_State_of_the_Union_Address",
+      "title": "January 27, 2010: 2010 State of the Union Address",
+      "president": "Barack Obama",
+      "year": 2010,
+      "date": "2010-01-27T13:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-27-2010-2010-state-union-address",
+      "wordCount": 7546
+    },
+    {
+      "id": "Barack_Obama_2010-02-09T01_00_00-05_00_February_9,_2010__News_Conference_on_Congressional_Gridlock",
+      "title": "February 9, 2010: News Conference on Congressional Gridlock",
+      "president": "Barack Obama",
+      "year": 2010,
+      "date": "2010-02-09T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/february-9-2010-news-conference-congressional-gridlock",
+      "wordCount": 5434
+    },
+    {
+      "id": "Barack_Obama_2010-03-15T01_00_00-04_00_March_15,_2010__Speech_on_Health_Care_Reform",
+      "title": "March 15, 2010: Speech on Health Care Reform",
+      "president": "Barack Obama",
+      "year": 2010,
+      "date": "2010-03-15T01:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/march-15-2010-speech-health-care-reform",
+      "wordCount": 4451
+    },
+    {
+      "id": "Barack_Obama_2010-04-15T02_00_00-04_00_April_15,_2010__Remarks_on_Space_Exploration_in_the_21st_Century",
+      "title": "April 15, 2010: Remarks on Space Exploration in the 21st Century",
+      "president": "Barack Obama",
+      "year": 2010,
+      "date": "2010-04-15T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/april-15-2010-remarks-space-exploration-21st-century",
+      "wordCount": 3670
+    },
+    {
+      "id": "Barack_Obama_2010-04-28T02_00_00-04_00_April_28,_2010__Remarks_on_Wall_Street_Reform",
+      "title": "April 28, 2010: Remarks on Wall Street Reform",
+      "president": "Barack Obama",
+      "year": 2010,
+      "date": "2010-04-28T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/april-28-2010-remarks-wall-street-reform",
+      "wordCount": 3632
+    },
+    {
+      "id": "Barack_Obama_2010-06-15T02_00_00-04_00_June_15,_2010__Speech_on_the_BP_Oil_Spill",
+      "title": "June 15, 2010: Speech on the BP Oil Spill",
+      "president": "Barack Obama",
+      "year": 2010,
+      "date": "2010-06-15T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/june-15-2010-speech-bp-oil-spill",
+      "wordCount": 2790
+    },
+    {
+      "id": "Barack_Obama_2010-08-31T02_00_00-04_00_August_31,_2010__Address_on_the_End_of_the_Combat_Mission_in_Iraq",
+      "title": "August 31, 2010: Address on the End of the Combat Mission in Iraq",
+      "president": "Barack Obama",
+      "year": 2010,
+      "date": "2010-08-31T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/august-31-2010-address-end-combat-mission-iraq",
+      "wordCount": 2666
+    },
+    {
+      "id": "Barack_Obama_2010-09-23T02_00_00-04_00_September_23,_2010__Address_to_the_United_Nations",
+      "title": "September 23, 2010: Address to the United Nations",
+      "president": "Barack Obama",
+      "year": 2010,
+      "date": "2010-09-23T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/september-23-2010-address-united-nations",
+      "wordCount": 4156
+    },
+    {
+      "id": "Barack_Obama_2010-11-03T01_00_00-04_00_November_3,_2010__Press_Conference_After_2010_Midterm_Elections",
+      "title": "November 3, 2010: Press Conference After 2010 Midterm Elections",
+      "president": "Barack Obama",
+      "year": 2010,
+      "date": "2010-11-03T01:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/november-3-2010-press-conference-after-2010-midterm-elections",
+      "wordCount": 8865
+    },
+    {
+      "id": "Barack_Obama_2009-01-20T13_00_00-05_00_January_20,_2009__Inaugural_Address",
+      "title": "January 20, 2009: Inaugural Address",
+      "president": "Barack Obama",
+      "year": 2009,
+      "date": "2009-01-20T13:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-20-2009-inaugural-address",
+      "wordCount": 2465
+    },
+    {
+      "id": "Barack_Obama_2009-01-29T01_00_00-05_00_January_29,_2009__Remarks_on_the_Lilly_Ledbetter_Fair_Pay_Restoration_Act_Bill_Signing",
+      "title": "January 29, 2009: Remarks on the Lilly Ledbetter Fair Pay Restoration Act Bill Signing",
+      "president": "Barack Obama",
+      "year": 2009,
+      "date": "2009-01-29T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-29-2009-remarks-lilly-ledbetter-fair-pay-restoration",
+      "wordCount": 932
+    },
+    {
+      "id": "Barack_Obama_2009-02-07T01_00_00-05_00_February_7,_2009__Remarks_on_the_American_Recovery_and_Reinvestment_Act",
+      "title": "February 7, 2009: Remarks on the American Recovery and Reinvestment Act",
+      "president": "Barack Obama",
+      "year": 2009,
+      "date": "2009-02-07T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/february-7-2009-remarks-american-recovery-and-reinvestment-act",
+      "wordCount": 2643
+    },
+    {
+      "id": "Barack_Obama_2009-02-24T13_00_00-05_00_February_24,_2009__Address_Before_a_Joint_Session_of_Congress",
+      "title": "February 24, 2009: Address Before a Joint Session of Congress",
+      "president": "Barack Obama",
+      "year": 2009,
+      "date": "2009-02-24T13:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/february-24-2009-address-joint-session-congress",
+      "wordCount": 6242
+    },
+    {
+      "id": "Barack_Obama_2009-05-26T02_00_00-04_00_May_26,_2009__Remarks_on_Nominating_Judge_Sonia_Sotomayor_to_the_U.S._Supreme_Court",
+      "title": "May 26, 2009: Remarks on Nominating Judge Sonia Sotomayor to the U.S. Supreme Court",
+      "president": "Barack Obama",
+      "year": 2009,
+      "date": "2009-05-26T02:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/may-26-2009-remarks-nominating-judge-sonia-sotomayor-us",
+      "wordCount": 1584
+    },
+    {
+      "id": "Barack_Obama_2009-06-04T14_00_00-04_00_June_4,_2009__Address_at_Cairo_University",
+      "title": "June 4, 2009: Address at Cairo University",
+      "president": "Barack Obama",
+      "year": 2009,
+      "date": "2009-06-04T14:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/june-4-2009-address-cairo-university",
+      "wordCount": 6121
+    },
+    {
+      "id": "Barack_Obama_2009-09-09T14_00_00-04_00_September_9,_2009__Address_to_Congress_on_Health_Care",
+      "title": "September 9, 2009: Address to Congress on Health Care",
+      "president": "Barack Obama",
+      "year": 2009,
+      "date": "2009-09-09T14:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/september-9-2009-address-congress-health-care",
+      "wordCount": 5709
+    },
+    {
+      "id": "Barack_Obama_2009-12-01T01_00_00-05_00_December_1,_2009__Speech_on_Strategy_in_Afghanistan_and_Pakistan",
+      "title": "December 1, 2009: Speech on Strategy in Afghanistan and Pakistan",
+      "president": "Barack Obama",
+      "year": 2009,
+      "date": "2009-12-01T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/december-1-2009-speech-strategy-afghanistan-and-pakistan",
+      "wordCount": 4749
+    },
+    {
+      "id": "Barack_Obama_2009-12-10T01_00_00-05_00_December_10,_2009__Acceptance_of_Nobel_Peace_Prize",
+      "title": "December 10, 2009: Acceptance of Nobel Peace Prize",
+      "president": "Barack Obama",
+      "year": 2009,
+      "date": "2009-12-10T01:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/december-10-2009-acceptance-nobel-peace-prize",
+      "wordCount": 4361
+    },
+    {
+      "id": "George_W._Bush_2009-01-12T10_17_00-05_00_January_12,_2009__Final_Press_Conference",
+      "title": "January 12, 2009: Final Press Conference",
+      "president": "George W. Bush",
+      "year": 2009,
+      "date": "2009-01-12T10:17:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-12-2009-final-press-conference",
+      "wordCount": 7449
+    },
+    {
+      "id": "George_W._Bush_2009-01-15T13_00_00-05_00_January_15,_2009__Farewell_Address_to_the_Nation",
+      "title": "January 15, 2009: Farewell Address to the Nation",
+      "president": "George W. Bush",
+      "year": 2009,
+      "date": "2009-01-15T13:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-15-2009-farewell-address-nation",
+      "wordCount": 1922
+    },
+    {
+      "id": "Barack_Obama_2008-08-28T14_00_00-04_00_August_28,_2008__Acceptance_Speech_at_the_Democratic_National_Convention",
+      "title": "August 28, 2008: Acceptance Speech at the Democratic National Convention",
+      "president": "Barack Obama",
+      "year": 2008,
+      "date": "2008-08-28T14:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/august-28-2008-acceptance-speech-democratic-national",
+      "wordCount": 4917
+    },
+    {
+      "id": "Barack_Obama_2008-11-04T13_00_00-05_00_November_4,_2008__Remarks_on_Election_Night",
+      "title": "November 4, 2008: Remarks on Election Night",
+      "president": "Barack Obama",
+      "year": 2008,
+      "date": "2008-11-04T13:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/november-4-2008-remarks-election-night",
+      "wordCount": 2024
+    },
+    {
+      "id": "George_W._Bush_2008-01-28T13_00_00-05_00_January_28,_2008__State_of_the_Union_Address",
+      "title": "January 28, 2008: State of the Union Address",
+      "president": "George W. Bush",
+      "year": 2008,
+      "date": "2008-01-28T13:00:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-28-2008-state-union-address",
+      "wordCount": 5816
+    },
+    {
+      "id": "George_W._Bush_2008-03-19T13_00_00-04_00_March_19,_2008__Remarks_on_the_War_on_Terror",
+      "title": "March 19, 2008: Remarks on the War on Terror",
+      "president": "George W. Bush",
+      "year": 2008,
+      "date": "2008-03-19T13:00:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/march-19-2008-remarks-war-terror",
+      "wordCount": 3260
+    },
+    {
+      "id": "George_W._Bush_2008-10-03T16_03_00-04_00_October_3,_2008__Remarks_on_Emergency_Economic_Stabilization_Act_of_2008",
+      "title": "October 3, 2008: Remarks on Emergency Economic Stabilization Act of 2008",
+      "president": "George W. Bush",
+      "year": 2008,
+      "date": "2008-10-03T16:03:00-04:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/october-3-2008-remarks-emergency-economic-stabilization-act",
+      "wordCount": 732
+    },
+    {
+      "id": "George_W._Bush_2008-11-13T14_58_00-05_00_November_13,_2008__Speech_on_Financial_Markets_and_the_World_Economy",
+      "title": "November 13, 2008: Speech on Financial Markets and the World Economy",
+      "president": "George W. Bush",
+      "year": 2008,
+      "date": "2008-11-13T14:58:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/november-13-2008-speech-financial-markets-and-world-economy",
+      "wordCount": 3042
+    },
+    {
+      "id": "George_W._Bush_2008-12-19T10_01_00-05_00_December_19,_2008__Remarks_on_Plan_to_Assist_Automakers",
+      "title": "December 19, 2008: Remarks on Plan to Assist Automakers",
+      "president": "George W. Bush",
+      "year": 2008,
+      "date": "2008-12-19T10:01:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/december-19-2008-remarks-plan-assist-automakers",
+      "wordCount": 1082
+    },
+    {
+      "id": "George_W._Bush_2007-01-10T22_01_00-05_00_January_11,_2007__Address_on_Military_Operations_in_Iraq",
+      "title": "January 11, 2007: Address on Military Operations in Iraq",
+      "president": "George W. Bush",
+      "year": 2007,
+      "date": "2007-01-10T22:01:00-05:00",
+      "url": "https://millercenter.org/the-presidency/presidential-speeches/january-11-2007-address-military-operations-iraq",
+      "wordCount": 2981
+    }
+  ]
+};

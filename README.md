@@ -44,3 +44,32 @@ Normalize every document into:
 ```
 
 The frontend expects yearly term-frequency series per cohort and can be backed by a generated JSON file or an API route later.
+
+## Current Processed Corpus
+
+The deployed static site includes `data/processed/ordsalat-data.js` and `data/processed/ordsalat-data.json`, generated from the Miller Center presidential speeches archive.
+
+- 1,057 speeches
+- 4.26M processed words
+- Coverage from 1789 to 2026
+- 70+ tracked or discovered terms
+- Per-decade frequency series, first appearances, top source speeches, president coverage, and document metadata
+
+Raw downloaded files are intentionally ignored under `data/raw/`.
+
+## Refresh Data
+
+Download and extract the Miller Center archive:
+
+```powershell
+Invoke-WebRequest -Uri https://data.millercenter.org/miller_center_speeches.tgz -OutFile data\raw\miller_center_speeches.tgz
+tar -xzf data\raw\miller_center_speeches.tgz -C data\raw
+```
+
+Build the static processed dataset:
+
+```powershell
+node scripts\build-data.js
+```
+
+Future importers should emit the same shape as `data/processed/ordsalat-data.json` so the frontend can merge UN, EU, USA, and podcast cohorts without changing the UI.

@@ -1,4 +1,5 @@
-const years = Array.from({ length: 14 }, (_, index) => 2000 + index * 2);
+const externalCorpus = window.ORDSALAT_DATA || null;
+let years = externalCorpus?.years || Array.from({ length: 14 }, (_, index) => 2000 + index * 2);
 
 const cohorts = [
   {
@@ -249,6 +250,8 @@ const sources = [
   },
 ];
 
+hydrateExternalCorpus();
+
 const stopWords = new Set(
   "about above after again against all also among and any are because been before being between both but can could did does doing down during each few for from further had has have having here how into its itself just more most other our out over own same should some such than that the their them then there these they this those through too under until very was were what when where which while who why will with would your".split(
     " ",
@@ -261,8 +264,55 @@ let selectedLens = "frequency";
 
 const $ = (selector) => document.querySelector(selector);
 
+function hydrateExternalCorpus() {
+  if (!externalCorpus) return;
+
+  years = externalCorpus.years || years;
+  const usa = cohorts.find((cohort) => cohort.id === "usa");
+  if (usa && externalCorpus.cohorts?.usa) {
+    usa.documents = externalCorpus.cohorts.usa.documents;
+    usa.span = `${externalCorpus.cohorts.usa.earliestYear}-${externalCorpus.cohorts.usa.latestYear}`;
+    usa.fullName = "Miller Center presidential speeches";
+  }
+
+  externalCorpus.terms.forEach((externalTerm) => {
+    const existing = terms.find((term) => term.term === externalTerm.term);
+    const first = externalTerm.firstYear || years.at(-1);
+    const intensity = Math.max(0.1, externalTerm.intensity || externalTerm.latest || 0.1);
+    const profile = {
+      first,
+      intensity,
+      momentum: Math.max(0.05, Math.abs(externalTerm.momentum || 0) / 10),
+    };
+
+    if (existing) {
+      existing.series = { ...(existing.series || {}), usa: externalTerm.series.usa };
+      existing.actual = externalTerm;
+      existing.profiles.usa = profile;
+      existing.category = existing.category || externalTerm.category;
+      return;
+    }
+
+    terms.push({
+      term: externalTerm.term,
+      category: externalTerm.category || "discovered",
+      source: externalTerm.source,
+      actual: externalTerm,
+      series: { usa: externalTerm.series.usa },
+      profiles: {
+        un: { first: years.at(-1), intensity: 0.1, momentum: 0.05 },
+        eu: { first: years.at(-1), intensity: 0.1, momentum: 0.05 },
+        usa: profile,
+        podcasts: { first: years.at(-1), intensity: 0.1, momentum: 0.05 },
+      },
+    });
+  });
+}
+
 function getSeries(term, cohortId) {
+  if (term.series?.[cohortId]) return term.series[cohortId];
   const profile = term.profiles[cohortId];
+  if (!profile) return years.map(() => 0);
   return years.map((year, index) => {
     if (year < profile.first) return 0;
     const age = Math.max(0, year - profile.first);
@@ -572,6 +622,140 @@ function renderSimilarity() {
   });
 }
 
+function renderCorpusEvidence() {
+  const stats = $("#corpusStats");
+  if (!externalCorpus) {
+    stats.innerHTML = `
+      <div class="stat-tile"><span>Status</span><strong>Seed mode</strong></div>
+      <div class="stat-tile"><span>Next step</span><strong>Run importer</strong></div>
+    `;
+    $("#termEvidence").innerHTML = "<div class=\"evidence-item\"><strong>No processed corpus loaded yet.</strong><span>Run node scripts/build-data.js after downloading source data.</span></div>";
+    return;
+  }
+
+  const source = externalCorpus.source;
+  stats.innerHTML = `
+    <div class="stat-tile"><span>Speeches</span><strong>${compactNumber(source.documentCount)}</strong></div>
+    <div class="stat-tile"><span>Words</span><strong>${compactNumber(source.totalWords)}</strong></div>
+    <div class="stat-tile"><span>Coverage</span><strong>${source.earliestYear}-${source.latestYear}</strong></div>
+    <div class="stat-tile"><span>Terms indexed</span><strong>${externalCorpus.terms.length}</strong></div>
+  `;
+
+  renderTermEvidence();
+  renderPresidentTable();
+  renderDocumentTable();
+  renderBurstTable();
+  renderEraBars();
+}
+
+function renderTermEvidence() {
+  const container = $("#termEvidence");
+  const actual = terms.find((term) => term.term === selectedTerm)?.actual;
+  $("#evidenceTitle").textContent = `${selectedTerm} evidence`;
+
+  if (!actual) {
+    container.innerHTML = "<div class=\"evidence-item\"><strong>No direct Miller Center hits for this term yet.</strong><span>Use the custom analyzer or add more corpora to test it.</span></div>";
+    return;
+  }
+
+  const documents = actual.topDocuments?.length
+    ? actual.topDocuments
+    : externalCorpus.documents.filter((doc) => doc.title.toLowerCase().includes(actual.term.split(" ")[0])).slice(0, 5);
+
+  container.innerHTML = `
+    <div class="evidence-item">
+      <span>Summary</span>
+      <strong>${actual.mentions.toLocaleString()} mentions across ${actual.documentCount.toLocaleString()} speeches</strong>
+      <small>First observed in this corpus: ${actual.firstYear || "not detected"}. Peak decade index: ${actual.intensity.toFixed(1)} per 10k words.</small>
+    </div>
+    ${documents
+      .map(
+        (doc) => `
+          <div class="evidence-item">
+            <span>${escapeHtml(doc.president || "Miller Center")} · ${doc.year}</span>
+            <strong>${escapeHtml(doc.title)}</strong>
+            ${doc.url ? `<a href="${escapeHtml(doc.url)}" target="_blank" rel="noreferrer">Open source</a>` : ""}
+          </div>
+        `,
+      )
+      .join("")}
+  `;
+}
+
+function renderPresidentTable() {
+  const tbody = $("#presidentTable");
+  tbody.innerHTML = externalCorpus.presidents
+    .slice(0, 12)
+    .map(
+      (president) => `
+        <tr>
+          <td>${escapeHtml(president.president)}</td>
+          <td>${president.documents.toLocaleString()}</td>
+          <td>${compactNumber(president.words)}</td>
+          <td>${president.firstYear}-${president.latestYear}</td>
+        </tr>
+      `,
+    )
+    .join("");
+}
+
+function renderDocumentTable() {
+  const tbody = $("#documentTable");
+  tbody.innerHTML = externalCorpus.documents
+    .slice(0, 14)
+    .map(
+      (doc) => `
+        <tr>
+          <td>${doc.url ? `<a href="${escapeHtml(doc.url)}" target="_blank" rel="noreferrer">${escapeHtml(doc.title)}</a>` : escapeHtml(doc.title)}</td>
+          <td>${escapeHtml(doc.president)}</td>
+          <td>${doc.year}</td>
+          <td>${compactNumber(doc.wordCount)}</td>
+        </tr>
+      `,
+    )
+    .join("");
+}
+
+function renderBurstTable() {
+  const tbody = $("#burstTable");
+  if (!externalCorpus) return;
+  const ranked = externalCorpus.terms
+    .filter((term) => Math.abs(term.momentum || 0) > 0.05)
+    .sort((a, b) => Math.abs(b.momentum) - Math.abs(a.momentum))
+    .slice(0, 14);
+
+  tbody.innerHTML = ranked
+    .map((term) => {
+      const rising = term.momentum >= 0;
+      return `
+        <tr>
+          <td>${escapeHtml(term.term)}</td>
+          <td><span class="pill">${rising ? "Rising" : "Fading"}</span></td>
+          <td>${rising ? "+" : ""}${term.momentum.toFixed(2)}</td>
+          <td>${term.latest.toFixed(2)}</td>
+        </tr>
+      `;
+    })
+    .join("");
+}
+
+function renderEraBars() {
+  const container = $("#eraBars");
+  if (!externalCorpus) return;
+  const maxWords = Math.max(...externalCorpus.periods.map((period) => period.words), 1);
+  container.innerHTML = externalCorpus.periods
+    .map(
+      (period) => `
+        <div class="era-row">
+          <strong>${period.decade}s</strong>
+          <div class="era-track"><div class="era-fill" style="width: ${Math.max(3, (period.words / maxWords) * 100).toFixed(1)}%"></div></div>
+          <span>${compactNumber(period.words)}</span>
+        </div>
+      `,
+    )
+    .join("");
+}
+
 function calculateOverlap(activeTerms, firstCohortId, secondCohortId) {
   if (firstCohortId === secondCohortId) return 1;
   const first = activeTerms.map((term) => getSeries(term, firstCohortId).at(-1));
@@ -740,6 +924,7 @@ function updateDashboard() {
   renderTimeline();
   renderFirstAppearances();
   renderSimilarity();
+  renderCorpusEvidence();
   renderAiPack();
 }
 

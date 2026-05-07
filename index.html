@@ -153,6 +153,104 @@
           </article>
         </section>
 
+        <section class="dashboard-grid evidence-grid" id="evidence">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Real corpus</p>
+                <h2>Presidential speech archive</h2>
+              </div>
+            </div>
+            <div class="corpus-stats" id="corpusStats"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Term evidence</p>
+                <h2 id="evidenceTitle">Source-backed hits</h2>
+              </div>
+            </div>
+            <div class="evidence-list" id="termEvidence"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Presidents</p>
+                <h2>Corpus coverage</h2>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>President</th>
+                    <th>Speeches</th>
+                    <th>Words</th>
+                    <th>Span</th>
+                  </tr>
+                </thead>
+                <tbody id="presidentTable"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Documents</p>
+                <h2>Recent source records</h2>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Speech</th>
+                    <th>President</th>
+                    <th>Year</th>
+                    <th>Words</th>
+                  </tr>
+                </thead>
+                <tbody id="documentTable"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Burst analysis</p>
+                <h2>Rising and fading language</h2>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Term</th>
+                    <th>Direction</th>
+                    <th>Momentum</th>
+                    <th>Latest</th>
+                  </tr>
+                </thead>
+                <tbody id="burstTable"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Era map</p>
+                <h2>Speech volume by decade</h2>
+              </div>
+            </div>
+            <div class="era-bars" id="eraBars"></div>
+          </article>
+        </section>
+
         <section class="panel lab-panel" id="custom-analyzer">
           <div class="panel-header">
             <div>
@@ -208,6 +306,7 @@
       </main>
     </div>
 
+    <script src="data/processed/ordsalat-data.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

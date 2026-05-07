@@ -479,8 +479,88 @@ th {
 
 .lab-panel,
 .source-section,
-.ai-panel {
+.ai-panel,
+.evidence-grid {
   margin-top: 16px;
+}
+
+.corpus-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.stat-tile,
+.evidence-item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+  padding: 12px;
+}
+
+.stat-tile span,
+.evidence-item span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.stat-tile strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.55rem;
+}
+
+.evidence-list {
+  display: grid;
+  max-height: 314px;
+  gap: 10px;
+  overflow: auto;
+}
+
+.evidence-item {
+  display: grid;
+  gap: 7px;
+}
+
+.evidence-item strong {
+  line-height: 1.25;
+}
+
+.evidence-item a {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.era-bars {
+  display: grid;
+  gap: 8px;
+  max-height: 314px;
+  overflow: auto;
+}
+
+.era-row {
+  display: grid;
+  grid-template-columns: 58px 1fr 76px;
+  gap: 10px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.era-track {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--panel-strong);
+}
+
+.era-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
 }
 
 .analyzer-grid,
