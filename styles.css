@@ -304,6 +304,10 @@ h3 {
   grid-column: span 7;
 }
 
+.span-12 {
+  grid-column: span 12;
+}
+
 .panel {
   padding: 16px;
   overflow: hidden;
@@ -475,6 +479,10 @@ td a {
   grid-template-columns: minmax(0, 1fr) 220px;
 }
 
+.search-console.compare-console {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .term-list {
   display: grid;
   max-height: 610px;
@@ -545,6 +553,94 @@ td a {
   height: 120px;
   border-radius: var(--radius);
   background: var(--bg);
+}
+
+.compare-line {
+  stroke-width: 3.5;
+}
+
+.compare-cards,
+.compare-evidence {
+  display: grid;
+  gap: 10px;
+}
+
+.compare-card {
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--compare-color);
+  border-radius: var(--radius);
+  background: var(--bg);
+  padding: 12px;
+}
+
+.compare-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.compare-card strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 1.05rem;
+}
+
+.compare-card dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 12px 0 0;
+}
+
+.compare-card div {
+  min-width: 0;
+}
+
+.compare-card dt {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.compare-card dd {
+  margin: 2px 0 0;
+  font-weight: 800;
+}
+
+.compare-evidence {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.compare-evidence-column {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--compare-color);
+  border-radius: var(--radius);
+  background: var(--bg);
+  padding: 12px;
+}
+
+.compare-evidence-column h3 {
+  margin-bottom: 2px;
+}
+
+.compare-evidence-column a {
+  display: grid;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 9px;
+}
+
+.compare-evidence-column span,
+.compare-evidence-column p {
+  color: var(--muted);
+  font-size: 0.78rem;
 }
 
 .evidence-list {
@@ -664,8 +760,13 @@ td a {
 
   .span-5,
   .span-6,
-  .span-7 {
+  .span-7,
+  .span-12 {
     grid-column: span 12;
+  }
+
+  .compare-evidence {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -683,10 +784,12 @@ td a {
   .global-search,
   .search-console,
   .search-console.compact,
+  .search-console.compare-console,
   .metric-grid,
   .source-grid,
   .detail-metrics,
-  .method-grid {
+  .method-grid,
+  .compare-evidence {
     grid-template-columns: 1fr;
   }
 

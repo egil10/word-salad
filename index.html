@@ -31,6 +31,7 @@
           <a href="/dashboard" data-route="/dashboard">Dashboard</a>
           <a href="/corpus" data-route="/corpus">Corpus Search</a>
           <a href="/terms" data-route="/terms">Term Explorer</a>
+          <a href="/compare" data-route="/compare">Compare</a>
           <a href="/sources" data-route="/sources">Sources</a>
           <a href="/ai" data-route="/ai">AI Workspace</a>
           <a href="/method" data-route="/method">Method</a>
@@ -190,6 +191,59 @@
                 </div>
               </div>
               <div class="term-detail" id="termDetail"></div>
+            </article>
+          </section>
+        </section>
+
+        <section class="page-view" data-page="/compare">
+          <section class="search-console compare-console">
+            <div>
+              <label for="compareTermA">Term A</label>
+              <select id="compareTermA"></select>
+            </div>
+            <div>
+              <label for="compareTermB">Term B</label>
+              <select id="compareTermB"></select>
+            </div>
+            <div>
+              <label for="compareTermC">Term C</label>
+              <select id="compareTermC"></select>
+            </div>
+            <div>
+              <label for="compareTermD">Term D</label>
+              <select id="compareTermD"></select>
+            </div>
+          </section>
+
+          <section class="work-grid">
+            <article class="panel span-7">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow">Comparison</p>
+                  <h2>Frequency over time</h2>
+                </div>
+              </div>
+              <svg id="compareChart" class="trend-chart" role="img" aria-label="Multi-term comparison chart"></svg>
+            </article>
+
+            <article class="panel span-5">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow">Snapshot</p>
+                  <h2>Side-by-side metrics</h2>
+                </div>
+              </div>
+              <div class="compare-cards" id="compareCards"></div>
+            </article>
+
+            <article class="panel span-12">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow">Evidence</p>
+                  <h2>Top source speeches by compared term</h2>
+                </div>
+              </div>
+              <div class="compare-evidence" id="compareEvidence"></div>
             </article>
           </section>
         </section>

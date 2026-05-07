@@ -5,6 +5,7 @@ const routes = {
   "/dashboard": { title: "Language Trends", kicker: "Dashboard" },
   "/corpus": { title: "Corpus Search", kicker: "Dataset browser" },
   "/terms": { title: "Term Explorer", kicker: "Indexed language" },
+  "/compare": { title: "Compare Words", kicker: "Term comparison" },
   "/sources": { title: "Source Library", kicker: "Resources" },
   "/ai": { title: "AI Workspace", kicker: "Evidence packs" },
   "/method": { title: "Method", kicker: "Reproducibility" },
@@ -70,6 +71,7 @@ const state = {
   decade: "all",
   termQuery: "",
   category: "all",
+  compareTerms: [],
 };
 
 const stopWords = new Set(
@@ -146,6 +148,13 @@ function bindEvents() {
     renderTermList();
   });
 
+  ["#compareTermA", "#compareTermB", "#compareTermC", "#compareTermD"].forEach((selector, index) => {
+    $(selector).addEventListener("change", (event) => {
+      state.compareTerms[index] = event.target.value;
+      renderCompare();
+    });
+  });
+
   $("#aiQuestion").addEventListener("input", renderAiPack);
   $("#aiTermSelect").addEventListener("change", (event) => {
     state.selectedTerm = event.target.value;
@@ -179,6 +188,7 @@ function renderAll() {
   renderCorpusSearch();
   renderTermList();
   renderTermDetail();
+  renderCompare();
   renderSources();
   renderAiPack();
 }
@@ -187,11 +197,16 @@ function renderStaticControls() {
   $("#datasetStatus").textContent = `${corpus.source.documentCount.toLocaleString()} speeches · ${compactNumber(corpus.source.totalWords)} words`;
 
   const sortedTerms = [...corpus.terms].sort((a, b) => b.mentions - a.mentions);
-  [$("#dashboardTermSelect"), $("#aiTermSelect")].forEach((select) => {
+  [$("#dashboardTermSelect"), $("#aiTermSelect"), $("#compareTermA"), $("#compareTermB"), $("#compareTermC"), $("#compareTermD")].forEach((select) => {
     select.innerHTML = sortedTerms
       .map((term) => `<option value="${escapeHtml(term.term)}">${escapeHtml(term.term)}</option>`)
       .join("");
     select.value = state.selectedTerm;
+  });
+
+  state.compareTerms = sortedTerms.slice(0, 4).map((term) => term.term);
+  ["#compareTermA", "#compareTermB", "#compareTermC", "#compareTermD"].forEach((selector, index) => {
+    $(selector).value = state.compareTerms[index];
   });
 
   const presidents = [...corpus.presidents].sort((a, b) => a.president.localeCompare(b.president));
@@ -454,6 +469,118 @@ function renderTermDetail() {
   renderSparkline($("#termSparkline"), term.series.usa);
 }
 
+function renderCompare() {
+  const compared = state.compareTerms
+    .map((name) => corpus.terms.find((term) => term.term === name))
+    .filter(Boolean);
+  renderCompareChart(compared);
+  renderCompareCards(compared);
+  renderCompareEvidence(compared);
+}
+
+function renderCompareChart(compared) {
+  const svg = $("#compareChart");
+  const width = 820;
+  const height = 320;
+  const pad = { top: 24, right: 32, bottom: 38, left: 48 };
+  const plotW = width - pad.left - pad.right;
+  const plotH = height - pad.top - pad.bottom;
+  const max = Math.max(...compared.flatMap((term) => term.series.usa), 1) * 1.18;
+
+  svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+  svg.innerHTML = "";
+
+  [0, 0.25, 0.5, 0.75, 1].forEach((ratio) => {
+    const y = pad.top + plotH * ratio;
+    svg.appendChild(svgLine(pad.left, y, width - pad.right, y, "grid-line"));
+  });
+
+  corpus.years.forEach((year, index) => {
+    if (index % 3 !== 0 && index !== corpus.years.length - 1) return;
+    const x = pad.left + (index / (corpus.years.length - 1)) * plotW;
+    const label = svgText(x, height - 12, String(year), "chart-label");
+    label.setAttribute("text-anchor", "middle");
+    svg.appendChild(label);
+  });
+
+  compared.forEach((term, termIndex) => {
+    const color = compareColor(termIndex);
+    const points = term.series.usa.map((value, index) => {
+      const x = pad.left + (index / (corpus.years.length - 1)) * plotW;
+      const y = pad.top + plotH - (value / max) * plotH;
+      return [x, y, value, corpus.years[index]];
+    });
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute("class", "chart-line compare-line");
+    path.setAttribute("stroke", color);
+    path.setAttribute("d", points.map(([x, y], index) => `${index ? "L" : "M"} ${x.toFixed(1)} ${y.toFixed(1)}`).join(" "));
+    svg.appendChild(path);
+
+    const last = points[points.length - 1];
+    const label = svgText(width - pad.right, last[1] - 8, term.term, "chart-label");
+    label.setAttribute("text-anchor", "end");
+    label.setAttribute("fill", color);
+    svg.appendChild(label);
+
+    points.forEach(([x, y, value, year], index) => {
+      if (index !== points.length - 1 && index % 4 !== 0) return;
+      const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      dot.setAttribute("cx", x);
+      dot.setAttribute("cy", y);
+      dot.setAttribute("r", 3.5);
+      dot.setAttribute("fill", color);
+      dot.appendChild(svgTitle(`${term.term} ${year}: ${value.toFixed(2)}`));
+      svg.appendChild(dot);
+    });
+  });
+}
+
+function renderCompareCards(compared) {
+  $("#compareCards").innerHTML = compared
+    .map(
+      (term, index) => `
+        <article class="compare-card" style="--compare-color:${compareColor(index)}">
+          <span>${escapeHtml(term.category)}</span>
+          <strong>${escapeHtml(term.term)}</strong>
+          <dl>
+            <div><dt>Mentions</dt><dd>${term.mentions.toLocaleString()}</dd></div>
+            <div><dt>First seen</dt><dd>${term.firstYear || "n/a"}</dd></div>
+            <div><dt>Latest</dt><dd>${term.latest.toFixed(2)}</dd></div>
+            <div><dt>Momentum</dt><dd>${formatSigned(term.momentum)}</dd></div>
+          </dl>
+        </article>
+      `,
+    )
+    .join("");
+}
+
+function renderCompareEvidence(compared) {
+  $("#compareEvidence").innerHTML = compared
+    .map(
+      (term, index) => `
+        <article class="compare-evidence-column" style="--compare-color:${compareColor(index)}">
+          <h3>${escapeHtml(term.term)}</h3>
+          ${
+            term.topDocuments?.length
+              ? term.topDocuments
+                  .slice(0, 4)
+                  .map(
+                    (doc) => `
+                      <a href="${escapeHtml(doc.url)}" target="_blank" rel="noreferrer">
+                        <span>${escapeHtml(doc.president)} · ${doc.year} · ${doc.count} hits</span>
+                        <strong>${escapeHtml(doc.title)}</strong>
+                      </a>
+                    `,
+                  )
+                  .join("")
+              : '<p>No document-level evidence for this discovered phrase yet.</p>'
+          }
+        </article>
+      `,
+    )
+    .join("");
+}
+
 function renderSparkline(svg, series) {
   const width = 620;
   const height = 120;
@@ -647,6 +774,10 @@ function compactNumber(value) {
 
 function formatSigned(value) {
   return `${value >= 0 ? "+" : ""}${Number(value).toFixed(2)}`;
+}
+
+function compareColor(index) {
+  return ["#087f6f", "#b64b30", "#355c9f", "#8d6f22"][index % 4];
 }
 
 function escapeHtml(value) {

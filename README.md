@@ -12,7 +12,7 @@ Serve the folder with any static server:
 npx serve .
 ```
 
-The app uses Vercel-style routes such as `/dashboard`, `/corpus`, `/terms`, `/sources`, `/ai`, and `/method`, so local testing should use a static server instead of opening the file directly.
+The app uses Vercel-style routes such as `/dashboard`, `/corpus`, `/terms`, `/compare`, `/sources`, `/ai`, and `/method`, so local testing should use a static server instead of opening the file directly.
 
 ## Deploy On Vercel
 
@@ -62,6 +62,7 @@ The deployed static site includes `data/processed/ordsalat-data.js` and `data/pr
 - `/dashboard`: high-level corpus metrics, trend chart, word cloud, burst table, and decade volume map
 - `/corpus`: searchable table for every processed source speech
 - `/terms`: searchable term index with first-year, momentum, and source-backed evidence
+- `/compare`: compare 2-4 words by timeline, first appearance, intensity, momentum, and source evidence
 - `/sources`: corpus resource library and ingestion status
 - `/ai`: prompt/evidence pack builder plus pasted-text analyzer
 - `/method`: concise explanation of the normalization and analysis method
