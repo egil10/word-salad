@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ordsalat tracks recurring words across speeches, transcripts, institutions, and media over time."
+    />
+    <title>Ordsalat | Language Trend Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#overview" aria-label="Ordsalat dashboard home">
+          <span class="brand-mark">O</span>
+          <span>
+            <strong>Ordsalat</strong>
+            <small>rhetoric drift index</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#overview">Overview</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#sources">Sources</a>
+          <a href="#ai-lab">AI Lab</a>
+        </nav>
+
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+          <span aria-hidden="true">T</span>
+        </button>
+      </header>
+
+      <main>
+        <section class="hero-section" id="overview">
+          <div class="hero-copy">
+            <p class="eyebrow">Institutional language intelligence</p>
+            <h1>See when words enter power, peak, and disappear.</h1>
+            <p class="hero-lede">
+              Compare UN, EU, US and podcast language over time, track first appearances, and export AI-ready evidence packs with dates, sources and cohort metadata.
+            </p>
+          </div>
+
+          <aside class="command-panel" aria-label="Dashboard controls">
+            <label class="search-label" for="termSearch">Track a word or phrase</label>
+            <div class="search-row">
+              <input id="termSearch" type="search" placeholder="Try resilience, misinformation, AI..." />
+              <button id="addTermButton" type="button">Track</button>
+            </div>
+
+            <div class="control-block">
+              <span class="control-label">Cohorts</span>
+              <div class="segmented" id="cohortControls" role="group" aria-label="Choose cohorts"></div>
+            </div>
+
+            <div class="control-block">
+              <span class="control-label">Lens</span>
+              <select id="lensSelect" aria-label="Select dashboard lens">
+                <option value="frequency">Frequency per 10k words</option>
+                <option value="velocity">Recent velocity</option>
+                <option value="novelty">First-appearance novelty</option>
+              </select>
+            </div>
+          </aside>
+        </section>
+
+        <section class="metric-grid" aria-label="Key metrics">
+          <article class="metric-card">
+            <span class="metric-label">Seed documents</span>
+            <strong id="metricDocs">0</strong>
+            <small>ready for corpus ingestion</small>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Tracked terms</span>
+            <strong id="metricTerms">0</strong>
+            <small>across 2000-2026</small>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Fastest riser</span>
+            <strong id="metricRiser">-</strong>
+            <small id="metricRiserMeta">last six years</small>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Earliest signal</span>
+            <strong id="metricEarliest">-</strong>
+            <small id="metricEarliestMeta">first observed in seed</small>
+          </article>
+        </section>
+
+        <section class="dashboard-grid">
+          <article class="panel word-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Word cloud</p>
+                <h2>Relative saturation</h2>
+              </div>
+              <output id="activeCohortsLabel" aria-live="polite"></output>
+            </div>
+            <div class="word-cloud" id="wordCloud" aria-label="Weighted word cloud"></div>
+          </article>
+
+          <article class="panel" id="timeline">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Timeline</p>
+                <h2 id="timelineTitle">Term trajectory</h2>
+              </div>
+              <select id="termSelect" aria-label="Select term"></select>
+            </div>
+            <div class="chart-frame">
+              <svg id="timelineChart" role="img" aria-label="Line chart of selected term over time"></svg>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Adoption</p>
+                <h2>First appearance map</h2>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Term</th>
+                    <th>First cohort</th>
+                    <th>First year</th>
+                    <th>2026 index</th>
+                  </tr>
+                </thead>
+                <tbody id="firstAppearanceTable"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Cohort distance</p>
+                <h2>Vocabulary overlap</h2>
+              </div>
+            </div>
+            <div class="matrix" id="similarityMatrix" aria-label="Vocabulary overlap matrix"></div>
+          </article>
+        </section>
+
+        <section class="panel lab-panel" id="custom-analyzer">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Bring your own corpus</p>
+              <h2>Paste speeches, transcripts or show notes</h2>
+            </div>
+            <button id="analyzeTextButton" type="button">Analyze Text</button>
+          </div>
+          <div class="analyzer-grid">
+            <textarea
+              id="customText"
+              spellcheck="true"
+              placeholder="Paste a speech, podcast transcript, EU debate excerpt or UN statement. Ordsalat extracts candidate buzzwords and compares them with the seed index."
+            ></textarea>
+            <div class="analysis-output" id="customOutput" aria-live="polite">
+              <span>Waiting for text.</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="source-section" id="sources">
+          <div class="section-heading">
+            <p class="eyebrow">Corpus runway</p>
+            <h2>Data sources worth ingesting first</h2>
+          </div>
+          <div class="source-grid" id="sourceGrid"></div>
+        </section>
+
+        <section class="panel ai-panel" id="ai-lab">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">AI Lab</p>
+              <h2>Evidence pack generator</h2>
+            </div>
+            <button id="copyPromptButton" type="button">Copy Prompt</button>
+          </div>
+          <div class="ai-grid">
+            <div class="prompt-builder">
+              <label for="aiQuestion">Research question</label>
+              <input
+                id="aiQuestion"
+                type="text"
+                value="Which organizations adopted resilience language first, and did podcasts follow or lead?"
+              />
+              <label for="aiTermChoice">Focus term</label>
+              <select id="aiTermChoice"></select>
+              <label for="aiEvidence">Generated prompt</label>
+              <textarea id="aiEvidence" readonly></textarea>
+            </div>
+            <pre class="json-preview" id="jsonPreview" aria-label="AI-ready JSON preview"></pre>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
