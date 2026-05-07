@@ -89,6 +89,23 @@ button {
   font-weight: 800;
 }
 
+i[data-lucide],
+.lucide {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+  vertical-align: middle;
+}
+
+.icon-text-button,
+.icon-link,
+.metric-label,
+.source-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
 label {
   display: block;
   margin-bottom: 7px;
@@ -176,6 +193,7 @@ h3 {
   display: flex;
   min-height: 42px;
   align-items: center;
+  gap: 9px;
   border-radius: var(--radius);
   padding: 0 11px;
   color: var(--muted);
@@ -266,7 +284,8 @@ h3 {
   color: var(--muted);
 }
 
-.metric-card span {
+.metric-card span.metric-label {
+  display: inline-flex;
   font-size: 0.74rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -426,10 +445,16 @@ td a {
   font-weight: 800;
 }
 
+.icon-link {
+  color: var(--accent);
+  font-weight: 800;
+}
+
 .pill {
   display: inline-flex;
   min-height: 26px;
   align-items: center;
+  gap: 6px;
   border: 1px solid var(--line);
   border-radius: 999px;
   padding: 0 8px;
@@ -643,6 +668,14 @@ td a {
   font-size: 0.78rem;
 }
 
+.compare-evidence-column small {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent);
+  font-weight: 800;
+}
+
 .evidence-list {
   display: grid;
   max-height: 310px;
@@ -700,6 +733,12 @@ td a {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
+}
+
+.source-open {
+  align-self: end;
+  color: var(--accent);
+  font-weight: 800;
 }
 
 .method-panel {

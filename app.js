@@ -90,6 +90,7 @@ function boot() {
   bindEvents();
   navigate(state.route, false);
   renderAll();
+  refreshIcons();
 }
 
 function bindEvents() {
@@ -191,6 +192,7 @@ function renderAll() {
   renderCompare();
   renderSources();
   renderAiPack();
+  refreshIcons();
 }
 
 function renderStaticControls() {
@@ -234,17 +236,17 @@ function renderMetrics() {
   const fastest = [...corpus.terms].sort((a, b) => b.momentum - a.momentum)[0];
   const mostCommon = [...corpus.terms].sort((a, b) => b.mentions - a.mentions)[0];
   const metrics = [
-    ["Speeches", corpus.source.documentCount.toLocaleString(), `${corpus.source.earliestYear}-${corpus.source.latestYear}`],
-    ["Words", compactNumber(corpus.source.totalWords), "normalized by decade"],
-    ["Indexed terms", corpus.terms.length.toString(), "tracked and discovered"],
-    ["Fastest riser", fastest.term, `momentum ${formatSigned(fastest.momentum)}`],
-    ["Most cited", mostCommon.term, `${mostCommon.mentions.toLocaleString()} mentions`],
+    ["file-text", "Speeches", corpus.source.documentCount.toLocaleString(), `${corpus.source.earliestYear}-${corpus.source.latestYear}`],
+    ["whole-word", "Words", compactNumber(corpus.source.totalWords), "normalized by decade"],
+    ["tags", "Indexed terms", corpus.terms.length.toString(), "tracked and discovered"],
+    ["trending-up", "Fastest riser", fastest.term, `momentum ${formatSigned(fastest.momentum)}`],
+    ["badge-check", "Most cited", mostCommon.term, `${mostCommon.mentions.toLocaleString()} mentions`],
   ];
   $("#metricGrid").innerHTML = metrics
     .map(
-      ([label, value, meta]) => `
+      ([icon, label, value, meta]) => `
         <article class="metric-card">
-          <span>${escapeHtml(label)}</span>
+          <span class="metric-label"><i data-lucide="${icon}"></i>${escapeHtml(label)}</span>
           <strong>${escapeHtml(value)}</strong>
           <small>${escapeHtml(meta)}</small>
         </article>
@@ -386,11 +388,12 @@ function renderCorpusSearch() {
           <td>${escapeHtml(doc.president)}</td>
           <td>${doc.year}</td>
           <td>${compactNumber(doc.wordCount)}</td>
-          <td><a href="${escapeHtml(doc.url)}" target="_blank" rel="noreferrer">Open</a></td>
+          <td><a class="icon-link" href="${escapeHtml(doc.url)}" target="_blank" rel="noreferrer"><i data-lucide="external-link"></i><span>Open</span></a></td>
         </tr>
       `,
     )
     .join("");
+  refreshIcons();
 }
 
 function filteredDocuments() {
@@ -457,7 +460,7 @@ function renderTermDetail() {
                   <article class="evidence-item">
                     <span>${escapeHtml(doc.president)} · ${doc.year} · ${doc.count} hits</span>
                     <strong>${escapeHtml(doc.title)}</strong>
-                    <a href="${escapeHtml(doc.url)}" target="_blank" rel="noreferrer">Open source</a>
+                    <a class="icon-link" href="${escapeHtml(doc.url)}" target="_blank" rel="noreferrer"><i data-lucide="external-link"></i><span>Open source</span></a>
                   </article>
                 `,
               )
@@ -467,6 +470,7 @@ function renderTermDetail() {
     </div>
   `;
   renderSparkline($("#termSparkline"), term.series.usa);
+  refreshIcons();
 }
 
 function renderCompare() {
@@ -569,6 +573,7 @@ function renderCompareEvidence(compared) {
                       <a href="${escapeHtml(doc.url)}" target="_blank" rel="noreferrer">
                         <span>${escapeHtml(doc.president)} · ${doc.year} · ${doc.count} hits</span>
                         <strong>${escapeHtml(doc.title)}</strong>
+                        <small><i data-lucide="external-link"></i> Open source</small>
                       </a>
                     `,
                   )
@@ -579,6 +584,7 @@ function renderCompareEvidence(compared) {
       `,
     )
     .join("");
+  refreshIcons();
 }
 
 function renderSparkline(svg, series) {
@@ -602,17 +608,19 @@ function renderSources() {
     .map(
       (source) => `
         <a class="source-card" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">
-          <span class="pill">${escapeHtml(source.status)}</span>
+          <span class="pill"><i data-lucide="${source.status === "Live in app" ? "check-circle-2" : "circle-dot"}"></i>${escapeHtml(source.status)}</span>
           <h3>${escapeHtml(source.title)}</h3>
           <p>${escapeHtml(source.note)}</p>
           <div class="source-meta">
             <span class="pill">${escapeHtml(source.coverage)}</span>
             <span class="pill">${escapeHtml(source.format)}</span>
           </div>
+          <span class="source-open"><i data-lucide="external-link"></i>Open resource</span>
         </a>
       `,
     )
     .join("");
+  refreshIcons();
 }
 
 function renderAiPack() {
@@ -719,9 +727,11 @@ async function copyPrompt() {
     $("#aiEvidence").select();
     document.execCommand("copy");
   }
-  $("#copyPromptButton").textContent = "Copied";
+  $("#copyPromptButton").innerHTML = '<i data-lucide="check"></i><span>Copied</span>';
+  refreshIcons();
   setTimeout(() => {
-    $("#copyPromptButton").textContent = "Copy Prompt";
+    $("#copyPromptButton").innerHTML = '<i data-lucide="copy"></i><span>Copy Prompt</span>';
+    refreshIcons();
   }, 1400);
 }
 
@@ -778,6 +788,16 @@ function formatSigned(value) {
 
 function compareColor(index) {
   return ["#087f6f", "#b64b30", "#355c9f", "#8d6f22"][index % 4];
+}
+
+function refreshIcons() {
+  if (window.lucide?.createIcons) {
+    window.lucide.createIcons({
+      attrs: {
+        "stroke-width": 2,
+      },
+    });
+  }
 }
 
 function escapeHtml(value) {

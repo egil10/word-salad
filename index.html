@@ -28,18 +28,21 @@
         </a>
 
         <nav class="side-nav" aria-label="Main pages">
-          <a href="/dashboard" data-route="/dashboard">Dashboard</a>
-          <a href="/corpus" data-route="/corpus">Corpus Search</a>
-          <a href="/terms" data-route="/terms">Term Explorer</a>
-          <a href="/compare" data-route="/compare">Compare</a>
-          <a href="/sources" data-route="/sources">Sources</a>
-          <a href="/ai" data-route="/ai">AI Workspace</a>
-          <a href="/method" data-route="/method">Method</a>
+          <a href="/dashboard" data-route="/dashboard"><i data-lucide="layout-dashboard"></i><span>Dashboard</span></a>
+          <a href="/corpus" data-route="/corpus"><i data-lucide="database"></i><span>Corpus Search</span></a>
+          <a href="/terms" data-route="/terms"><i data-lucide="list-filter"></i><span>Term Explorer</span></a>
+          <a href="/compare" data-route="/compare"><i data-lucide="git-compare-arrows"></i><span>Compare</span></a>
+          <a href="/sources" data-route="/sources"><i data-lucide="library"></i><span>Sources</span></a>
+          <a href="/ai" data-route="/ai"><i data-lucide="sparkles"></i><span>AI Workspace</span></a>
+          <a href="/method" data-route="/method"><i data-lucide="workflow"></i><span>Method</span></a>
         </nav>
 
         <div class="sidebar-footer">
           <span id="datasetStatus">Loading corpus</span>
-          <button class="ghost-button" id="themeToggle" type="button">Theme</button>
+          <button class="ghost-button icon-text-button" id="themeToggle" type="button">
+            <i data-lucide="moon-star"></i>
+            <span>Theme</span>
+          </button>
         </div>
       </aside>
 
@@ -51,7 +54,10 @@
           </div>
           <div class="global-search">
             <input id="globalSearch" type="search" placeholder="Search terms, speeches, presidents, sources..." />
-            <button id="globalSearchButton" type="button">Search</button>
+            <button class="icon-text-button" id="globalSearchButton" type="button">
+              <i data-lucide="search"></i>
+              <span>Search</span>
+            </button>
           </div>
         </header>
 
@@ -141,7 +147,10 @@
                 <p class="eyebrow">Search results</p>
                 <h2 id="corpusResultTitle">All speeches</h2>
               </div>
-              <button id="exportCorpusButton" type="button">Export JSON</button>
+              <button class="icon-text-button" id="exportCorpusButton" type="button">
+                <i data-lucide="download"></i>
+                <span>Export JSON</span>
+              </button>
             </div>
             <div class="table-wrap tall">
               <table>
@@ -269,7 +278,10 @@
                   <p class="eyebrow">Evidence prompt</p>
                   <h2>Build an AI-ready pack</h2>
                 </div>
-                <button id="copyPromptButton" type="button">Copy Prompt</button>
+                <button class="icon-text-button" id="copyPromptButton" type="button">
+                  <i data-lucide="copy"></i>
+                  <span>Copy Prompt</span>
+                </button>
               </div>
               <label for="aiQuestion">Question</label>
               <input
@@ -289,7 +301,10 @@
                   <p class="eyebrow">Custom text</p>
                   <h2>Analyze a pasted transcript</h2>
                 </div>
-                <button id="analyzeTextButton" type="button">Analyze</button>
+                <button class="icon-text-button" id="analyzeTextButton" type="button">
+                  <i data-lucide="scan-text"></i>
+                  <span>Analyze</span>
+                </button>
               </div>
               <textarea
                 id="customText"
@@ -327,6 +342,7 @@
       </main>
     </div>
 
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="data/processed/ordsalat-data.js"></script>
     <script src="app.js"></script>
   </body>
